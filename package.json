@@ -1,0 +1,15 @@
+{
+  "name": "avg_cleaning",
+  "version": "1.0.0",
+  "description": "Cleaning request app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aswin Kumar Jegadeesh",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.0.0"
+  }
+}

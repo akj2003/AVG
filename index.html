@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Room Cleaning</title>
+        <script src="/Users/aj/Workspace/Electron/Development/AVG/mainScreen.js"></script>
+    </head>
+    <body>
+        <script>
+            $(function(){
+                $("#datepicker").datepicker({formate: 'mm-dd-yyyy',
+                   startDate: '+0d',
+                   autoclose: true  
+               });
+             });
+        </script>
+        <br>
+        <form name="roomclean" id="roomClean">
+            <label class="catlab" id="catlabel"> Room Category: </label>
+            <select name="optone" id="catSel" size="1" onchange="room()">
+                   <option value="" selected="selected">Select Room Category</option>
+            </select>
+            <br>
+            <br>
+            <label class="catlab" id="catlabel"> Room Number: </label>
+            <select name="opttwo" id="roomSel" size=1>
+                <option value="" selected="selected">Please select category</option>
+            </select>
+        </form>
+        <table>
+            <tr>
+                <th>View Details</th>
+            </tr>
+            <tr>
+                <td>Room Last Cleaned</td>
+                <td>04-06-2023</td>
+            </tr>
+            <tr>
+                <td>Room Cleaned by</td>
+                <td>FirstName LastName</td>
+            </tr>
+            <tr>
+                <td>Requested by</td>
+                <td>FirstName LastName</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <button class="btnIC">Initiate Clean</button>
+                </td>
+                <td>
+                    <button class="btnVS">View Status</button>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Initiate Cleaning</th>
+            </tr>
+            <tr>
+                <td>Schedule date</td>
+                <td>
+                    <input type="datetime-local" id="datepicker" class="form"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Requested By</td>
+                <td>
+                    <select name="Requestor" id="req">
+                        <option value="" selected="selected">----Select----</option>
+                        <option value="Aswin">Aswin</option>
+                        <option value="Kumar">Kumar</option>
+                        <option value="Jegadeesh">Jegadeesh</option>
+                        <option value="Aswin Kumar">Aswin Kumar</option>                        
+                 </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Assigned To</td>
+                <td>
+                    <select name="Assigne" id="assigne">
+                        <option value="" selected="selected">----Select----</option>
+                        <option value="Aswin">Aswin</option>
+                        <option value="Kumar">Kumar</option>
+                        <option value="Jegadeesh">Jegadeesh</option>
+                        <option value="Aswin Kumar">Aswin Kumar</option>                        
+                 </select>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>View Room Cleaning Status</th>
+            </tr>
+            <tr>
+                <td>Room Category</td>
+                <td>
+                    <select name="optone" id="catSel" size="1" onchange="cat()">
+                        <option value="" selected="selected">Select Room Category</option>
+                 </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label></label>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
