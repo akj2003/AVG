@@ -1,110 +1,121 @@
 <html>
     <head>
-        <title>Room Cleaning</title>
+        <title>AVG Cleaning Request</title>
         <script src="/Users/aj/Workspace/Electron/Development/AVG/mainScreen.js"></script>
+        <link rel="stylesheet" href="/Users/aj/Workspace/Electron/Development/AVG/style/mainScreen.css" type="text/css">
     </head>
     <body>
-        <script>
-            $(function(){
-                $("#datepicker").datepicker({formate: 'mm-dd-yyyy',
-                   startDate: '+0d',
-                   autoclose: true  
-               });
-             });
-        </script>
         <br>
+        <div id="title">
+            AVG Cleaning Request
+        </div>
+        <div id="mod1_title">
+            View details
+        </div>
         <form name="roomclean" id="roomClean">
-            <label class="catlab" id="catlabel"> Room Category: </label>
+            <label class="catlab" id="catlabel"> Block: </label>
             <select name="optone" id="catSel" size="1" onchange="room()">
-                   <option value="" selected="selected">Select Room Category</option>
+                   <option value="" selected="selected">Select Block</option>
             </select>
             <br>
             <br>
             <label class="catlab" id="catlabel"> Room Number: </label>
-            <select name="opttwo" id="roomSel" size=1>
-                <option value="" selected="selected">Please select category</option>
+            <select name="opttwo" id="roomSel" size="1"  onselect="mod_viewdetails_enable(this.value)" >
+                <option value="" selected="selected" >Please Select Room</option>
             </select>
         </form>
-        <table>
-            <tr>
-                <th>View Details</th>
-            </tr>
-            <tr>
-                <td>Room Last Cleaned</td>
-                <td>04-06-2023</td>
-            </tr>
-            <tr>
-                <td>Room Cleaned by</td>
-                <td>FirstName LastName</td>
-            </tr>
-            <tr>
-                <td>Requested by</td>
-                <td>FirstName LastName</td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td>
-                    <button class="btnIC">Initiate Clean</button>
-                </td>
-                <td>
+        <div id="mod_viewdetails" style="overflow-y:auto;">
+            <table id="tbl_viewdetails" class="tbl_viewdetails">
+                <tr id="vd_tr">
+                    <th id="vd_th">
+                        No.
+                    </th>
+                    <th id="vd_th">
+                        Requested by
+                    </th>
+                    <th id="vd_th">
+                        Room Last cleaned on
+                    </th>
+                    <th id="vd_th">
+                        Assigned To
+                    </th>
+                </tr>
+                <tr id="vd_tr">
+                    <td id="vd_td">
+                        No.
+                    </td>
+                    <td id="vd_td">
+                        Requested by
+                    </td>
+                    <td id="vd_td">
+                        Room Last cleaned on
+                    </td>
+                    <td id="vd_td">
+                        Assigned To
+                    </td>
+                </tr>
+            </table>
+            <div class="row" id="mod_btns">
+                <div class="column">
+                        <button class="btnIC">Initiate Clean</button>
+                </div>
+                <div class="column">
                     <button class="btnVS">View Status</button>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
+        
 
-        <table>
-            <tr>
-                <th>Initiate Cleaning</th>
-            </tr>
-            <tr>
-                <td>Schedule date</td>
-                <td>
+        <div id="mod_Request">
+            <div id="mod_request_title">
+                Initiate Cleaning Request
+            </div>
+            <div class="column">
+                <div class="row">Schedule date</div>
+                <div class="row">Requested By</div>
+                <div class="row">Assigned To</div>
+            </div>
+            <div class="column">
+                <div class="row">
                     <input type="datetime-local" id="datepicker" class="form"/>
-                </td>
-            </tr>
-            <tr>
-                <td>Requested By</td>
-                <td>
+                </div>
+                <div class="row">
                     <select name="Requestor" id="req">
                         <option value="" selected="selected">----Select----</option>
                         <option value="Aswin">Aswin</option>
                         <option value="Kumar">Kumar</option>
                         <option value="Jegadeesh">Jegadeesh</option>
                         <option value="Aswin Kumar">Aswin Kumar</option>                        
-                 </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Assigned To</td>
-                <td>
+                    </select>
+                </div>
+                <div class="row">
                     <select name="Assigne" id="assigne">
                         <option value="" selected="selected">----Select----</option>
                         <option value="Aswin">Aswin</option>
                         <option value="Kumar">Kumar</option>
                         <option value="Jegadeesh">Jegadeesh</option>
                         <option value="Aswin Kumar">Aswin Kumar</option>                        
-                 </select>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>View Room Cleaning Status</th>
-            </tr>
-            <tr>
-                <td>Room Category</td>
-                <td>
-                    <select name="optone" id="catSel" size="1" onchange="cat()">
-                        <option value="" selected="selected">Select Room Category</option>
-                 </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label></label>
-                </td>
-            </tr>
-        </table>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="mod_viewStatus">
+            <div id="mod_viewStatus_title">
+                View Room Cleaning Status
+            </div>
+            <div id="column">
+                <div id="row">
+                    Room Block
+                </div>
+            </div>
+            <div id="column">
+                <div id="row">
+                    <select name="optone" id="catSel1" size="1">
+                        <option value="" selected="selected">Select Block</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
