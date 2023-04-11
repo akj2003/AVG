@@ -1,0 +1,112 @@
+[
+    {
+        "BlockID": "1",
+        "BlockName": "Ganga",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "2",
+        "BlockName": "Vyasa",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "3",
+        "BlockName": "Bhavani",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "4",
+        "BlockName": "Godavari",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "5",
+        "BlockName": "Gomati",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "6",
+        "BlockName": "Bhagirathi",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "7",
+        "BlockName": "Saraswati",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "8",
+        "BlockName": "Gautami",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "9",
+        "BlockName": "Kaveri",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "10",
+        "BlockName": "Brahmaputra",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "11",
+        "BlockName": "Indravati",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "12",
+        "BlockName": "Sindhu",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "13",
+        "BlockName": "Tunga",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "14",
+        "BlockName": "Pampa",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "15",
+        "BlockName": "Purna",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "16",
+        "BlockName": "Bhadra",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "17",
+        "BlockName": "Mandakini",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "18",
+        "BlockName": "Pinakini",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "19",
+        "BlockName": "Narmada",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "20",
+        "BlockName": "Sabarmati",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "21",
+        "BlockName": "Om Villa",
+        "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "22",
+        "BlockName": "Varada",
+        "BlockPurpose": "For Visitors"
+    }
+]

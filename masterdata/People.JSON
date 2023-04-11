@@ -1,0 +1,26 @@
+[
+    {
+        "PeopleID": "P1",
+        "First Name": "Vimala",
+        "Last Name": "Sadasivam",
+        "Role": "Admin",
+        "Phonenumber": "",
+        "Email": ""
+    },
+    {
+        "PeopleID": "P2",
+        "First Name": "Shuddhatma",
+        "Last Name": "",
+        "Role": "Admin",
+        "Phonenumber": "",
+        "Email": ""
+    },
+    {
+        "PeopleID": "P3",
+        "First Name": "Gary",
+        "Last Name": "",
+        "Role": "Admin",
+        "Phonenumber": "",
+        "Email": ""
+    }
+]
