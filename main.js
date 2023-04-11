@@ -6,6 +6,7 @@ function createWindow() {
         height:600
     })
     mainWindow.loadFile('index.html')
+    mainWindow.webContents.openDevTools()
 }
 
 app.whenReady().then(createWindow)
@@ -21,4 +22,3 @@ app.on('activate', () => {
         createWindow()
     }
 })
-
