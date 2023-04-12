@@ -60,3 +60,36 @@
     display: table;
     clear: both;
   }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #eae5de;
+    cursor: pointer;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #080808;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(225, 178, 86);
+    color: black;
+    cursor: pointer;
+  }
+  
+  .topnav a.active {
+    background-color: rgb(246, 161, 2);
+    color: white;
+    cursor: default;
+  }
