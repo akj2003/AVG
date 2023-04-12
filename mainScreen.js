@@ -1,4 +1,5 @@
-var catObject = {
+import readFile from './util/readfile';
+const catObject = {
     "Ganga": ["210", "211"],
     "Vyasa": ["301", "302", "303", "304", "305", "306", "307", "308", "309"],
     "Gautami": ["401", "402", "403"],
