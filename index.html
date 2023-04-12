@@ -7,23 +7,23 @@
     <body>
         <br>
         <div id="title">
-            AVG Cleaning Request
+            <button class="home" onclick="home()">Home</button> - - AVG Cleaning Request
         </div>
-        <div id="mod1_title">
-            View details
+        <div id="home">
+            <label id="lbl">View details</label>
+            <form name="roomclean" id="roomClean">
+                <label class="catlab" id="catlabel"> Block: </label>
+                <select name="optone" id="catSel" size="1" onchange="room()">
+                    <option value="" selected="selected">Select Block</option>
+                </select>
+                <br>
+                <br>
+                <label class="catlab" id="catlabel"> Room Number: </label>
+                <select name="opttwo" id="roomSel" size="1"  onchange="roomsel()" >
+                    <option value="" selected="selected" onselect="room()" >Please Select Room</option>
+                </select>
+            </form>
         </div>
-        <form name="roomclean" id="roomClean">
-            <label class="catlab" id="catlabel"> Block: </label>
-            <select name="optone" id="catSel" size="1" onchange="room()">
-                   <option value="" selected="selected">Select Block</option>
-            </select>
-            <br>
-            <br>
-            <label class="catlab" id="catlabel"> Room Number: </label>
-            <select name="opttwo" id="roomSel" size="1"  onselect="mod_viewdetails_enable(this.value)" >
-                <option value="" selected="selected" >Please Select Room</option>
-            </select>
-        </form>
         <div id="mod_viewdetails" style="overflow-y:auto;">
             <table id="tbl_viewdetails" class="tbl_viewdetails">
                 <tr id="vd_tr">
@@ -57,10 +57,10 @@
             </table>
             <div class="row" id="mod_btns">
                 <div class="column">
-                        <button class="btnIC">Initiate Clean</button>
+                        <button class="btnIC" onclick="initrequest()">Initiate Clean</button>
                 </div>
                 <div class="column">
-                    <button class="btnVS">View Status</button>
+                    <button class="btnVS" onclick="viewstat()">View Status</button>
                 </div>
             </div>
         </div>
