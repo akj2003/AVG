@@ -49,13 +49,23 @@ function initrequest() {
    document.getElementById("mod_viewStatus").style.display = "none";
    document.getElementById("home").style.display = "none";
    document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("id_nav_IR").classList.add("active");
+   if (document.getElementById('id_nav_home').classList.contains('active'))
+      document.getElementById('id_nav_home').classList.remove("active")
+   if (document.getElementById('id_nav_VS').classList.contains('active'))
+      document.getElementById('id_nav_VS').classList.remove("active")
 }
 
 function viewstat() {
    document.getElementById("mod_Request").style.display = "none";
    document.getElementById("mod_viewStatus").style.display = "block";
    document.getElementById("home").style.display = "none";
-   document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("mod_viewdetails").style.display = "none"; 
+   document.getElementById("id_nav_VS").classList.add("active"); 
+   if (document.getElementById('id_nav_IR').classList.contains('active'))
+      document.getElementById('id_nav_IR').classList.remove("active")
+   if (document.getElementById('id_nav_home').classList.contains('active'))
+      document.getElementById('id_nav_home').classList.remove("active")
 }
 
 function home() {
@@ -65,4 +75,19 @@ function home() {
    document.getElementById("mod_viewdetails").style.display = "none";
    document.getElementById("roomSel").selectedIndex = 0
    document.getElementById("catSel").selectedIndex = 0
+   document.getElementById("id_nav_home").classList.add("active");
+   if (document.getElementById('id_nav_IR').classList.contains('active'))
+      document.getElementById('id_nav_IR').classList.remove("active")
+   if (document.getElementById('id_nav_VS').classList.contains('active'))
+      document.getElementById('id_nav_VS').classList.remove("active")
+}
+
+function submitrequest() {
+   alert("Request has been submitted");
+   home();
+   document.getElementById("id_nav_home").classList.add("active");
+   if (document.getElementById('id_nav_IR').classList.contains('active'))
+      document.getElementById('id_nav_IR').classList.remove("active")
+   if (document.getElementById('id_nav_VS').classList.contains('active'))
+      document.getElementById('id_nav_VS').classList.remove("active")
 }

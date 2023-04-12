@@ -5,9 +5,16 @@
         <link rel="stylesheet" href="/Users/aj/Workspace/Electron/Development/AVG/style/mainScreen.css" type="text/css">
     </head>
     <body>
+        <div class="nav">
+            <div class="topnav">
+              <a class="active" id="id_nav_home" onclick="home()">Home</a>
+              <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
+              <a id="id_nav_VS" onclick="viewstat()">View Status</a>
+            </div>
+        </div>
         <br>
         <div id="title">
-            <button class="home" onclick="home()">Home</button> - - AVG Cleaning Request
+            AVG Cleaning Request
         </div>
         <div id="home">
             <label id="lbl">View details</label>
@@ -96,6 +103,11 @@
                         <option value="Jegadeesh">Jegadeesh</option>
                         <option value="Aswin Kumar">Aswin Kumar</option>                        
                     </select>
+                </div>
+            </div>
+            <div class="row" id="mod_btns">
+                <div class="column">
+                        <button class="submit" onclick="submitrequest()">Submit Request</button>
                 </div>
             </div>
         </div>
