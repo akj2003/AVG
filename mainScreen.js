@@ -35,6 +35,21 @@ const catObject = {
     roomsel();
  }
 
+ function roomVS() {
+   document.getElementById('cont_VS').innerHTML = '';
+   var rooms = catObject[catSel1.value];
+   var node = document.createElement('div');
+    if (this.selectedIndex < 1) return;
+    for (var i = 0; i < rooms.length; i++) {
+       node = document.createElement('div');
+       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
+       node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(this)")">'+ rooms[i] +'</label>'; 
+       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
+       document.getElementById('cont_VS').appendChild(node);
+       console.log(node);
+    }
+ }
+
 function roomsel() {
    var x = document.getElementById("roomSel").value;
    if(x!='')
@@ -91,4 +106,8 @@ function submitrequest() {
       document.getElementById('id_nav_IR').classList.remove("active")
    if (document.getElementById('id_nav_VS').classList.contains('active'))
       document.getElementById('id_nav_VS').classList.remove("active")
+}
+
+function updatestat(lblid) {
+   document.getElementById(lblid.id).setAttribute("class", "cleaninprogress");
 }
