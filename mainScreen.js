@@ -108,17 +108,5 @@ function submitrequest() {
 }
 
 function updatestat(lblid) {
-   //var lblid = "lbl"+id;
-   //var lbl = document.getElementById("lbl" +ids);
-   //lbl.style.backgroundColor = "blue";
-   //console.log(ids);
-   console.log(lblid.id);
-   //console.log(this.id);
-  // alert("status has been changed - - " + id + " - - " + lblid);
-   //console.log(document.getElementById("lbl1"));
-   //document.getElementById('lbl0').style.color="red";
-  // window.addEventListener('load',() =>{
-   //document.getElementById('lbl1').style.backgroundColor='red';
    document.getElementById(lblid.id).setAttribute("class", "cleaninprogress");
-   //});
 }
