@@ -122,7 +122,6 @@ function submitrequest() {
             fs.writeFile(srcpath,JSON.stringify(element, null, 2));
             console.log(element);
          }
-         
    });
    //var parsed = additional[0]["RoomName"];
    //console.log(parsed);
