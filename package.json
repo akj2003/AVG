@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Cleaning request app",
   "main": "main.js",
+  "type": "commonjs",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
