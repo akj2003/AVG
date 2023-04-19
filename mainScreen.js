@@ -53,18 +53,34 @@ function listRooms() {
 }
 
  function roomVS() {
+   const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
-   var rooms = catObject[catSel1.value];
    var node = document.createElement('div');
-    if (this.selectedIndex < 1) return;
-    for (var i = 0; i < rooms.length; i++) {
-       node = document.createElement('div');
+   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
+   if (this.selectedIndex < 1) return;
+   console.log(roomsObjFiltered);
+   for (var room in roomsObjFiltered) {
+      //roomSel.options[room] = new Option(room, room);
+      //roomSel.options[room].text = roomsObjFiltered[room].RoomName;
+      //roomSel.options[room].value = roomsObjFiltered[room].RoomID;
+      console.log(roomsObjFiltered[room].RoomName);
+      node = document.createElement('div');
        //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
-       node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(this)")">'+ rooms[i] +'</label>'; 
+       node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">'+ roomsObjFiltered[room].RoomName +'</label>'; 
        //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
        document.getElementById('cont_VS').appendChild(node);
-       console.log(node);
-    }
+       //console.log(node);
+   }
+   
+   //var rooms = catObject[catSel1.value];
+   //var rooms = document.getElementById('catSel1').value;
+   //console.log(rooms);
+   
+    
+    //for (var i = 0; i < rooms.length; i++) {
+       
+    //}
  }
 
 function roomsel() {
@@ -154,10 +170,11 @@ function updateJSON(data){
 }
 
 function updatestat(lblid) {
-   //console.log(lblid);
-   //console.log(lblid.id);
-   var labelid = lblid.id;
-   var label = labelid.slice(0,lblid.id.length)
-   //console.log(label);
-   document.getElementById(label).setAttribute("class", "cleaninprogress");
+   if(lblid != 'cont_VS')
+   {
+      var labelid = lblid.id;
+      var label = labelid.slice(0,lblid.id.length)
+      document.getElementById(label).setAttribute("class", "cleaninprogress");
+      return;
+   }
 }
