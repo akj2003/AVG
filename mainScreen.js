@@ -41,20 +41,14 @@ function listRooms() {
       roomSel.options[room].value = roomsObjFiltered[room].RoomID;
    }
 
-   /* roomSel.length = 1;
-    if (this.selectedIndex < 1) return;
-    var rooms = catObject[catSel.value];
-    for (var i = 0; i < rooms.length; i++) {
-       roomSel.options[roomSel.options.length] = new Option(rooms[i], rooms[i])
-       roomSel.options.value = rooms[i];
-    }
-    roomsel();
-    */
+   roomSelected();
 }
 
-function roomsel() {
+function roomSelected() {
+
+   // TODO : Display last five cleaning requests/completion
    var x = document.getElementById("roomSel").value;
-   if (x != '')
+   if (x != null)
       document.getElementById("mod_viewdetails").style.display = "block";
    else
       document.getElementById("mod_viewdetails").style.display = "none";
