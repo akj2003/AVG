@@ -1,31 +1,47 @@
-import readFile from './util/readfile';
-const catObject = {
-    "Ganga": ["210", "211"],
-    "Vyasa": ["301", "302", "303", "304", "305", "306", "307", "308", "309"],
-    "Gautami": ["401", "402", "403"],
- }
- 
- window.onload = function() {
-    var catSel = document.getElementById("catSel"),
-        roomSel = document.getElementById("roomSel"),
-        catSel1 = document.getElementById("catSel1");
-        
-    for (var cat in catObject) {
-       catSel1.options[catSel1.options.length] = new Option(cat, cat);
-       catSel1.options.value =cat;
-    }
-    for (var cat in catObject) {
-       catSel.options[catSel.options.length] = new Option(cat, cat);
-       catSel.options.value = cat;
-    }
-    document.getElementById("mod_viewdetails").style.display = "none";
-    document.getElementById("mod_Request").style.display = "none";
-    document.getElementById("mod_viewStatus").style.display = "none";
- }
- 
- function room() {
+
+window.onload = function () {
+   const fs = require('fs');
+   var catObject = JSON.parse(fs.readFileSync('../AVG/masterdata/Block.JSON', 'utf8'));
+
+
+
+   var catSel = document.getElementById("catSel"),
+      catSel1 = document.getElementById("catSel1");
+
+   for (var cat in catObject) {
+      catSel.options[cat] = new Option(cat, cat);
+      catSel.options[cat].text = catObject[cat].BlockName;
+      catSel.options[cat].value = catObject[cat].BlockID;
+
+      catSel1.options[cat] = new Option(cat, cat);
+      catSel1.options[cat].text = catObject[cat].BlockName;
+      catSel1.options[cat].value = catObject[cat].BlockID;
+   }
+
+   listRooms();
+
+   document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("mod_Request").style.display = "none";
+   document.getElementById("mod_viewStatus").style.display = "none";
+}
+
+function listRooms() {
+   const fs = require('fs');
+   var blockSelected = document.getElementById("catSel").value;
+   document.getElementById("roomSel").innerText = null;
    var roomSel = document.getElementById("roomSel");
-    roomSel.length = 1;
+
+   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == blockSelected);
+
+
+   for (var room in roomsObjFiltered) {
+      roomSel.options[room] = new Option(room, room);
+      roomSel.options[room].text = roomsObjFiltered[room].RoomName;
+      roomSel.options[room].value = roomsObjFiltered[room].RoomID;
+   }
+
+   /* roomSel.length = 1;
     if (this.selectedIndex < 1) return;
     var rooms = catObject[catSel.value];
     for (var i = 0; i < rooms.length; i++) {
@@ -33,7 +49,8 @@ const catObject = {
        roomSel.options.value = rooms[i];
     }
     roomsel();
- }
+    */
+}
 
  function roomVS() {
    document.getElementById('cont_VS').innerHTML = '';
@@ -52,12 +69,12 @@ const catObject = {
 
 function roomsel() {
    var x = document.getElementById("roomSel").value;
-   if(x!='')
+   if (x != '')
       document.getElementById("mod_viewdetails").style.display = "block";
    else
       document.getElementById("mod_viewdetails").style.display = "none";
-      document.getElementById("mod_viewStatus").style.display = "none";
-      document.getElementById("mod_Request").style.display = "none";
+   document.getElementById("mod_viewStatus").style.display = "none";
+   document.getElementById("mod_Request").style.display = "none";
 }
 
 function initrequest() {
@@ -76,8 +93,8 @@ function viewstat() {
    document.getElementById("mod_Request").style.display = "none";
    document.getElementById("mod_viewStatus").style.display = "block";
    document.getElementById("home").style.display = "none";
-   document.getElementById("mod_viewdetails").style.display = "none"; 
-   document.getElementById("id_nav_VS").classList.add("active"); 
+   document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("id_nav_VS").classList.add("active");
    if (document.getElementById('id_nav_IR').classList.contains('active'))
       document.getElementById('id_nav_IR').classList.remove("active")
    if (document.getElementById('id_nav_home').classList.contains('active'))
