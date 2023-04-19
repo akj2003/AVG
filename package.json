@@ -11,6 +11,7 @@
   "author": "Aswin Kumar Jegadeesh",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^24.0.0"
+    "electron": "^24.0.0",
+    "electron-json-storage": "^4.6.0"
   }
 }
