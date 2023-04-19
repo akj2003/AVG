@@ -1,5 +1,10 @@
 [
     {
+        "BlockID": "0",
+        "BlockName": "--Select--",
+        "BlockPurpose": "--Select--"
+    },
+    {
         "BlockID": "1",
         "BlockName": "Ganga",
         "BlockPurpose": "For Visitors"
