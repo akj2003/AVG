@@ -119,7 +119,7 @@ function submitrequest() {
             console.log(element);
             //updateJSON(element);
             element.CleanedBy = "Aswin";
-            fs.writeFile(srcpath,JSON.stringify(element, null, 2));
+            //fs.writeFile(srcpath,JSON.stringify(element, null, 2));
             console.log(element);
          }
    });
@@ -138,7 +138,7 @@ function updateJSON(data){
 function updatestat(lblid) {
    //console.log(lblid);
    //console.log(lblid.id);
-   //var labelid = lblid.id;
+   var labelid = lblid.id;
    var label = labelid.slice(0,lblid.id.length)
    //console.log(label);
    document.getElementById(label).setAttribute("class", "cleaninprogress");
