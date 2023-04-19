@@ -44,9 +44,22 @@ function listRooms() {
    roomSelected();
 }
 
-function roomSelected() {
+ function roomVS() {
+   document.getElementById('cont_VS').innerHTML = '';
+   var rooms = catObject[catSel1.value];
+   var node = document.createElement('div');
+    if (this.selectedIndex < 1) return;
+    for (var i = 0; i < rooms.length; i++) {
+       node = document.createElement('div');
+       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
+       node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(this)")">'+ rooms[i] +'</label>'; 
+       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
+       document.getElementById('cont_VS').appendChild(node);
+       console.log(node);
+    }
+ }
 
-   // TODO : Display last five cleaning requests/completion
+function roomSelected() {
    var x = document.getElementById("roomSel").value;
    if (x != null)
       document.getElementById("mod_viewdetails").style.display = "block";
@@ -95,11 +108,48 @@ function home() {
 }
 
 function submitrequest() {
-   alert("Request has been submitted");
-   home();
-   document.getElementById("id_nav_home").classList.add("active");
-   if (document.getElementById('id_nav_IR').classList.contains('active'))
-      document.getElementById('id_nav_IR').classList.remove("active")
-   if (document.getElementById('id_nav_VS').classList.contains('active'))
-      document.getElementById('id_nav_VS').classList.remove("active")
+   console.log("Request has been submitted");
+   const path = require('path');
+   //home();
+   //document.getElementById("id_nav_home").classList.add("active");
+   //if (document.getElementById('id_nav_IR').classList.contains('active'))
+   //   document.getElementById('id_nav_IR').classList.remove("active")
+   //if (document.getElementById('id_nav_VS').classList.contains('active'))
+   //   document.getElementById('id_nav_VS').classList.remove("active")
+
+   var app = require('electron').remote;
+   var fs = require('fs');
+   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
+   var txt = fs.readFileSync(srcpath, 'utf8');
+   var additional = JSON.parse(txt);
+   console.log(additional);
+   additional.forEach(element => {
+      if(element.RoomName == 210)
+         if(element.CleanTranID == 5) {
+            console.log(element);
+            //updateJSON(element);
+            element.CleanedBy = "Aswin";
+            fs.writeFile(srcpath,JSON.stringify(element, null, 2));
+            console.log(element);
+         }
+   });
+   //var parsed = additional[0]["RoomName"];
+   //console.log(parsed);
+}
+
+function updateJSON(data){
+   const path = require('path');
+   var fs = require('fs');
+   var element = JSON.stringify(data);
+   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
+   fs.writeFileSync(srcpath, element);
+}
+
+function updatestat(lblid) {
+   //console.log(lblid);
+   //console.log(lblid.id);
+   //var labelid = lblid.id;
+   var label = labelid.slice(0,lblid.id.length)
+   //console.log(label);
+   document.getElementById(label).setAttribute("class", "cleaninprogress");
 }
