@@ -10,6 +10,7 @@
 
     </head>
     <body>
+        <form name="roomclean" id="roomClean">
         <div class="nav">
             <div class="topnav">
               <a class="active" id="id_nav_home" onclick="home()">Home</a>
@@ -23,7 +24,7 @@
         </div>
         <div id="home">
             <label id="lbl">View details</label>
-            <form name="roomclean" id="roomClean">
+            
                 <label class="catlab" id="catlabel"> Block: </label>
                 <select name="optone" id="catSel" size="1" onchange="listRooms()">
                     <option value="" >Select Block</option>
@@ -31,12 +32,11 @@
                 <br>
                 <br>
                 <label class="catlab" id="catlabel"> Room Number: </label>
-                <select name="opttwo" id="roomSel" size="1"  onchange="roomSelected()" >
-                    <option value="" selected="selected" onselect="room()" >Please Select Room</option>
+                <select name="opttwo" id="roomSel" size="1"  onchange="roomSelected()" onselect="listCleaningRecords()" >
                 </select>
-            </form>
+            
         </div>
-        <div id="mod_viewdetails" style="overflow-y:auto;">
+        <div id="mod_viewdetails" style="overflow-y:auto;display: block;">
             <table id="tbl_viewdetails" class="tbl_viewdetails">
                 <tr id="vd_tr">
                     <th id="vd_th">
@@ -92,17 +92,14 @@
                     <input type="datetime-local" id="datepicker" class="form"/>
                 </div>
                 <div class="row">
-                    <select name="Requestor" id="req">
+                    <select name="Requestor" id="requestor">
                                              
                     </select>
                 </div>
                 <div class="row">
-                    <select name="Assigne" id="assigne">
+                    <select name="Assigne" id="assignee">
                         <option value="" selected="selected">----Select----</option>
-                        <option value="Aswin">Aswin</option>
-                        <option value="Kumar">Kumar</option>
-                        <option value="Jegadeesh">Jegadeesh</option>
-                        <option value="Aswin Kumar">Aswin Kumar</option>                        
+                                               
                     </select>
                 </div>
             </div>
@@ -132,5 +129,6 @@
             <div id="cont_VS" onclick="updatestat(this.id)">
             </div>
         </div>
+    </form>
     </body>
 </html>
