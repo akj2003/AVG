@@ -1,32 +1,27 @@
 [
     {
-        "PeopleID": "P0",
-        "First Name": "--Select--",
-        "Last Name": "--Select--",
-        "Role": "--Select--",
-        "Phonenumber": "--Select--",
-        "Email": "--Select--"
-    },
-    {
         "PeopleID": "P1",
-        "First Name": "Vimala",
-        "Last Name": "Sadasivam",
+        "FirstName": "Vimala",
+        "LastName": "Sadasivam",
+        "DisplayName": "Vimala",
         "Role": "Admin",
         "Phonenumber": "",
         "Email": ""
     },
     {
         "PeopleID": "P2",
-        "First Name": "Shuddhatma",
-        "Last Name": "",
+        "FirstName": "Shuddhatma",
+        "LastName": "",
+        "DisplayName": "Shuddhatma",
         "Role": "Admin",
         "Phonenumber": "",
         "Email": ""
     },
     {
         "PeopleID": "P3",
-        "First Name": "Gary",
-        "Last Name": "",
+        "FirstName": "Gary",
+        "LastName": "",
+        "DisplayName": "Gary",
         "Role": "Admin",
         "Phonenumber": "",
         "Email": ""

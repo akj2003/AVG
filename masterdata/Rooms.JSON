@@ -1,13 +1,5 @@
 [
     {
-        "RoomID": "0",
-        "RoomName": "--Select--",
-        "BlockID": "0",
-        "BlockName": "--Select--",
-        "SanitoryStatus": "--Select--",
-        "Aailability": "--Select--"
-    },
-    {
         "RoomID": "1",
         "RoomName": "210",
         "BlockID": "1",
