@@ -56,35 +56,39 @@ table tr:nth-child(odd) {
     background-color: grey;
     border: none;
     color: white;
-    padding: 8px 12px;
+    padding: 12px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    border-start-start-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-start-end-radius: 10px;
+    border-radius: 4px;
+    box-shadow: 0 5px 2px #ccc;
+    transition: ease-in 0.5s;
+    text-transform: uppercase;
 }
 .btnVS {
     background-color: grey;
     border: none;
-    color: white;
-    padding: 8px 12px;
+    color: white;    
+    padding: 12px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    border-start-start-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-start-end-radius: 10px;
+    border-radius: 4px;
+    box-shadow: 0 5px 2px #ccc;
+    transition: ease-in 0.5s;
+    text-transform: uppercase;
 }
 
+.btnVS:hover, .btnIC:hover  {
+  background-color: #e08837;
+}
+ 
 #tbl_viewdetails {
     border-collapse: collapse;
     border-spacing: 0;
@@ -129,11 +133,12 @@ table tr:nth-child(odd) {
     text-decoration: none;
     font-size: 17px;
     cursor: pointer;
+    transition: ease-in 0.5s
   }
   
   .topnav a:hover {
-    background-color: rgb(225, 178, 86);
-    color: black;
+    background-color: #e08837;
+    color: #fff;
     cursor: pointer;
   }
   
@@ -151,8 +156,8 @@ table tr:nth-child(odd) {
   .clean {
     display: inline-block;
     min-width: 10px;
-    padding: 3px 7px;
-    font-size: 28px;
+    padding: 8px 24px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
@@ -160,7 +165,7 @@ table tr:nth-child(odd) {
     white-space: nowrap;
     vertical-align: middle;
     background-color: #037b1f;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-top: 20px;
     }
 
@@ -227,11 +232,61 @@ table tr:nth-child(odd) {
 #chk_container {
   display: none;
 }
-
-.chk_hide {
-  display: block;
-}
-
 .chk_show {
   display: block;
 }
+
+.checbox-container {
+  background: #f7f7f7;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.room-check {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.room-check div {
+  display: flex;
+  min-width: 100px;    
+  margin-bottom: 16px;
+  margin-right: 32px;
+  box-shadow: 15px 10px 16px #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  transition: ease-in .5s;
+
+}
+
+.room-check div:hover, .room-check div:focus {
+  box-shadow: none;;
+}
+
+.room-check div input {
+  margin-right: 8px;
+}
+.room-check div label {
+  margin: 0;
+}
+.selectall {
+  margin-bottom: 16px;
+}
+
+.selectall label {
+  padding: 16px;
+}
+
+.selectall label input {
+  margin-right: 8px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-container button {
+  margin: 0 4px 16px;
+}
+

@@ -117,33 +117,36 @@
                     </div>
                 </div>
         
-                <div id="mod_viewStatus">
-                    <div id="mod_viewStatus_title">
+                <div id="mod_viewStatus" class="block">
+                    <h2 id="mod_viewStatus_title">
                         View Room Cleaning Status
-                    </div>
-                    <div id="column">
-                        <div id="row">
-                            Room Block
+                    </h2>
+                    <div class="block-content">
+                        <div id="column" class="block-selector">
+                            <div class="selectbox-field mrgt-1">
+                                <label>
+                                    Room Block
+                                </label>
+                                <select name="optone" id="catSel1" size="1" onchange="roomVS()">
+                                    <option value="">Select Block</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div id="column">
-                        <div id="row">
-                            <select name="optone" id="catSel1" size="1" onchange="roomVS()">
-                                <option value="">Select Block</option>
-                            </select>
+                        <div class="checbox-container">
+                                
+                            <div id="chk_container" class="selectall">
+                                <label class="chk_lbl01"> 
+                                    <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
+                                </label>
+                            </div>
+                            <div id="cont_VS" onclick="updatestat(this.id)" class="room-check">
+                            </div>
+                        </div> 
+                        <div id="btn_container" class="btn-container">
+                            <button type="button" class="btnVS">Initiate Clean</button>
+                            <button type="button" class="btnVS">In Progress</button>
+                            <button type="button" class="btnVS">Clean</button>
                         </div>
-                    </div>                    
-                    <div id="chk_container">
-                        <label class="chk_lbl01"> 
-                            <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
-                        </label>
-                    </div>
-                    <div id="cont_VS" onclick="updatestat(this.id)">
-                    </div>
-                    <div id="btn_container">
-                        <input type="button" value="Initiate Clean">
-                        <input type="button" value="In Progress">
-                        <input type="button" value="Clean">
                     </div>
                 </div>
             </main>
