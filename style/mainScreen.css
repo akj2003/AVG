@@ -235,3 +235,7 @@ table tr:nth-child(odd) {
 .chk_show {
   display: block;
 }
+
+#lblnoshow {
+  display: none;
+}
