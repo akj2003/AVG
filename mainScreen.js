@@ -42,6 +42,7 @@ function listRooms() {
 }
 
 function roomVS() {
+   document.getElementById("chk_container").style.display = "block";
    const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
    var node = document.createElement('div');
@@ -54,7 +55,8 @@ function roomVS() {
       console.log(roomsObjFiltered[room].RoomName);
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
-      node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" name="check" id="chk_' +room + '"><label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -151,6 +153,7 @@ function updatestat(lblid) {
       var labelid = lblid.id;
       var label = labelid.slice(0, lblid.id.length)
       document.getElementById(label).setAttribute("class", "cleaninprogress");
+      
       return;
    }
 }
@@ -233,5 +236,30 @@ function listCleaningRecords() {
 
       }
    }
+
+}
+
+function checkAll(chk) {
+var chk_box = document.getElementsByTagName("input");
+for(var x=0;x<chk_box.length;x++) {
+   var obj = chk_box[x];
+   if(obj.type="checkbox"){
+      if(obj.name=="check"){
+         obj.checked =true;
+         //console.log(chk.checked);
+         console.log("checked");
+         document.getElementById(obj.id).setAttribute("name", "uncheck");
+         //document.getElementById('chk_single').disabled = true;
+         document.getElementById(obj.id).disabled = true;
+      }
+      else if(obj.name=="uncheck"){
+         obj.checked =false;
+         console.log("unchecked");
+         document.getElementById(obj.id).setAttribute("name", "check");
+         //document.getElementById('chk_single').disabled = false;
+         document.getElementById(obj.id).disabled = false;
+      }
+   }
+}
 
 }
