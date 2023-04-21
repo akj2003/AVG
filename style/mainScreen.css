@@ -224,4 +224,14 @@ table tr:nth-child(odd) {
 
   }
 
+#chk_container {
+  display: none;
+}
 
+.chk_hide {
+  display: block;
+}
+
+.chk_show {
+  display: block;
+}
