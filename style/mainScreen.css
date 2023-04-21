@@ -1,3 +1,57 @@
+body {
+  font-size: 16px;
+  font-family: 'robotoregular';
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+main {
+  padding: 24px;
+}
+
+select {
+  width: 100%;
+  min-height: 48px;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+.mlft-1 {
+  margin-left: 16px;
+}
+
+.mrgt-1 {
+  margin-right: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #d1d1d1;
+}
+table td {
+  padding: 16px;
+}
+
+table tr:first-child {
+  font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+  background-color: #eae5de;
+}
+
 .btnIC {
     background-color: grey;
     border: none;
@@ -59,11 +113,6 @@
     content: "";
     display: table;
     clear: both;
-  }
-
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
   
   .topnav {
@@ -146,4 +195,33 @@
         border-radius: 10px;
         margin-top: 20px;
         }
+  .block {
+    border: 1px solid #eee;
+    border-top: none; 
+  }
+  .block h2 {
+    background: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  .block-content {
+    padding: 16px;
+  }
+
+  .block-selector {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .selectbox-field {
+    min-width: 250px;
+  }
+
+  .selectbox-field  select {
+    width: 100%;
+
+  }
+
 

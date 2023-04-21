@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>AVG Cleaning Request</title>
         <script src="../AVG/mainScreen.js"></script>
+        <link rel="stylesheet" href="../AVG/style/fonts/roboto-regular/stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="../AVG/style/normalize.css" type="text/css">
         <link rel="stylesheet" href="../AVG/style/mainScreen.css" type="text/css">
         <!--<link rel="stylesheet" href="../AVG/style/bootstrap.min.css" type="text/css">-->
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css">
@@ -10,131 +13,130 @@
 
     </head>
     <body>
-        <div class="nav">
-            <div class="topnav">
-              <a class="active" id="id_nav_home" onclick="home()">Home</a>
-              <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
-              <a id="id_nav_VS" onclick="viewstat()">View Status</a>
-            </div>
-        </div>
-        <br>
-        <div id="title">
-            AVG Cleaning Request
-        </div>
-        <div id="home">
-            <label id="lbl">View details</label>
-            <form name="roomclean" id="roomClean">
-                <label class="catlab" id="catlabel"> Block: </label>
-                <select name="optone" id="catSel" size="1" onchange="listRooms()">
-                    <option value="" >Select Block</option>
-                </select>
-                <br>
-                <br>
-                <label class="catlab" id="catlabel"> Room Number: </label>
-                <select name="opttwo" id="roomSel" size="1"  onchange="roomsel()" >
-                    <option value="" onselect="room()" >Please Select Room</option>
-                </select>
-            </form>
-        </div>
-        <div id="mod_viewdetails" style="overflow-y:auto;">
-            <table id="tbl_viewdetails" class="tbl_viewdetails">
-                <tr id="vd_tr">
-                    <th id="vd_th">
-                        No.
-                    </th>
-                    <th id="vd_th">
-                        Requested by
-                    </th>
-                    <th id="vd_th">
-                        Room Last cleaned on
-                    </th>
-                    <th id="vd_th">
-                        Assigned To
-                    </th>
-                </tr>
-                <tr id="vd_tr">
-                    <td id="vd_td">
-                        No.
-                    </td>
-                    <td id="vd_td">
-                        Requested by
-                    </td>
-                    <td id="vd_td">
-                        Room Last cleaned on
-                    </td>
-                    <td id="vd_td">
-                        Assigned To
-                    </td>
-                </tr>
-            </table>
-            <div class="row" id="mod_btns">
-                <div class="column">
-                        <button class="btnIC" onclick="initrequest()">Initiate Clean</button>
-                </div>
-                <div class="column">
-                    <button class="btnVS" onclick="viewstat()">View Status</button>
+        <form name="roomclean" id="roomClean">
+            <div class="nav">
+                <div class="topnav">
+                <a class="active" id="id_nav_home" onclick="home()">Home</a>
+                <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
+                <a id="id_nav_VS" onclick="viewstat()">View Status</a>
                 </div>
             </div>
-        </div>
+            <main>
+                <h1 id="title">
+                    AVG Cleaning Request
+                </h1>
+                <div id="home" class="block">
+                    <h2 id="lbl">View details</h2>
+                    <div class="block-content">
+                        <div class="block-selector">
+                            <div class="selectbox-field mrgt-1">
+                                <label class="catlab" id="catlabel">Block </label>
+                                <select name="optone" id="catSel" size="1" onchange="listRooms()">
+                                    <option value="" >Select Block</option>
+                                </select>
+                            </div>
+                            <div class="selectbox-field">
+                                <label class="catlab" id="catlabel">Room Number</label>
+                                <select name="opttwo" id="roomSel" size="1"  onchange="roomSelected()" onselect="listCleaningRecords()" >
+                                </select>
+                            </div>
+                        </div>
+                        <div id="mod_viewdetails" style="overflow-y:auto;display: block;">
+                            <table id="tbl_viewdetails" class="tbl_viewdetails">
+                                <tr id="vd_tr">
+                                    <th id="vd_th">
+                                        No.
+                                    </th>
+                                    <th id="vd_th">
+                                        Requested by
+                                    </th>
+                                    <th id="vd_th">
+                                        Room Last cleaned on
+                                    </th>
+                                    <th id="vd_th">
+                                        Assigned To
+                                    </th>
+                                </tr>
+                                <tr id="vd_tr">
+                                    <td id="vd_td">
+                                        No.
+                                    </td>
+                                    <td id="vd_td">
+                                        Requested by
+                                    </td>
+                                    <td id="vd_td">
+                                        Room Last cleaned on
+                                    </td>
+                                    <td id="vd_td">
+                                        Assigned To
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="row" id="mod_btns">
+                                <div class="column">
+                                        <button class="btnIC" onclick="initrequest()">Initiate Clean</button>
+                                </div>
+                                <div class="column">
+                                    <button class="btnVS" onclick="viewstat()">View Status</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
         
-
-        <div id="mod_Request">
-            <div id="mod_request_title">
-                Initiate Cleaning Request
-            </div>
-            <div class="column">
-                <div class="row">Schedule date</div>
-                <div class="row">Requested By</div>
-                <div class="row">Assigned To</div>
-            </div>
-            <div class="column">
-                <div class="row">
-                    <input type="datetime-local" id="datepicker" class="form"/>
+                <div id="mod_Request">
+                    <div id="mod_request_title">
+                        Initiate Cleaning Request
+                    </div>
+                    <div class="column">
+                        <div class="row">Schedule date</div>
+                        <div class="row">Requested By</div>
+                        <div class="row">Assigned To</div>
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <input type="datetime-local" id="datepicker" class="form"/>
+                        </div>
+                        <div class="row">
+                            <select name="Requestor" id="requestor">
+                                                    
+                            </select>
+                        </div>
+                        <div class="row">
+                            <select name="Assigne" id="assignee">
+                                <option value="" selected="selected">----Select----</option>
+                                                    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" id="mod_btns">
+                        <div class="column">
+                                <button class="submit" onclick="submitrequest()">Submit Request</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <select name="Requestor" id="req">
-                        <option value="" selected="selected">----Select----</option>
-                        <option value="Aswin">Aswin</option>
-                        <option value="Kumar">Kumar</option>
-                        <option value="Jegadeesh">Jegadeesh</option>
-                        <option value="Aswin Kumar">Aswin Kumar</option>                        
-                    </select>
+        
+                <div id="mod_viewStatus">
+                    <div id="mod_viewStatus_title">
+                        View Room Cleaning Status
+                    </div>
+                    <div id="column">
+                        <div id="row">
+                            Room Block
+                        </div>
+                    </div>
+                    <div id="column">
+                        <div id="row">
+                            <select name="optone" id="catSel1" size="1" onchange="roomVS()">
+                                <option value="">Select Block</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="cont_VS" onclick="updatestat(this.id)">
+                    </div>
                 </div>
-                <div class="row">
-                    <select name="Assigne" id="assigne">
-                        <option value="" selected="selected">----Select----</option>
-                        <option value="Aswin">Aswin</option>
-                        <option value="Kumar">Kumar</option>
-                        <option value="Jegadeesh">Jegadeesh</option>
-                        <option value="Aswin Kumar">Aswin Kumar</option>                        
-                    </select>
-                </div>
-            </div>
-            <div class="row" id="mod_btns">
-                <div class="column">
-                        <button class="submit" onclick="submitrequest()">Submit Request</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="mod_viewStatus">
-            <div id="mod_viewStatus_title">
-                View Room Cleaning Status
-            </div>
-            <div id="column">
-                <div id="row">
-                    Room Block
-                </div>
-            </div>
-            <div id="column">
-                <div id="row">
-                    <select name="optone" id="catSel1" size="1" onchange="roomVS()">
-                        <option value="">Select Block</option>
-                    </select>
-                </div>
-            </div>
-            <div id="cont_VS" onclick="updatestat(this.id)">
-            </div>
-        </div>
+            </main>
+        </form>
     </body>
 </html>
