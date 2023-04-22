@@ -13,12 +13,14 @@
 
     </head>
     <body>
+        <div class="logo-bg"></div>
         <form name="roomclean" id="roomClean">
             <div class="nav">
+                <img src="assets/images/AVG_Logo-1.png" class="logo"/>
                 <div class="topnav">
-                <a class="active" id="id_nav_home" onclick="home()">Home</a>
-                <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
-                <a id="id_nav_VS" onclick="viewstat()">View Status</a>
+                    <a class="active" id="id_nav_home" onclick="home()">Home</a>
+                    <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
+                    <a id="id_nav_VS" onclick="viewstat()">View Status</a>
                 </div>
             </div>
             <main>
@@ -116,36 +118,38 @@
                         </div>
                     </div>
                 </div>
-                <div id="mod_Request">
-                    <div id="mod_request_title">
+                <div id="mod_Request" class="block">
+                    <h2 id="mod_request_title">
                         Initiate Cleaning Request
-                    </div>
-                    <div class="column">
-                        <div class="row">Schedule date</div>
-                        <div class="row">Requested By</div>
-                        <div class="row">Assigned To</div>
-                    </div>
-                    <div class="column">
-                        <div class="row">
-                            <input type="datetime-local" id="datepicker" class="form"/>
-                        </div>
-                        <div class="row">
-                            <select name="Requestor" id="requestor">
+                    </h2>
+                    <div class="block-content">
+                        <div class="block-selector">
+                            <div class="form-field">
+                                <label>Schedule date</label>
+                                <input type="datetime-local" id="datepicker" class="form text-input"/>
+                            </div>
+                            <div class="selectbox-field">
+                                <label>Requested By</label>
+                                <select name="Requestor" id="requestor">
                                                     
-                            </select>
+                                </select>
+                            </div>
+                            <div class="selectbox-field">
+                                <label>Assigned To</label>
+                                <select name="Assigne" id="assignee">
+                                    <option value="" selected="selected">----Select----</option>
+                                                        
+                                </select>
+                            </div>
+
                         </div>
-                        <div class="row">
-                            <select name="Assigne" id="assignee">
-                                <option value="" selected="selected">----Select----</option>
-                                                    
-                            </select>
+                        <div class="row" id="mod_btns">
+                            <div class="btn-container">
+                                <button class="submit btnVS" onclick="submitrequest()">Submit Request</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" id="mod_btns">
-                        <div class="column">
-                                <button class="submit" class="btnVS" onclick="submitrequest()">Submit Request</button>
-                        </div>
-                    </div>
+                   
                 </div>
         
             </main>
