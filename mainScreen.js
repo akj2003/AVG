@@ -51,20 +51,19 @@ function roomVS() {
    var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
    if (this.selectedIndex < 1) return;
-   console.log(roomsObjFiltered);
+   //console.log(roomsObjFiltered);
    for (var room in roomsObjFiltered) {
-
-      console.log(roomsObjFiltered[room].RoomName);
+      //console.log(roomsObjFiltered[room].RoomName);
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
-      console.log(node);
+      //console.log(node);
    }
 
-
+   getroomstatus();
 }
 
 function roomSelected() {
@@ -85,7 +84,6 @@ function initrequest() {
    document.getElementById("mod_viewStatus").style.display = "none";
    document.getElementById("home").style.display = "none";
    document.getElementById("mod_viewdetails").style.display = "none";
-   document.getElementById("id_nav_IR").classList.add("active");
    if (document.getElementById('id_nav_home').classList.contains('active'))
       document.getElementById('id_nav_home').classList.remove("active")
    if (document.getElementById('id_nav_VS').classList.contains('active'))
@@ -98,8 +96,6 @@ function viewstat() {
    document.getElementById("home").style.display = "none";
    document.getElementById("mod_viewdetails").style.display = "none";
    document.getElementById("id_nav_VS").classList.add("active");
-   if (document.getElementById('id_nav_IR').classList.contains('active'))
-      document.getElementById('id_nav_IR').classList.remove("active")
    if (document.getElementById('id_nav_home').classList.contains('active'))
       document.getElementById('id_nav_home').classList.remove("active")
 }
@@ -112,8 +108,6 @@ function home() {
    document.getElementById("roomSel").selectedIndex = 0
    document.getElementById("catSel").selectedIndex = 0
    document.getElementById("id_nav_home").classList.add("active");
-   if (document.getElementById('id_nav_IR').classList.contains('active'))
-      document.getElementById('id_nav_IR').classList.remove("active")
    if (document.getElementById('id_nav_VS').classList.contains('active'))
       document.getElementById('id_nav_VS').classList.remove("active")
 }
@@ -150,7 +144,7 @@ function updateJSON(data) {
    fs.writeFileSync(srcpath, element);
 }
 
-function updatestat(lblid) {
+/*function updatestat(lblid) {
    if (lblid != 'cont_VS') {
       var labelid = lblid.id;
       var label = labelid.slice(0, lblid.id.length)
@@ -159,7 +153,7 @@ function updatestat(lblid) {
       console.log(label);
       return;
    }
-}
+}*/
 
 function listUsers() {
 
@@ -294,25 +288,26 @@ function getSelectedChk() {
    return(selected);
 }
 
-function inProgress() {
-   document.getElementById("btn_inpro").classList.add("active");
-   document.getElementById("btn_clean").classList.remove("active");
-   document.getElementById("btn_initiate").classList.remove("active");
-   document.getElementById("mod_Request").style.display = "none";
-   var selected = new Array()
-   selected = getSelectedChk();
-   //console.log(selected);
-   for(var x=0;x<selected.length;x++){
-      //document.getElementById(label).setAttribute("class", "cleaninprogress");
-      document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
-      document.getElementById("lbl_" + selected[x]).classList.add("cleaninprogress");
-      document.getElementById("lbl_" + selected[x]).classList.remove("clean");
+function getroomstatus() {
+   const fs = require('fs');
+   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
+   var room
+   for (var room in roomsObjFiltered) {
+      if(roomsObjFiltered[room].SanitoryStatus == "Clean"){
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
+      }
+      else if(roomsObjFiltered[room].SanitoryStatus == "Not Clean"){
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
+      }
+      console.log("chk_" + roomsObjFiltered[room].RoomName + "-----" + roomsObjFiltered[room].SanitoryStatus);
    }
 }
 
 function initateClean() {
    document.getElementById("btn_initiate").classList.add("active");
-   document.getElementById("btn_inpro").classList.remove("active");
    document.getElementById("btn_clean").classList.remove("active");
    document.getElementById("mod_Request").style.display = "block";
    var selected = new Array()
@@ -320,21 +315,18 @@ function initateClean() {
    for(var x=0;x<selected.length;x++){
       //document.getElementById(label).setAttribute("class", "cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.remove("clean");
-      document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.add("notclean");
    }
 }
 
 function clean() {
    document.getElementById("btn_clean").classList.add("active");
-   document.getElementById("btn_inpro").classList.remove("active");
    document.getElementById("btn_initiate").classList.remove("active");
    document.getElementById("mod_Request").style.display = "none";
    var selected = new Array()
    selected = getSelectedChk();
    for(var x=0;x<selected.length;x++){
       document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
-      document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.add("clean");
    }
 }
