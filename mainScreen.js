@@ -42,6 +42,7 @@ function listRooms() {
 }
 
 function roomVS() {
+   document.getElementById("chk_container").style.display = "block";
    const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
    var node = document.createElement('div');
@@ -54,10 +55,11 @@ function roomVS() {
       console.log(roomsObjFiltered[room].RoomName);
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
-      node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
-      //console.log(node);
+      console.log(node);
    }
 
 
@@ -77,7 +79,7 @@ function roomSelected() {
 }
 
 function initrequest() {
-   document.getElementById("mod_Request").style.display = "block";
+   document.getElementById("mod_Request").style.display = "none";
    document.getElementById("mod_viewStatus").style.display = "none";
    document.getElementById("home").style.display = "none";
    document.getElementById("mod_viewdetails").style.display = "none";
@@ -151,6 +153,8 @@ function updatestat(lblid) {
       var labelid = lblid.id;
       var label = labelid.slice(0, lblid.id.length)
       document.getElementById(label).setAttribute("class", "cleaninprogress");
+      console.log(lblid);
+      console.log(label);
       return;
    }
 }
@@ -234,4 +238,108 @@ function listCleaningRecords() {
       }
    }
 
+}
+
+function checkAll(chk) {
+   //console.log(chk);
+var chk_box = document.getElementsByTagName("input");
+for(var x=0;x<chk_box.length;x++) {
+   var obj = chk_box[x];
+   if(obj.type=="checkbox"){
+      //console.log(obj.type);
+      if(obj.name=="check"){
+         obj.checked =true;
+         //console.log(chk.checked);
+         //console.log("checked");
+         document.getElementById(obj.id).setAttribute("name", "uncheck");
+         //document.getElementById('chk_single').disabled = true;
+         document.getElementById(obj.id).disabled = true;
+      }
+      else if(obj.name=="uncheck"){
+         obj.checked =false;
+         //console.log("unchecked");
+         document.getElementById(obj.id).setAttribute("name", "check");
+         //document.getElementById('chk_single').disabled = false;
+         document.getElementById(obj.id).disabled = false;
+      }
+   }
+}
+
+}
+
+function clean(lblid) {
+   if (lblid != 'cont_VS') {
+      var labelid = lblid.id;
+      var label = labelid.slice(0, lblid.id.length)
+      document.getElementById(label).setAttribute("class", "cleaninprogress");
+      return;
+   }
+
+}
+function getSelectedChk() {
+   var chk_box = document.getElementsByTagName("input");
+   var selected = new Array();
+   for(var x=0;x<chk_box.length;x++) {
+      var obj = chk_box[x];
+      if(obj.type=="checkbox"){
+         //console.log(obj.type);
+         if(obj.name=="uncheck"){
+            selected[x-1] = obj.value;
+            //console.log(obj.value);
+         }
+      } 
+   }
+   return(selected);
+}
+
+function inProgress() {
+   document.getElementById("btn_inpro").classList.add("active");
+   document.getElementById("btn_clean").classList.remove("active");
+   document.getElementById("btn_initiate").classList.remove("active");
+   document.getElementById("mod_Request").style.display = "none";
+   document.getElementById("btn_initiate").removeAttribute("class","active");
+   var selected = new Array()
+   selected = getSelectedChk();
+   //console.log(selected);
+   for(var x=0;x<selected.length;x++){
+      //document.getElementById(label).setAttribute("class", "cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.add("cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.remove("clean");
+   }
+}
+
+function initateClean() {
+   document.getElementById("btn_initiate").classList.add("active");
+   document.getElementById("btn_inpro").classList.remove("active");
+   document.getElementById("btn_clean").classList.remove("active");
+   document.getElementById("mod_Request").style.display = "block";
+   var selected = new Array()
+   selected = getSelectedChk();
+   for(var x=0;x<selected.length;x++){
+      //document.getElementById(label).setAttribute("class", "cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.add("notclean");
+   }
+}
+
+function clean() {
+   document.getElementById("btn_clean").classList.add("active");
+   document.getElementById("btn_inpro").classList.remove("active");
+   document.getElementById("btn_initiate").classList.remove("active");
+   document.getElementById("mod_Request").style.display = "none";
+   var selected = new Array()
+   selected = getSelectedChk();
+   for(var x=0;x<selected.length;x++){
+      document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.add("clean");
+   }
+}
+
+function checkSin(chk) {
+   if(chk.name == "check"){
+      document.getElementById(chk.id).setAttribute("name","uncheck");
+   }
+   else if(chk.name == "uncheck"){
+      document.getElementById(chk.id).setAttribute("name","check");
+   }
 }
