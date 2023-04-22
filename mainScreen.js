@@ -42,6 +42,8 @@ function listRooms() {
 }
 
 function roomVS() {
+   //document.getElementById("chk_multi").checked = false
+   //document.getElementById("chk_multi").setAttribute("name", "uncheck");
    document.getElementById("chk_container").style.display = "block";
    const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
@@ -267,7 +269,7 @@ for(var x=0;x<chk_box.length;x++) {
 
 }
 
-function clean(lblid) {
+/*function clean(lblid) {
    if (lblid != 'cont_VS') {
       var labelid = lblid.id;
       var label = labelid.slice(0, lblid.id.length)
@@ -275,7 +277,7 @@ function clean(lblid) {
       return;
    }
 
-}
+}*/
 function getSelectedChk() {
    var chk_box = document.getElementsByTagName("input");
    var selected = new Array();
@@ -297,12 +299,12 @@ function inProgress() {
    document.getElementById("btn_clean").classList.remove("active");
    document.getElementById("btn_initiate").classList.remove("active");
    document.getElementById("mod_Request").style.display = "none";
-   document.getElementById("btn_initiate").removeAttribute("class","active");
    var selected = new Array()
    selected = getSelectedChk();
    //console.log(selected);
    for(var x=0;x<selected.length;x++){
       //document.getElementById(label).setAttribute("class", "cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
       document.getElementById("lbl_" + selected[x]).classList.add("cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.remove("clean");
    }
@@ -317,6 +319,7 @@ function initateClean() {
    selected = getSelectedChk();
    for(var x=0;x<selected.length;x++){
       //document.getElementById(label).setAttribute("class", "cleaninprogress");
+      document.getElementById("lbl_" + selected[x]).classList.remove("clean");
       document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.add("notclean");
    }
@@ -330,6 +333,7 @@ function clean() {
    var selected = new Array()
    selected = getSelectedChk();
    for(var x=0;x<selected.length;x++){
+      document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
       document.getElementById("lbl_" + selected[x]).classList.remove("cleaninprogress");
       document.getElementById("lbl_" + selected[x]).classList.add("clean");
    }
