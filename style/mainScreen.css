@@ -292,3 +292,10 @@ table tr:nth-child(odd) {
   margin: 0 4px 16px;
 }
 
+.chk_show {
+  display: block;
+}
+
+#lblnoshow {
+  display: none;
+}

@@ -84,7 +84,38 @@
                     </div>
                 </div>
                 
-        
+                <div id="mod_viewStatus" class="block">
+                    <h2 id="mod_viewStatus_title">
+                        View Room Cleaning Status
+                    </h2>
+                    <div class="block-content">
+                        <div id="column" class="block-selector">
+                            <div class="selectbox-field mrgt-1">
+                                <label>
+                                    Room Block
+                                </label>
+                                <select name="optone" id="catSel1" size="1" onchange="roomVS()">
+                                    <option value="">Select Block</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="checbox-container">
+                                
+                            <div id="chk_container" class="selectall">
+                                <label class="chk_lbl01"> 
+                                    <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
+                                </label>
+                            </div>
+                            <div id="cont_VS" onclick="updatestat(this.id)" class="room-check">
+                            </div>
+                        </div> 
+                        <div id="btn_container" class="btn-container">
+                            <button type="button" id="btn_initiate" class="btnVS" onclick="initateClean()"> Initiate Clean </button>
+                            <button type="button" id="btn_inpro" class="btnVS" onclick="inProgress()"> In Progress </button>
+                            <button type="button" id="btn_clean" class="btnVS" onclick="clean()"> Clean </button>
+                        </div>
+                    </div>
+                </div>
                 <div id="mod_Request">
                     <div id="mod_request_title">
                         Initiate Cleaning Request
@@ -112,43 +143,11 @@
                     </div>
                     <div class="row" id="mod_btns">
                         <div class="column">
-                                <button class="submit" onclick="submitrequest()">Submit Request</button>
+                                <button class="submit" class="btnVS" onclick="submitrequest()">Submit Request</button>
                         </div>
                     </div>
                 </div>
         
-                <div id="mod_viewStatus" class="block">
-                    <h2 id="mod_viewStatus_title">
-                        View Room Cleaning Status
-                    </h2>
-                    <div class="block-content">
-                        <div id="column" class="block-selector">
-                            <div class="selectbox-field mrgt-1">
-                                <label>
-                                    Room Block
-                                </label>
-                                <select name="optone" id="catSel1" size="1" onchange="roomVS()">
-                                    <option value="">Select Block</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="checbox-container">
-                                
-                            <div id="chk_container" class="selectall">
-                                <label class="chk_lbl01"> 
-                                    <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
-                                </label>
-                            </div>
-                            <div id="cont_VS" onclick="updatestat(this.id)" class="room-check">
-                            </div>
-                        </div> 
-                        <div id="btn_container" class="btn-container">
-                            <button type="button" class="btnVS">Initiate Clean</button>
-                            <button type="button" class="btnVS">In Progress</button>
-                            <button type="button" class="btnVS">Clean</button>
-                        </div>
-                    </div>
-                </div>
             </main>
         </form>
     </body>
