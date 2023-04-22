@@ -18,7 +18,7 @@ main {
   padding: 24px;
 }
 
-select {
+select, .text-input {
   width: 100%;
   min-height: 48px;
 }
@@ -205,6 +205,8 @@ table tr:nth-child(odd) {
     border: 1px solid #eee;
     border-top: none; 
     box-shadow: 5px 10px 8px #eee;
+    margin-bottom: 24px;
+    transition: all ease-in 0.5s;
   }
   .block h2 {
     background: #eee;
@@ -222,14 +224,18 @@ table tr:nth-child(odd) {
     margin-bottom: 24px;
   }
 
-  .selectbox-field {
+  .selectbox-field, .form-field {
     min-width: 250px;
   }
 
-  .selectbox-field  select {
+  .selectbox-field  select, .form-field input {
     width: 100%;
 
   }
+
+  #mod_Request .block-selector {
+    justify-content: space-between;
+  } 
 
 #chk_container {
   display: none;
