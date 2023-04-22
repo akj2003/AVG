@@ -86,7 +86,7 @@ table tr:nth-child(odd) {
     text-transform: uppercase;
 }
 
-.btnVS:hover, .btnIC:hover  {
+.btnVS:hover, .btnIC:hover, .active  {
   background-color: #e08837;
 }
  
