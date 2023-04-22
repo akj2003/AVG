@@ -17,7 +17,7 @@
             <div class="nav">
                 <div class="topnav">
                 <a class="active" id="id_nav_home" onclick="home()">Home</a>
-                <a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>
+                <!--<a id="id_nav_IR" onclick="initrequest()">Initiate Request</a>-->
                 <a id="id_nav_VS" onclick="viewstat()">View Status</a>
                 </div>
             </div>
@@ -72,14 +72,6 @@
                                     </td>
                                 </tr>
                             </table>
-                            <div class="row" id="mod_btns">
-                                <div class="column">
-                                        <button class="btnIC" onclick="initrequest()">Initiate Clean</button>
-                                </div>
-                                <div class="column">
-                                    <button class="btnVS" onclick="viewstat()">View Status</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,7 +103,6 @@
                         </div> 
                         <div id="btn_container" class="btn-container">
                             <button type="button" id="btn_initiate" class="btnVS" onclick="initateClean()"> Initiate Clean </button>
-                            <button type="button" id="btn_inpro" class="btnVS" onclick="inProgress()"> In Progress </button>
                             <button type="button" id="btn_clean" class="btnVS" onclick="clean()"> Clean </button>
                         </div>
                     </div>
