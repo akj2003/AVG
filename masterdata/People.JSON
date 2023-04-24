@@ -19,6 +19,15 @@
     },
     {
         "PeopleID": "P3",
+        "FirstName": "Aswin",
+        "LastName": "Kumar",
+        "DisplayName": "Aswin",
+        "Role": "Staff",
+        "Phonenumber": "",
+        "Email": ""
+    },
+    {
+        "PeopleID": "P4",
         "FirstName": "Gary",
         "LastName": "",
         "DisplayName": "Gary",
@@ -27,11 +36,20 @@
         "Email": ""
     },
     {
-        "PeopleID": "P4",
+        "PeopleID": "P5",
         "FirstName": "Prashanth",
         "LastName": "Kumar",
         "DisplayName": "Prashanth",
-        "Role": "Admin",
+        "Role": "Staff",
+        "Phonenumber": "",
+        "Email": ""
+    },
+    {
+        "PeopleID": "P6",
+        "FirstName": "Kumar",
+        "LastName": "Kumar",
+        "DisplayName": "Kumar",
+        "Role": "Staff",
         "Phonenumber": "",
         "Email": ""
     }
