@@ -162,21 +162,30 @@ function listUsers() {
 
    var requesterObj = document.getElementById("requestor"),
       assigneeObj = document.getElementById("assignee");
+   
+   let counter = 0;
+   let count = 0;
 
-   for (var person in peopleObject) {
-      var personName = peopleObject[person].DisplayName;
-      var personID = peopleObject[person].PeopleID;
+   for (var admin in peopleObject) {
+      var personName = peopleObject[admin].DisplayName;
+      var personID = peopleObject[admin].PeopleID;
+      if(peopleObject[admin].Role == "Admin") {
+         requesterObj.options[count] = new Option(admin, admin);
+         requesterObj.options[count].text = personName;
+         requesterObj.options[count].value = personID;
+         count++;
+      }
+   }
 
-      requesterObj.options[person] = new Option(person, person);
-
-      requesterObj.options[person].text = personName;
-      requesterObj.options[person].value = personID;
-
-      assigneeObj.options[person] = new Option(person, person);
-
-      assigneeObj.options[person].text = personName;
-      assigneeObj.options[person].value = personID;
-
+   for (var staff in peopleObject) {
+      var staffName = peopleObject[staff].DisplayName;
+      var staffID = peopleObject[staff].PeopleID;
+      if(peopleObject[staff].Role == "Staff") {
+         assigneeObj.options[counter] = new Option(staff, staff);
+         assigneeObj.options[counter].text = staffName;
+         assigneeObj.options[counter].value = staffID;
+         counter++;
+      }
    }
 }
 
