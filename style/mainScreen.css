@@ -16,9 +16,25 @@ h1 {
 }
 main {
   padding: 24px;
+  position: relative;
 }
 
-select {
+.logo-bg{
+ content: "";
+  background-image: url('../assets/images/avg-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+
+select, .text-input {
   width: 100%;
   min-height: 48px;
 }
@@ -86,7 +102,7 @@ table tr:nth-child(odd) {
     text-transform: uppercase;
 }
 
-.btnVS:hover, .btnIC:hover  {
+.btnVS:hover, .btnIC:hover, .active  {
   background-color: #e08837;
 }
  
@@ -119,10 +135,23 @@ table tr:nth-child(odd) {
     display: table;
     clear: both;
   }
+
+  .nav {
+    background-color: #eae5de;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 24px;
+    margin-bottom: 24px;
+    
+  }
+
+  .nav .logo {
+    width: 200px
+  }
   
   .topnav {
     overflow: hidden;
-    background-color: #eae5de;
     cursor: pointer;
   }
   
@@ -130,11 +159,11 @@ table tr:nth-child(odd) {
     float: left;
     color: #080808;
     text-align: center;
-    padding: 14px 16px;
+    padding: 32px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     cursor: pointer;
-    transition: ease-in 0.5s
+    transition: ease-in 0.5s;
   }
   
   .topnav a:hover {
@@ -205,6 +234,8 @@ table tr:nth-child(odd) {
     border: 1px solid #eee;
     border-top: none; 
     box-shadow: 5px 10px 8px #eee;
+    margin-bottom: 24px;
+    transition: all ease-in 0.5s;
   }
   .block h2 {
     background: #eee;
@@ -222,14 +253,18 @@ table tr:nth-child(odd) {
     margin-bottom: 24px;
   }
 
-  .selectbox-field {
+  .selectbox-field, .form-field {
     min-width: 250px;
   }
 
-  .selectbox-field  select {
+  .selectbox-field  select, .form-field input {
     width: 100%;
 
   }
+
+  #mod_Request .block-selector {
+    justify-content: space-between;
+  } 
 
 #chk_container {
   display: none;

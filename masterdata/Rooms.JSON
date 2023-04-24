@@ -12,7 +12,7 @@
         "RoomName": "211",
         "BlockID": "1",
         "BlockName": "Ganga",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Resident"
     },
     {
@@ -460,7 +460,7 @@
         "RoomName": "451",
         "BlockID": "10",
         "BlockName": "Brahmaputra",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
