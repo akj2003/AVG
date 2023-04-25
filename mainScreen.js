@@ -57,7 +57,7 @@ function roomVS() {
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
-      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -181,7 +181,7 @@ function listUsers() {
 }
 
 function listCleaningRecords() {
-   
+
    document.getElementById("mod_viewdetails").style.display = "block";
    var roomCleanRectbl = document.getElementById("tbl_viewdetails");
 
@@ -189,16 +189,16 @@ function listCleaningRecords() {
    const fs = require('fs');
    var roomCleanRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8'));
    var roomsCleanTranFiltered = roomCleanRecordsObj.filter(obj => obj.RoomID == roomSelID);
-   
+
    if (roomsCleanTranFiltered == [] || roomsCleanTranFiltered == null)
       return;
 
-  // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
+   // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
    var cellCount = 4;
-   
+
    roomCleanRectbl.innerHTML = "";
    var header = roomCleanRectbl.createTHead();
-   var headrow = header.insertRow(0); 
+   var headrow = header.insertRow(0);
    var headcell1 = headrow.insertCell(0);
    headcell1.innerHTML = '<th id="vd_th">Nos. </th >';
    var headcell2 = headrow.insertCell(1);
@@ -209,13 +209,13 @@ function listCleaningRecords() {
    headcell4.innerHTML = '<th id="vd_th">Assigned To </th></tr >';
 
    for (var cleanRec in roomsCleanTranFiltered) {
-      var row = roomCleanRectbl.insertRow(Number(cleanRec)+1);
+      var row = roomCleanRectbl.insertRow(Number(cleanRec) + 1);
       for (var i = 0; i < cellCount; i++) {
          var cell = row.insertCell(i);
          switch (i) {
 
             case 0:
-               cell.innerHTML = Number(cleanRec) + 1 ;
+               cell.innerHTML = Number(cleanRec) + 1;
                break;
 
             case 1:
@@ -238,28 +238,28 @@ function listCleaningRecords() {
 
 function checkAll(chk) {
    //console.log(chk);
-var chk_box = document.getElementsByTagName("input");
-for(var x=0;x<chk_box.length;x++) {
-   var obj = chk_box[x];
-   if(obj.type=="checkbox"){
-      //console.log(obj.type);
-      if(obj.name=="check"){
-         obj.checked =true;
-         //console.log(chk.checked);
-         //console.log("checked");
-         document.getElementById(obj.id).setAttribute("name", "uncheck");
-         //document.getElementById('chk_single').disabled = true;
-         document.getElementById(obj.id).disabled = true;
-      }
-      else if(obj.name=="uncheck"){
-         obj.checked =false;
-         //console.log("unchecked");
-         document.getElementById(obj.id).setAttribute("name", "check");
-         //document.getElementById('chk_single').disabled = false;
-         document.getElementById(obj.id).disabled = false;
+   var chk_box = document.getElementsByTagName("input");
+   for (var x = 0; x < chk_box.length; x++) {
+      var obj = chk_box[x];
+      if (obj.type == "checkbox") {
+         //console.log(obj.type);
+         if (obj.name == "check") {
+            obj.checked = true;
+            //console.log(chk.checked);
+            //console.log("checked");
+            document.getElementById(obj.id).setAttribute("name", "uncheck");
+            //document.getElementById('chk_single').disabled = true;
+            document.getElementById(obj.id).disabled = true;
+         }
+         else if (obj.name == "uncheck") {
+            obj.checked = false;
+            //console.log("unchecked");
+            document.getElementById(obj.id).setAttribute("name", "check");
+            //document.getElementById('chk_single').disabled = false;
+            document.getElementById(obj.id).disabled = false;
+         }
       }
    }
-}
 
 }
 
@@ -275,17 +275,35 @@ for(var x=0;x<chk_box.length;x++) {
 function getSelectedChk() {
    var chk_box = document.getElementsByTagName("input");
    var selected = new Array();
-   for(var x=0;x<chk_box.length;x++) {
+   for (var x = 0; x < chk_box.length; x++) {
       var obj = chk_box[x];
-      if(obj.type=="checkbox"){
+      if (obj.type == "checkbox") {
          //console.log(obj.type);
-         if(obj.name=="uncheck"){
-            selected[x-1] = obj.value;
+         if (obj.name == "uncheck") {
+            selected[x - 1] = obj.value;
             //console.log(obj.value);
          }
-      } 
+      }
    }
-   return(selected);
+   return (selected);
+}
+
+function getSelectedChkIds() {
+   var chk_box = document.getElementsByTagName("input");
+   var selected = new Array();
+   for (var x = 0; x < chk_box.length; x++) {
+      var obj = chk_box[x];
+      console.log(`getSelectedIDs object obj => ${obj}`);
+      if (obj.type == "checkbox") {
+         //console.log(obj.type);
+         if (obj.name == "uncheck") {
+            console.log(`getSelectedIDs object obj.id => ${obj.id}`);
+            selected[x - 1] = obj.id;
+
+         }
+      }
+   }
+   return (selected);
 }
 
 function getroomstatus() {
@@ -294,11 +312,11 @@ function getroomstatus() {
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
    var room
    for (var room in roomsObjFiltered) {
-      if(roomsObjFiltered[room].SanitoryStatus == "Clean"){
+      if (roomsObjFiltered[room].SanitoryStatus == "Clean") {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
       }
-      else if(roomsObjFiltered[room].SanitoryStatus == "Not Clean"){
+      else if (roomsObjFiltered[room].SanitoryStatus == "Not Clean") {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
       }
@@ -310,13 +328,29 @@ function initateClean() {
    document.getElementById("btn_initiate").classList.add("active");
    document.getElementById("btn_clean").classList.remove("active");
    document.getElementById("mod_Request").style.display = "block";
-   var selected = new Array()
-   selected = getSelectedChk();
-   for(var x=0;x<selected.length;x++){
+   var selected = new Array();
+   var selectedroomIds = '';
+   var selected = getSelectedChk();
+   for (var x = 0; x < selected.length; x++) {
       //document.getElementById(label).setAttribute("class", "cleaninprogress");
-      document.getElementById("lbl_" + selected[x]).classList.remove("clean");
-      document.getElementById("lbl_" + selected[x]).classList.add("notclean");
+
+     // document.getElementById("lbl_" + selected[x]).classList.remove("clean");
+      //document.getElementById("lbl_" + selected[x]).classList.add("notclean");
    }
+
+   var selectedChkObjects = getSelectedChkIds()
+   for (var x = 0; x < selctedChkObjects.length; x++) {
+      //document.getElementById(label).setAttribute("class", "cleaninprogress");
+      console.log(`Check box object = ${selectedChkObjects[x]}`);
+      var IDVal = selected[x];
+      if (IDVal != null || IDVal.value != '' || IDVal.length > 0) {
+         selectedroomIds = selectedroomIds + ',' + IDVal.substring(3, IDVal.length - 1);
+      }
+
+      console.log(`Selected room IDs = ${selectedroomIds}`);
+
+   }
+
 }
 
 function clean() {
@@ -325,17 +359,17 @@ function clean() {
    document.getElementById("mod_Request").style.display = "none";
    var selected = new Array()
    selected = getSelectedChk();
-   for(var x=0;x<selected.length;x++){
+   for (var x = 0; x < selected.length; x++) {
       document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
       document.getElementById("lbl_" + selected[x]).classList.add("clean");
    }
 }
 
 function checkSin(chk) {
-   if(chk.name == "check"){
-      document.getElementById(chk.id).setAttribute("name","uncheck");
+   if (chk.name == "check") {
+      document.getElementById(chk.id).setAttribute("name", "uncheck");
    }
-   else if(chk.name == "uncheck"){
-      document.getElementById(chk.id).setAttribute("name","check");
+   else if (chk.name == "uncheck") {
+      document.getElementById(chk.id).setAttribute("name", "check");
    }
 }
