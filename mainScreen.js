@@ -16,8 +16,10 @@ window.onload = function () {
    }
 
    listRooms();
+   home();
    listCleaningRecords();
    listUsers();
+   workorder();
 
    document.getElementById("mod_Request").style.display = "none";
    document.getElementById("mod_viewStatus").style.display = "none";
@@ -71,7 +73,7 @@ function roomVS() {
 function roomSelected() {
    var x = document.getElementById("roomSel").value;
    document.getElementById('lbl_err').style.display = "none";
-   if (x != null)
+   if (x != null || x != [] || x != '')
       document.getElementById("mod_viewdetails").style.display = "block";
    else
       document.getElementById("mod_viewdetails").style.display = "none";
@@ -101,7 +103,7 @@ function viewstat() {
    document.getElementById('lbl_err').style.display = "none";
    document.getElementById("home").style.display = "none";
    document.getElementById("mod_viewdetails").style.display = "none";
-   document.getElementById("mod_printwork").style.display = "block";
+   document.getElementById("mod_printwork").style.display = "none";
    document.getElementById("id_nav_VS").classList.add("active");
    if (document.getElementById('id_nav_home').classList.contains('active'))
       document.getElementById('id_nav_home').classList.remove("active")
@@ -112,7 +114,8 @@ function home() {
    document.getElementById("mod_viewStatus").style.display = "none";
    document.getElementById('lbl_err').style.display = "none";
    document.getElementById("home").style.display = "block";
-   document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("mod_printwork").style.display = "none";
+   document.getElementById("mod_viewdetails").style.display = "block";
    document.getElementById("roomSel").selectedIndex = 0
    document.getElementById("catSel").selectedIndex = 0
    document.getElementById("id_nav_home").classList.add("active");
@@ -171,9 +174,11 @@ function listUsers() {
    document.getElementById('lbl_err').style.display = "none";
 
    var requesterObj = document.getElementById("requestor"),
-      assigneeObj = document.getElementById("assignee");
+      assigneeObj = document.getElementById("assignee"),
+      pw_assigneeObj = document.getElementById("pw_assignee");
    
    let counter = 0;
+   let pw_counter = 0;
    let count = 0;
 
    for (var admin in peopleObject) {
@@ -197,11 +202,79 @@ function listUsers() {
          counter++;
       }
    }
+
+
+   for (var staff in peopleObject) {
+      var staffName = peopleObject[staff].DisplayName;
+      var staffID = peopleObject[staff].PeopleID;
+      if(peopleObject[staff].Role == "Staff") {
+         pw_assigneeObj.options[pw_counter] = new Option(staff, staff);
+         pw_assigneeObj.options[pw_counter].text = staffName;
+         pw_assigneeObj.options[pw_counter].value = staffName;
+         pw_counter++;
+      }
+   }
 }
 
-function listCleaningRecords() {
+function workorder(){
+   const fs = require('fs');
+   var assingee =  document.getElementById('pw_assignee').value;
+   var printWorkOrdertbl = document.getElementById('tbl_printworkorder');
+   var workOrderRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON','utf8'));
+   var workOrderTranFiltered = workOrderRecordsObj.filter(obj => obj.CleanedBy == assingee );
+
+   if(workOrderTranFiltered == [] || workOrderTranFiltered == null) {
+      console.log("No rooms are assigned to ");
+      return;
+   }
+   var cellCount = 4;
    
-   document.getElementById("mod_viewdetails").style.display = "block";
+   printWorkOrdertbl.innerHTML = "";
+   var header = printWorkOrdertbl.createTHead();
+   var headrow = header.insertRow(0); 
+   var headcell1 = headrow.insertCell(0);
+   headcell1.innerHTML = '<th id="pw_th">Nos. </th >';
+   var headcell2 = headrow.insertCell(1);
+   headcell2.innerHTML = '<th id="pw_th">Room Number</th>';
+   var headcell3 = headrow.insertCell(2);
+   headcell3.innerHTML = '<th id="pw_th">Requested Date </th>';
+   var headcell4 = headrow.insertCell(3);
+   headcell4.innerHTML = '<th id="pw_th">Assigned To </th></tr >';
+
+   console.log(workOrderTranFiltered);
+
+   for (var workorder in workOrderTranFiltered) {
+      var row = printWorkOrdertbl.insertRow(Number(workorder)+1);
+      for (var i = 0; i < cellCount; i++) {
+         var cell = row.insertCell(i);
+         console.log(workorder);
+         switch (i) {
+
+            case 0:
+               cell.innerHTML = Number(workorder) + 1 ;
+               break;
+
+            case 1:
+               cell.innerHTML = workOrderTranFiltered[workorder].RoomName;
+               break;
+
+            case 2:
+               cell.innerHTML = workOrderTranFiltered[workorder].Date;
+               break;
+
+            case 3:
+               cell.innerHTML = workOrderTranFiltered[workorder].CleanedBy;
+               break;
+         }
+
+      }
+   }
+}
+
+
+function listCleaningRecords() {
+   document.getElementById("mod_printworkorder").style.display = "block";
+   //document.getElementById("mod_viewdetails").style.display = "none";
    document.getElementById('lbl_err').style.display = "none";
    var roomCleanRectbl = document.getElementById("tbl_viewdetails");
 
@@ -421,4 +494,17 @@ function checkSin(chk) {
       document.getElementById(chk.id).setAttribute("name","check");
       console.log(chk.name);
    }
+}
+
+//Print Work Order
+function reset_pw() {
+
+}
+
+function printworkorder(){
+   var printContents = document.getElementById("mod_printworkorder").innerHTML;
+   var originalContents = document.body.innerHTML;
+   document.body.innerHTML = printContents;
+   window.print();
+   document.body.innerHTML = originalContents;
 }
