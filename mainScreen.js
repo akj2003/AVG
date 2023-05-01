@@ -42,8 +42,8 @@ function listRooms() {
 }
 
 function roomVS() {
-   //document.getElementById("chk_multi").checked = false
    //document.getElementById("chk_multi").setAttribute("name", "uncheck");
+   document.getElementById("chk_multi").checked = false;
    document.getElementById("chk_container").style.display = "block";
    const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
@@ -98,7 +98,7 @@ function viewstat() {
    document.getElementById("id_nav_VS").classList.add("active");
    if (document.getElementById('id_nav_home').classList.contains('active'))
       document.getElementById('id_nav_home').classList.remove("active")
-   
+
    roomVS();
 }
 
@@ -163,8 +163,16 @@ function listCleaningRecords() {
    var roomCleanRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8'));
    var roomsCleanTranFiltered = roomCleanRecordsObj.filter(obj => obj.RoomID == roomSelID);
 
+
+
    if (roomsCleanTranFiltered == [] || roomsCleanTranFiltered == null)
       return;
+
+   roomsCleanTranFiltered = roomsCleanTranFiltered.sort((a, b) => {
+      if (a.CleanTranID > b.CleanTranID) {
+         return -1;
+      }
+   });
 
    // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
    var cellCount = 4;
@@ -298,7 +306,7 @@ function initateClean() {
    var selected = getSelectedChk();
 
    for (var x = 0; x < selected.length; x++) { // TODO: Aswin's code to be uncommented
-      document.getElementById(label).setAttribute("class", "cleaninprogress");
+      // document.getElementById(label).setAttribute("class", "cleaninprogress");
 
       document.getElementById("lbl_" + selected[x]).classList.remove("clean");
       document.getElementById("lbl_" + selected[x]).classList.add("notclean");
@@ -326,9 +334,10 @@ function checkSin(chk) {
    }
 }
 
-const flsAmendProm = require('fs');
+
 
 function saveCleanTrans(item, path) {
+   const flsAmendProm = require('fs');
    if (!flsAmendProm.existsSync(path)) {
       flsAmendProm.writeFile(path, JSON.stringify([item]));
    } else {
@@ -338,6 +347,27 @@ function saveCleanTrans(item, path) {
       else list = [JSON.parse(item)]
       flsAmendProm.writeFileSync(path, JSON.stringify(list));
    }
+}
+
+function saveJSONFile(jsonObj, path) {
+   const flsSave = require('fs');
+   if (!flsSave.existsSync(path)) {
+      flsSave.writeFile(path, [jsonObj]);
+   } else {
+      flsSave.writeFileSync(path, JSON.stringify(jsonObj));
+   }
+}
+
+function udpateRooms(objRooms, targetRoomID, setValue) {
+   if (objRooms) {
+      var jsonRooms = JSON.parse(objRooms);
+      jsonRooms.forEach(room => {
+         if (room.RoomID == targetRoomID) {
+            room.SanitoryStatus = setValue;
+         }
+      });
+   }
+   return jsonRooms;
 }
 
 function submitCleanRequest() {
@@ -363,7 +393,9 @@ function submitCleanRequest() {
    const fs = require('fs');
    var roomsObjTranID = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8')).length + 1;
 
+
    for (var rmIndx = 0; rmIndx < selectedChkObjects.length; rmIndx++) {
+      var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
       roomsObjTranID = roomsObjTranID + rmIndx;
       var cleanTxObj = `{"RoomID": "${selectedChkObjects[rmIndx]}",
       "RoomName": "${selected[rmIndx]}",
@@ -372,15 +404,10 @@ function submitCleanRequest() {
       "CleanedBy": "${document.getElementById("assignee").value}",
       "RequestedBy": "${document.getElementById("requestor").value}"}`;
 
+      var updatedRoomObj = udpateRooms(roomsObj, selectedChkObjects[rmIndx], "Not Clean");
+      saveJSONFile(updatedRoomObj, '../AVG/masterdata/Rooms.JSON');
+
       saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
    }
    console.log("Request has been submitted");
-}
-
-function updateJSON(data) {
-   const path = require('path');
-   var fs = require('fs');
-   var element = JSON.stringify(data);
-   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
-   fs.writeFileSync(srcpath, element);
 }
