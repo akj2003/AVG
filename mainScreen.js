@@ -57,7 +57,7 @@ function roomVS() {
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
-      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -98,6 +98,8 @@ function viewstat() {
    document.getElementById("id_nav_VS").classList.add("active");
    if (document.getElementById('id_nav_home').classList.contains('active'))
       document.getElementById('id_nav_home').classList.remove("active")
+   
+   roomVS();
 }
 
 function home() {
@@ -112,48 +114,8 @@ function home() {
       document.getElementById('id_nav_VS').classList.remove("active")
 }
 
-function submitrequest() {
-   console.log("Request has been submitted");
-   const path = require('path');
 
-   var app = require('electron').remote;
-   var fs = require('fs');
-   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
-   var txt = fs.readFileSync(srcpath, 'utf8');
-   var additional = JSON.parse(txt);
-   console.log(additional);
-   additional.forEach(element => {
-      if (element.RoomName == 210)
-         if (element.CleanTranID == 5) {
-            console.log(element);
-            //updateJSON(element);
-            element.CleanedBy = "Aswin";
-            //fs.writeFile(srcpath,JSON.stringify(element, null, 2));
-            console.log(element);
-         }
-   });
-   //var parsed = additional[0]["RoomName"];
-   //console.log(parsed);
-}
 
-function updateJSON(data) {
-   const path = require('path');
-   var fs = require('fs');
-   var element = JSON.stringify(data);
-   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
-   fs.writeFileSync(srcpath, element);
-}
-
-/*function updatestat(lblid) {
-   if (lblid != 'cont_VS') {
-      var labelid = lblid.id;
-      var label = labelid.slice(0, lblid.id.length)
-      document.getElementById(label).setAttribute("class", "cleaninprogress");
-      console.log(lblid);
-      console.log(label);
-      return;
-   }
-}*/
 
 function listUsers() {
 
@@ -162,17 +124,18 @@ function listUsers() {
 
    var requesterObj = document.getElementById("requestor"),
       assigneeObj = document.getElementById("assignee");
-   
+
    let counter = 0;
    let count = 0;
 
    for (var admin in peopleObject) {
       var personName = peopleObject[admin].DisplayName;
       var personID = peopleObject[admin].PeopleID;
-      if(peopleObject[admin].Role == "Admin") {
+      if (peopleObject[admin].Role == "Admin") {
          requesterObj.options[count] = new Option(admin, admin);
          requesterObj.options[count].text = personName;
-         requesterObj.options[count].value = personID;
+         requesterObj.options[count].value = personName;
+         requesterObj.options[count].id = personID
          count++;
       }
    }
@@ -180,17 +143,18 @@ function listUsers() {
    for (var staff in peopleObject) {
       var staffName = peopleObject[staff].DisplayName;
       var staffID = peopleObject[staff].PeopleID;
-      if(peopleObject[staff].Role == "Staff") {
+      if (peopleObject[staff].Role == "Staff") {
          assigneeObj.options[counter] = new Option(staff, staff);
          assigneeObj.options[counter].text = staffName;
-         assigneeObj.options[counter].value = staffID;
+         assigneeObj.options[counter].value = staffName;
+         assigneeObj.options[counter].id = staffID;
          counter++;
       }
    }
 }
 
 function listCleaningRecords() {
-   
+
    document.getElementById("mod_viewdetails").style.display = "block";
    var roomCleanRectbl = document.getElementById("tbl_viewdetails");
 
@@ -198,16 +162,16 @@ function listCleaningRecords() {
    const fs = require('fs');
    var roomCleanRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8'));
    var roomsCleanTranFiltered = roomCleanRecordsObj.filter(obj => obj.RoomID == roomSelID);
-   
+
    if (roomsCleanTranFiltered == [] || roomsCleanTranFiltered == null)
       return;
 
-  // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
+   // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
    var cellCount = 4;
-   
+
    roomCleanRectbl.innerHTML = "";
    var header = roomCleanRectbl.createTHead();
-   var headrow = header.insertRow(0); 
+   var headrow = header.insertRow(0);
    var headcell1 = headrow.insertCell(0);
    headcell1.innerHTML = '<th id="vd_th">Nos. </th >';
    var headcell2 = headrow.insertCell(1);
@@ -218,13 +182,13 @@ function listCleaningRecords() {
    headcell4.innerHTML = '<th id="vd_th">Assigned To </th></tr >';
 
    for (var cleanRec in roomsCleanTranFiltered) {
-      var row = roomCleanRectbl.insertRow(Number(cleanRec)+1);
+      var row = roomCleanRectbl.insertRow(Number(cleanRec) + 1);
       for (var i = 0; i < cellCount; i++) {
          var cell = row.insertCell(i);
          switch (i) {
 
             case 0:
-               cell.innerHTML = Number(cleanRec) + 1 ;
+               cell.innerHTML = Number(cleanRec) + 1;
                break;
 
             case 1:
@@ -247,54 +211,66 @@ function listCleaningRecords() {
 
 function checkAll(chk) {
    //console.log(chk);
-var chk_box = document.getElementsByTagName("input");
-for(var x=0;x<chk_box.length;x++) {
-   var obj = chk_box[x];
-   if(obj.type=="checkbox"){
-      //console.log(obj.type);
-      if(obj.name=="check"){
-         obj.checked =true;
-         //console.log(chk.checked);
-         //console.log("checked");
-         document.getElementById(obj.id).setAttribute("name", "uncheck");
-         //document.getElementById('chk_single').disabled = true;
-         document.getElementById(obj.id).disabled = true;
-      }
-      else if(obj.name=="uncheck"){
-         obj.checked =false;
-         //console.log("unchecked");
-         document.getElementById(obj.id).setAttribute("name", "check");
-         //document.getElementById('chk_single').disabled = false;
-         document.getElementById(obj.id).disabled = false;
+   var chk_box = document.getElementsByTagName("input");
+   for (var x = 0; x < chk_box.length; x++) {
+      var obj = chk_box[x];
+      if (obj.type == "checkbox") {
+         //console.log(obj.type);
+         if (obj.name == "check") {
+            obj.checked = true;
+            //console.log(chk.checked);
+            //console.log("checked");
+            document.getElementById(obj.id).setAttribute("name", "uncheck");
+            //document.getElementById('chk_single').disabled = true;
+            document.getElementById(obj.id).disabled = true;
+         }
+         else if (obj.name == "uncheck") {
+            obj.checked = false;
+            //console.log("unchecked");
+            document.getElementById(obj.id).setAttribute("name", "check");
+            //document.getElementById('chk_single').disabled = false;
+            document.getElementById(obj.id).disabled = false;
+         }
       }
    }
-}
 
 }
 
-/*function clean(lblid) {
-   if (lblid != 'cont_VS') {
-      var labelid = lblid.id;
-      var label = labelid.slice(0, lblid.id.length)
-      document.getElementById(label).setAttribute("class", "cleaninprogress");
-      return;
-   }
-
-}*/
 function getSelectedChk() {
    var chk_box = document.getElementsByTagName("input");
    var selected = new Array();
-   for(var x=0;x<chk_box.length;x++) {
+   for (var x = 0; x < chk_box.length; x++) {
       var obj = chk_box[x];
-      if(obj.type=="checkbox"){
+      if (obj.type == "checkbox") {
          //console.log(obj.type);
-         if(obj.name=="uncheck"){
-            selected[x-1] = obj.value;
+         if (obj.name == "uncheck") {
+            selected[x - 1] = obj.value;
             //console.log(obj.value);
          }
-      } 
+      }
    }
-   return(selected);
+   return (selected);
+}
+
+
+function getSelectedChkIds() {
+   var chk_box = document.getElementsByTagName("input");
+   var selected = new Array();
+   for (var x = 0; x < chk_box.length; x++) {
+      var obj = chk_box[x];
+      console.log(`getSelectedIDs object obj => ${obj}`);
+      if (obj.type == "checkbox") {
+         //console.log(obj.type);
+         if (obj.name == "uncheck") {
+            console.log(`getSelectedIDs object obj.id => ${obj.id}`);
+            selected[x - 1] = obj.id;
+
+         }
+      }
+   }
+
+   console.log(`getSelectedIDs result ${selected}`);
+   return (selected);
 }
 
 function getroomstatus() {
@@ -303,11 +279,11 @@ function getroomstatus() {
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
    var room
    for (var room in roomsObjFiltered) {
-      if(roomsObjFiltered[room].SanitoryStatus == "Clean"){
+      if (roomsObjFiltered[room].SanitoryStatus == "Clean") {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
       }
-      else if(roomsObjFiltered[room].SanitoryStatus == "Not Clean"){
+      else if (roomsObjFiltered[room].SanitoryStatus == "Not Clean") {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
       }
@@ -319,10 +295,11 @@ function initateClean() {
    document.getElementById("btn_initiate").classList.add("active");
    document.getElementById("btn_clean").classList.remove("active");
    document.getElementById("mod_Request").style.display = "block";
-   var selected = new Array()
-   selected = getSelectedChk();
-   for(var x=0;x<selected.length;x++){
-      //document.getElementById(label).setAttribute("class", "cleaninprogress");
+   var selected = getSelectedChk();
+
+   for (var x = 0; x < selected.length; x++) { // TODO: Aswin's code to be uncommented
+      document.getElementById(label).setAttribute("class", "cleaninprogress");
+
       document.getElementById("lbl_" + selected[x]).classList.remove("clean");
       document.getElementById("lbl_" + selected[x]).classList.add("notclean");
    }
@@ -334,17 +311,76 @@ function clean() {
    document.getElementById("mod_Request").style.display = "none";
    var selected = new Array()
    selected = getSelectedChk();
-   for(var x=0;x<selected.length;x++){
+   for (var x = 0; x < selected.length; x++) {
       document.getElementById("lbl_" + selected[x]).classList.remove("notclean");
       document.getElementById("lbl_" + selected[x]).classList.add("clean");
    }
 }
 
 function checkSin(chk) {
-   if(chk.name == "check"){
-      document.getElementById(chk.id).setAttribute("name","uncheck");
+   if (chk.name == "check") {
+      document.getElementById(chk.id).setAttribute("name", "uncheck");
    }
-   else if(chk.name == "uncheck"){
-      document.getElementById(chk.id).setAttribute("name","check");
+   else if (chk.name == "uncheck") {
+      document.getElementById(chk.id).setAttribute("name", "check");
    }
+}
+
+const flsAmendProm = require('fs');
+
+function saveCleanTrans(item, path) {
+   if (!flsAmendProm.existsSync(path)) {
+      flsAmendProm.writeFile(path, JSON.stringify([item]));
+   } else {
+      var data = flsAmendProm.readFileSync(path, 'utf8');
+      var list = (data.length) ? JSON.parse(data) : [];
+      if (list instanceof Array) list.push(JSON.parse(item))
+      else list = [JSON.parse(item)]
+      flsAmendProm.writeFileSync(path, JSON.stringify(list));
+   }
+}
+
+function submitCleanRequest() {
+
+   var selectedroomIds = '', rnNameList = '';
+   var selected = getSelectedChk();
+   var selectedChkObjects = getSelectedChkIds();
+
+   console.log(` Results id n val objects ${selected}, ${(selectedChkObjects)}`);
+   // selectedroomIds = selectedChkObjects.substring(1, selectedChkObjects.length - 1);
+
+   for (var x = 0; x < selectedChkObjects.length; x++) {
+      console.log(`Check box object = ${selectedChkObjects[x]}`);
+      var IDVal = selectedChkObjects[x];
+
+      if (IDVal || IDVal.value != '' || IDVal.length > 0) {
+         selectedChkObjects[x] = IDVal.substring(4, IDVal.length);
+      }
+
+      console.log(`In Process room IDs ${selectedChkObjects[x]} `);
+   }
+
+   const fs = require('fs');
+   var roomsObjTranID = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8')).length + 1;
+
+   for (var rmIndx = 0; rmIndx < selectedChkObjects.length; rmIndx++) {
+      roomsObjTranID = roomsObjTranID + rmIndx;
+      var cleanTxObj = `{"RoomID": "${selectedChkObjects[rmIndx]}",
+      "RoomName": "${selected[rmIndx]}",
+      "CleanTranID": "${roomsObjTranID}",
+      "Date": "${document.getElementById("clnReqDate").value}",
+      "CleanedBy": "${document.getElementById("assignee").value}",
+      "RequestedBy": "${document.getElementById("requestor").value}"}`;
+
+      saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
+   }
+   console.log("Request has been submitted");
+}
+
+function updateJSON(data) {
+   const path = require('path');
+   var fs = require('fs');
+   var element = JSON.stringify(data);
+   var srcpath = path.resolve(__dirname, '../AVG/masterdata/RoomsCleanTransCopy.JSON');
+   fs.writeFileSync(srcpath, element);
 }
