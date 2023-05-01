@@ -61,6 +61,7 @@ function roomVS() {
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
