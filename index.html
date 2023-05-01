@@ -79,6 +79,14 @@
                         </div>
                     </div>
                 </div>
+                <div id="mod_printwork" class="block">
+                    <div class="selectbox-field">
+                        <label>Assigned To</label>
+                        <select name="Assigne" id="assignee">
+                                                
+                        </select>
+                    </div>
+                </div>
                 
                 <div id="mod_viewStatus" class="block">
                     <h2 id="mod_viewStatus_title">
@@ -102,9 +110,10 @@
                                     <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
                                 </label>
                             </div>
-                            <div id="cont_VS" onclick="updatestat(this.id)" class="room-check">
+                            <div id="cont_VS" class="room-check">
                             </div>
                         </div> 
+                        <label id="lbl_err" display="none"></label>
                         <div id="btn_container" class="btn-container">
                             <button type="button" id="btn_initiate" class="btnVS" onclick="initateClean()"> Initiate Clean </button>
                             <button type="button" id="btn_clean" class="btnVS" onclick="clean()"> Clean </button>
