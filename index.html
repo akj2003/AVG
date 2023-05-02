@@ -23,120 +23,163 @@
 
                 <a class="active" id="id_nav_home" onclick="home()">Home</a>
                 <a id="id_nav_IR" onclick="initrequest()">Print Work</a>
-                <a id="id_nav_VS" onclick="viewstat()">View Status</a>
+                <a id="id_nav_VS" onclick="viewstat()">Clean History</a>
 
+                </div>
             </div>
-        </div>
-        <main>
-            <h1 id="title">
-                AVG Cleaning Request
-            </h1>
-            <div id="home" class="block">
-                <h2 id="lbl">View details</h2>
-                <div class="block-content">
-                    <div class="block-selector">
-                        <div class="selectbox-field mrgt-1">
-                            <label class="catlab" id="catlabel">Block </label>
-                            <select name="optone" id="catSel" size="1" onchange="listRooms()">
-                                <option value="">Select Block</option>
-                            </select>
+            <main>
+                <h1 id="title">
+                    AVG Cleaning Request
+                </h1>
+                <div id="home" class="block">
+                    <h2 id="lbl">View details</h2>
+                    <div class="block-content">
+                        <div class="block-selector">
+                            <div class="selectbox-field mrgt-1">
+                                <label class="catlab" id="catlabel">Block </label>
+                                <select name="optone" id="catSel" size="1" onchange="listRooms()">
+                                    <option value="" >Select Block</option>
+                                </select>
+                            </div>
+                            <div class="selectbox-field">
+                                <label class="catlab" id="catlabel">Room Number</label>
+                                <select name="opttwo" id="roomSel" size="1"  onchange="roomSelected()" onselect="listCleaningRecords()" >
+                                </select>
+                            </div>
                         </div>
-                        <div class="selectbox-field">
-                            <label class="catlab" id="catlabel">Room Number</label>
-                            <select name="opttwo" id="roomSel" size="1" onchange="roomSelected()"
-                                onselect="listCleaningRecords()">
-                            </select>
+                        <div id="mod_viewdetails" style="overflow-y:auto;display: block;">
+                            <table id="tbl_viewdetails" class="tbl_viewdetails">
+                                <tr id="vd_tr">
+                                    <th id="vd_th">
+                                        No.
+                                    </th>
+                                    <th id="vd_th">
+                                        Requested by
+                                    </th>
+                                    <th id="vd_th">
+                                        Room Last cleaned on
+                                    </th>
+                                    <th id="vd_th">
+                                        Assigned To
+                                    </th>
+                                </tr>
+                                <tr id="vd_tr">
+                                    <td id="vd_td">
+                                        No.
+                                    </td>
+                                    <td id="vd_td">
+                                        Requested by
+                                    </td>
+                                    <td id="vd_td">
+                                        Room Last cleaned on
+                                    </td>
+                                    <td id="vd_td">
+                                        Assigned To
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                    <div id="mod_viewdetails" style="overflow-y:auto;display: block;">
-                        <table id="tbl_viewdetails" class="tbl_viewdetails">
-                            <tr id="vd_tr">
-                                <th id="vd_th">
+                </div>
+                <div id="mod_printwork" class="block">
+                    <div class="selectbox-field">
+                        <label>Assigned To</label>
+                        <select name="Assigne" id="pw_assignee" onchange="workorder()">
+                                                
+                        </select>
+                    </div>
+                    <div id="mod_printworkorder" style="overflow-y:auto;display: block;">
+                        <table id="tbl_printworkorder" class="tbl_printworkorder">
+                            <tr id="pw_tr">
+                                <th id="pw_th">
                                     No.
                                 </th>
-                                <th id="vd_th">
-                                    Requested by
+                                <th id="pw_th">
+                                    Room Number
                                 </th>
-                                <th id="vd_th">
-                                    Room Last cleaned on
+                                <th id="pw_th">
+                                    Requested Date
                                 </th>
-                                <th id="vd_th">
+                                <th id="pw_th">
                                     Assigned To
                                 </th>
                             </tr>
-                            <tr id="vd_tr">
-                                <td id="vd_td">
+                            <tr id="pw_tr">
+                                <td id="pw_td">
                                     No.
                                 </td>
-                                <td id="vd_td">
-                                    Requested by
+                                <td id="pw_td">
+                                    Room Number
                                 </td>
-                                <td id="vd_td">
-                                    Room Last cleaned on
+                                <td id="pw_td">
+                                    Requested Date
                                 </td>
-                                <td id="vd_td">
+                                <td id="pw_td">
                                     Assigned To
                                 </td>
                             </tr>
                         </table>
                     </div>
-                </div>
-            </div>
-
-            <div id="mod_viewStatus" class="block">
-                <h2 id="mod_viewStatus_title">
-                    View Room Cleaning Status
-                </h2>
-                <div class="block-content">
-                    <div id="column" class="block-selector">
-                        <div class="selectbox-field mrgt-1">
-                            <label>
-                                Room Block
-                            </label>
-                            <select name="optone" id="catSel1" size="1" onchange="roomVS()">
-                                <option value="">Select Block</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="checbox-container">
-
-                        <div id="chk_container" class="selectall">
-                            <label class="chk_lbl01">
-                                <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
-                            </label>
-                        </div>
-                        <div id="cont_VS" onclick="updatestat(this.id)" class="room-check">
-                        </div>
-                    </div>
-                    <div id="btn_container" class="btn-container">
-                        <button type="button" id="btn_initiate" class="btnVS" onclick="initateClean()"> Initiate Clean
-                        </button>
-                        <button type="button" id="btn_clean" class="btnVS" onclick="clean()"> Clean </button>
+                    <div class="btn-container">
+                        <button class="btnVS" onclick="printworkorder()">Print Workorder</button>
+                        <button class="btnVS" onclick="reset_pw()">Reset</button>
                     </div>
                 </div>
-            </div>
-            <div id="mod_Request" class="block">
-                <h2 id="mod_request_title">
-                    Initiate Cleaning Request
-                </h2>
-                <div class="block-content">
-                    <div class="block-selector">
-                        <div class="form-field">
-                            <label>Schedule date</label>
-                            <input type="datetime-local" id="clnReqDate" class="form text-input" />
+                
+                <div id="mod_viewStatus" class="block">
+                    <h2 id="mod_viewStatus_title">
+                        View Room Cleaning Status
+                    </h2>
+                    <div class="block-content">
+                        <div id="column" class="block-selector">
+                            <div class="selectbox-field mrgt-1">
+                                <label>
+                                    Room Block
+                                </label>
+                                <select name="optone" id="catSel1" size="1" onchange="roomVS()">
+                                    <option value="">Select Block</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="selectbox-field">
-                            <label>Requested By</label>
-                            <select name="Requestor" id="requestor">
-
-                            </select>
+                        <div class="checbox-container">
+                                
+                            <div id="chk_container" class="selectall">
+                                <label class="chk_lbl01"> 
+                                    <input type="checkbox" id="chk_multi" onclick="checkAll(this)"> Select All
+                                </label>
+                            </div>
+                            <div id="cont_VS" class="room-check">
+                            </div>
+                        </div> 
+                        <label id="lbl_err" display="none"></label>
+                        <div id="btn_container" class="btn-container">
+                            <button type="button" id="btn_initiate" class="btnVS" onclick="initateClean()"> Initiate Clean </button>
+                            <button type="button" id="btn_clean" class="btnVS" onclick="clean()"> Clean </button>
                         </div>
-                        <div class="selectbox-field">
-                            <label>Assigned To</label>
-                            <select name="Assigne" id="assignee">
-
-                            </select>
-                        </div>
+                    </div>
+                </div>
+                <div id="mod_Request" class="block">
+                    <h2 id="mod_request_title">
+                        Initiate Cleaning Request
+                    </h2>
+                    <div class="block-content">
+                        <div class="block-selector">
+                            <div class="form-field">
+                                <label>Schedule date</label>
+                                <input type="datetime-local" id="datepicker" class="form text-input"/>
+                            </div>
+                            <div class="selectbox-field">
+                                <label>Requested By</label>
+                                <select name="Requestor" id="requestor">
+                                                    
+                                </select>
+                            </div>
+                            <div class="selectbox-field">
+                                <label>Assigned To</label>
+                                <select name="Assigne" id="assignee">
+                                                        
+                                </select>
+                            </div>
 
                     </div>
                     <div class="row" id="mod_btns">
