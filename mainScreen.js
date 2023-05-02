@@ -22,7 +22,7 @@ window.onload = function () {
    workorder();
 
    document.getElementById("mod_Request").style.display = "none";
-   document.getElementById("mod_viewStatus").style.display = "none";
+   document.getElementById("mod_viewdetails").style.display = "none";
 }
 
 function listRooms() {
@@ -43,6 +43,35 @@ function listRooms() {
 
    roomSelected();
 }
+function getroomstatus() {
+   const fs = require('fs');
+   document.getElementById('lbl_err').style.display = "none";
+   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
+   var room
+   for (var room in roomsObjFiltered) {
+      if (roomsObjFiltered[room].SanitoryStatus == "Clean") {
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
+      }
+      else if (roomsObjFiltered[room].SanitoryStatus == "Not Clean") {
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
+         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
+      }
+      //console.log("chk_" + roomsObjFiltered[room].RoomName + "-----" + roomsObjFiltered[room].SanitoryStatus);
+   }
+}
+
+
+
+function checkSin(chk) {
+   if (chk.name == "check") {
+      document.getElementById(chk.id).setAttribute("name", "uncheck");
+   }
+   else if (chk.name == "uncheck") {
+      document.getElementById(chk.id).setAttribute("name", "check");
+   }
+}
 
 function roomVS() {
    //document.getElementById("chk_multi").setAttribute("name", "uncheck");
@@ -61,7 +90,7 @@ function roomVS() {
       node = document.createElement('div');
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
-      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
+      //node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
@@ -98,21 +127,8 @@ function initrequest() {
       document.getElementById('id_nav_VS').classList.remove("active")
 }
 
+//Cleaning history navigation link
 function viewstat() {
-   document.getElementById("mod_Request").style.display = "none";
-   document.getElementById("mod_viewStatus").style.display = "block";
-   document.getElementById('lbl_err').style.display = "none";
-   document.getElementById("home").style.display = "none";
-   document.getElementById("mod_viewdetails").style.display = "none";
-   document.getElementById("mod_printwork").style.display = "none";
-   document.getElementById("id_nav_VS").classList.add("active");
-   if (document.getElementById('id_nav_home').classList.contains('active'))
-      document.getElementById('id_nav_home').classList.remove("active")
-
-   roomVS();
-}
-
-function home() {
    document.getElementById("mod_Request").style.display = "none";
    document.getElementById("mod_viewStatus").style.display = "none";
    document.getElementById('lbl_err').style.display = "none";
@@ -121,9 +137,24 @@ function home() {
    document.getElementById("mod_viewdetails").style.display = "block";
    document.getElementById("roomSel").selectedIndex = 0
    document.getElementById("catSel").selectedIndex = 0
+   document.getElementById("id_nav_VS").classList.add("active");
+   if (document.getElementById('id_nav_home').classList.contains('active'))
+      document.getElementById('id_nav_home').classList.remove("active")
+}
+
+// Home navigation link
+function home() {
+   document.getElementById("mod_Request").style.display = "none";
+   document.getElementById("mod_viewStatus").style.display = "block";
+   document.getElementById('lbl_err').style.display = "none";
+   document.getElementById("home").style.display = "none";
+   document.getElementById("mod_viewdetails").style.display = "none";
+   document.getElementById("mod_printwork").style.display = "none";
    document.getElementById("id_nav_home").classList.add("active");
    if (document.getElementById('id_nav_VS').classList.contains('active'))
       document.getElementById('id_nav_VS').classList.remove("active")
+
+   roomVS();
 }
 
 function listUsers() {
@@ -202,13 +233,13 @@ function workorder(){
    var headcell4 = headrow.insertCell(3);
    headcell4.innerHTML = '<th id="pw_th">Assigned To </th></tr >';
 
-   console.log(workOrderTranFiltered);
+   //console.log(workOrderTranFiltered);
 
    for (var workorder in workOrderTranFiltered) {
       var row = printWorkOrdertbl.insertRow(Number(workorder)+1);
       for (var i = 0; i < cellCount; i++) {
          var cell = row.insertCell(i);
-         console.log(workorder);
+         //console.log(workorder);
          switch (i) {
 
             case 0:
@@ -378,24 +409,7 @@ function getSelectedChk_notclean() {
    return(selected_notclean);
 }
 
-function getroomstatus() {
-   const fs = require('fs');
-   document.getElementById('lbl_err').style.display = "none";
-   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
-   var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
-   var room
-   for (var room in roomsObjFiltered) {
-      if (roomsObjFiltered[room].SanitoryStatus == "Clean") {
-         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
-         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
-      }
-      else if (roomsObjFiltered[room].SanitoryStatus == "Not Clean") {
-         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
-         document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
-      }
-      //console.log("chk_" + roomsObjFiltered[room].RoomName + "-----" + roomsObjFiltered[room].SanitoryStatus);
-   }
-}
+
 
 function initateClean() {
    document.getElementById("btn_initiate").classList.add("active");
@@ -430,36 +444,6 @@ function initateClean() {
          document.getElementById('lbl_err').style.display = "block";
       }
 }
-
-function clean() {
-   document.getElementById("btn_clean").classList.add("active");
-   document.getElementById("btn_initiate").classList.remove("active");
-   document.getElementById("mod_Request").style.display = "none";
-   var selected_clean = new Array();
-   var selected_notclean = new Array();
-   selected_clean = getSelectedChk_clean();
-   selected_notclean = getSelectedChk_notclean();
-   for(var x=0;x<selected_notclean.length;x++){
-      document.getElementById("lbl_" + selected_notclean[x]).classList.remove("notclean");
-      document.getElementById("lbl_" + selected_notclean[x]).classList.add("clean");
-      document.getElementById('lbl_err').style.display = "none";
-   }
-   if(selected_clean.length > 0){
-         console.log("Room number : " + selected_clean + " are already cleaned. Please choose Initiate clean option incase if you wish to clean.");
-         document.getElementById("lbl_err").innerHTML = "Room number : " + selected_clean + " are already cleaned. Please choose Initiate clean option incase if you wish to clean.";
-         document.getElementById('lbl_err').style.display = "block";
-   }
-}
-
-function checkSin(chk) {
-   if (chk.name == "check") {
-      document.getElementById(chk.id).setAttribute("name", "uncheck");
-   }
-   else if (chk.name == "uncheck") {
-      document.getElementById(chk.id).setAttribute("name", "check");
-   }
-}
-
 
 
 function saveCleanTrans(item, path) {
