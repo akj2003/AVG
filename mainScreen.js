@@ -73,6 +73,115 @@ function checkSin(chk) {
    }
 }
 
+function getSelectedChk_clean() {
+   var chk_box = document.getElementsByTagName("input");
+   document.getElementById('lbl_err').style.display = "none";
+   var selected_clean = new Array();
+   let counter_clean = 0;
+   for(var x=0;x<chk_box.length;x++) {
+      var obj = chk_box[x];
+      //console.log("obj --- " + obj);
+      if(obj.type=="checkbox"){
+         //console.log("obj.type --- " + obj.type + " ---- obj.value --- " + obj.value + " --- obj.name ---" + obj.name);
+         if(obj.name=="uncheck"){
+            if(document.getElementById('lbl_' + obj.value).className == "clean") {
+               console.log("clean -- " + obj.value);
+               selected_clean[counter_clean] = obj.value;
+               counter_clean++;
+            }
+         }
+      }
+   }
+   return(selected_clean);
+}
+
+function getSelectedChk_notclean() {
+   var chk_box = document.getElementsByTagName("input");
+   document.getElementById('lbl_err').style.display = "none";
+   var selected_notclean = new Array();
+   let counter_notclean = 0;
+   for(var x=0;x<chk_box.length;x++) {
+      var obj = chk_box[x];
+      //console.log("obj --- " + obj);
+      if(obj.type=="checkbox"){
+         //console.log("obj.type --- " + obj.type + " ---- obj.value --- " + obj.value + " --- obj.name ---" + obj.name);
+         if(obj.name=="uncheck"){
+            if(document.getElementById('lbl_' + obj.value).className == "notclean") {
+               console.log("notclean -- " + obj.value);
+               selected_notclean[counter_notclean] = obj.value;
+               counter_notclean++;
+            } 
+         }
+      } 
+   }
+   return(selected_notclean);
+}
+
+function initateClean() {
+   document.getElementById("btn_initiate").classList.add("active");
+   document.getElementById("btn_clean").classList.remove("active");
+   document.getElementById("mod_Request").style.display = "block";
+   var selected_clean = new Array();
+   var selected_notclean = new Array();
+   selected_clean = getSelectedChk_clean();
+   selected_notclean = getSelectedChk_notclean();
+   console.log(selected_clean);
+   console.log(selected_notclean);
+   if(selected_clean.length > 0) {
+      document.getElementById('lbl_err').style.display = "none";
+      for(var x=0;x<selected_clean.length;x++){
+            document.getElementById('lbl_err').style.display = "none";
+            document.getElementById("lbl_" + selected_clean[x]).classList.remove("clean");
+            document.getElementById("lbl_" + selected_clean[x]).classList.add("notclean");
+      }
+   }
+   else  if(selected_notclean.length == 0) {
+      document.getElementById("mod_Request").style.display = "none";
+      document.getElementById("lbl_err").innerHTML = 'No rooms are selected to initiate clean';
+      document.getElementById('lbl_err').style.display = "block";
+   }
+
+   if(selected_notclean.length == 1) {
+      document.getElementById("mod_Request").style.display = "none";
+      console.log("Cleaning request is already initiated for Room number " + selected_notclean);
+      document.getElementById("lbl_err").innerHTML = 'Cleaning request is already initiated for Room number ' + selected_notclean;
+      document.getElementById('lbl_err').style.display = "block";
+   }
+   else if(selected_notclean.length > 0) {
+      document.getElementById("mod_Request").style.display = "block";
+      console.log("Cleaning request is already initiated for Room number " + selected_notclean);
+      document.getElementById("lbl_err").innerHTML = 'Cleaning request is already initiated for Room number ' + selected_notclean;
+      document.getElementById('lbl_err').style.display = "block";
+   }
+}
+
+function clean() {
+   document.getElementById("btn_clean").classList.add("active");
+   document.getElementById("btn_initiate").classList.remove("active");
+   document.getElementById("mod_Request").style.display = "none";
+   var selected_clean = new Array();
+   var selected_notclean = new Array();
+   selected_clean = getSelectedChk_clean();
+   selected_notclean = getSelectedChk_notclean();
+   if(selected_notclean.length > 0) {
+      document.getElementById('lbl_err').style.display = "none";
+      for(var x=0;x<selected_notclean.length;x++){
+         document.getElementById("lbl_" + selected_notclean[x]).classList.remove("notclean");
+         document.getElementById("lbl_" + selected_notclean[x]).classList.add("clean");
+         document.getElementById('lbl_err').style.display = "none";
+      }
+   }
+   else if(selected_clean.length == 0){
+      document.getElementById("lbl_err").innerHTML = "No rooms are selected to proceed.";
+      document.getElementById('lbl_err').style.display = "block";
+   }
+   if(selected_clean.length > 0){
+         console.log("Room number : " + selected_clean + " are already cleaned. Please choose Initiate clean option incase if you wish to clean.");
+         document.getElementById("lbl_err").innerHTML = "Room number : " + selected_clean + " are already cleaned. Please choose Initiate clean option incase if you wish to clean.";
+         document.getElementById('lbl_err').style.display = "block";
+   }
+}
+
 function roomVS() {
    //document.getElementById("chk_multi").setAttribute("name", "uncheck");
    document.getElementById("chk_multi").checked = false;
@@ -365,85 +474,6 @@ for(var x=0;x<chk_box.length;x++) {
    }
 
 }*/
-function getSelectedChk_clean() {
-   var chk_box = document.getElementsByTagName("input");
-   document.getElementById('lbl_err').style.display = "none";
-   var selected_clean = new Array();
-   let counter_clean = 0;
-   for(var x=0;x<chk_box.length;x++) {
-      var obj = chk_box[x];
-      //console.log("obj --- " + obj);
-      if(obj.type=="checkbox"){
-         //console.log("obj.type --- " + obj.type + " ---- obj.value --- " + obj.value + " --- obj.name ---" + obj.name);
-         if(obj.name=="uncheck"){
-            if(document.getElementById('lbl_' + obj.value).className == "clean") {
-               console.log("clean -- " + obj.value);
-               selected_clean[counter_clean] = obj.value;
-               counter_clean++;
-            }
-         }
-      }
-   }
-   return(selected_clean);
-}
-
-function getSelectedChk_notclean() {
-   var chk_box = document.getElementsByTagName("input");
-   document.getElementById('lbl_err').style.display = "none";
-   var selected_notclean = new Array();
-   let counter_notclean = 0;
-   for(var x=0;x<chk_box.length;x++) {
-      var obj = chk_box[x];
-      //console.log("obj --- " + obj);
-      if(obj.type=="checkbox"){
-         //console.log("obj.type --- " + obj.type + " ---- obj.value --- " + obj.value + " --- obj.name ---" + obj.name);
-         if(obj.name=="uncheck"){
-            if(document.getElementById('lbl_' + obj.value).className == "notclean") {
-               console.log("notclean -- " + obj.value);
-               selected_notclean[counter_notclean] = obj.value;
-               counter_notclean++;
-            } 
-         }
-      } 
-   }
-   return(selected_notclean);
-}
-
-
-
-function initateClean() {
-   document.getElementById("btn_initiate").classList.add("active");
-   document.getElementById("btn_clean").classList.remove("active");
-   document.getElementById("mod_Request").style.display = "block";
-   var selected_clean = new Array();
-   var selected_notclean = new Array();
-   selected_clean = getSelectedChk_clean();
-   selected_notclean = getSelectedChk_notclean();
-   console.log(selected_clean);
-   console.log(selected_notclean);
-   if(selected_clean.length > 0) {
-      for(var x=0;x<selected_clean.length;x++){
-         //document.getElementById(label).setAttribute("class", "cleaninprogress");
-         //console.log("lbl_" + selected[x]);
-         //if(document.getElementById("lbl_" + selected[x]).className == "notclean") {
-            //console.log("Cleaning request is already initiated for Room number " + selected[x]);
-            //document.getElementById("lbl_err").innerHTML = 'Cleaning request is already initiated for Room number ' + selected;
-         // document.getElementById('lbl_err').style.display = "block";
-         //}
-         //else {
-            document.getElementById('lbl_err').style.display = "none";
-            document.getElementById("lbl_" + selected_clean[x]).classList.remove("clean");
-            document.getElementById("lbl_" + selected_clean[x]).classList.add("notclean");
-         //}
-      }
-   }
-
-      if(selected_notclean.length > 0) {
-         console.log("Cleaning request is already initiated for Room number " + selected_notclean);
-         document.getElementById("lbl_err").innerHTML = 'Cleaning request is already initiated for Room number ' + selected_notclean;
-         document.getElementById('lbl_err').style.display = "block";
-      }
-}
 
 
 function saveCleanTrans(item, path) {
