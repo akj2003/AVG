@@ -108,5 +108,10 @@
         "BlockID": "22",
         "BlockName": "Varada",
         "BlockPurpose": "For Visitors"
+    },
+    {
+        "BlockID": "23",
+        "BlockName": "Others",
+        "BlockPurpose": "General Area"
     }
 ]
