@@ -269,7 +269,6 @@ function home() {
 }
 
 function listUsers() {
-
    const fs = require('fs');
    var peopleObject = JSON.parse(fs.readFileSync('../AVG/masterdata/People.JSON', 'utf8'));
    document.getElementById('lbl_err').style.display = "none";
@@ -446,35 +445,43 @@ function checkAll(chk) {
    document.getElementById('lbl_err').style.display = "none";
    for(var x=0;x<chk_box.length;x++) {
       var obj = chk_box[x];
-      if(obj.type=="checkbox"){
-         //console.log(obj.type);
-         if(obj.name=="check"){
-            obj.checked =true;
-            //console.log(chk.checked);
-            //console.log("checked");
-            document.getElementById(obj.id).setAttribute("name", "uncheck");
-            //document.getElementById('chk_single').disabled = true;
-            document.getElementById(obj.id).disabled = true;
-         }
-         else if(obj.name=="uncheck"){
-            obj.checked =false;
-            //console.log("unchecked");
-            document.getElementById(obj.id).setAttribute("name", "check");
-            //document.getElementById('chk_single').disabled = false;
-            document.getElementById(obj.id).disabled = false;
+      if(obj.id != "chk_multi") {
+         if(obj.type=="checkbox"){
+            //console.log(obj.checked);
+            if(selection == "check"){
+               obj.checked =true;
+               //console.log(chk.checked);
+               //console.log("checked");
+               document.getElementById(obj.id).setAttribute("name", "uncheck");
+               //document.getElementById('chk_single').disabled = true;
+               //document.getElementById(obj.id).disabled = true;
+            }
+            else if(selection == "uncheck"){
+               obj.checked =false;
+               //console.log("unchecked");
+               document.getElementById(obj.id).setAttribute("name", "check");
+               //document.getElementById('chk_single').disabled = false;
+               //document.getElementById(obj.id).disabled = false;
+            }
          }
       }
-
+      else if(obj.id == "chk_multi") {
+         if(obj.checked == false)
+            selection = "uncheck";
+         else
+            selection = "check";
+            
+      }
    }
-   if(chk.name == "check"){
+   /*if(chk.name == "check"){
       document.getElementById(chk.id).setAttribute("name","uncheck");
       var status = document.getElementById('lbl_' + chk.value).className;
-      console.log(chk.name + ' || ' + status);
+      console.log('chk.name Value ' + chk.name + ' || ' + status);
    }
    else if(chk.name == "uncheck"){
       document.getElementById(chk.id).setAttribute("name","check");
-      console.log(chk.name);
-   }
+      console.log('chk.name Value ' + chk.name);
+   }*/
 }
 
 
@@ -564,21 +571,11 @@ function submitCleanRequest() {
       saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
    }
    console.log("Request has been submitted");
-   
-  if(chk.name == "check"){
-      document.getElementById(chk.id).setAttribute("name","uncheck");
-      var status = document.getElementById('lbl_' + chk.value).className;
-      console.log(chk.name + ' || ' + status);
-   }
-   else if(chk.name == "uncheck"){
-      document.getElementById(chk.id).setAttribute("name","check");
-      console.log(chk.name);
-   }
+  
 }
 
 //Print Work Order
 function reset_pw() {
-
 }
 
 function printworkorder(){
