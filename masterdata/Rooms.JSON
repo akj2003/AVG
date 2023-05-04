@@ -20,7 +20,7 @@
         "RoomName": "301",
         "BlockID": "2",
         "BlockName": "Vyasa",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -36,7 +36,7 @@
         "RoomName": "303",
         "BlockID": "2",
         "BlockName": "Vyasa",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -52,7 +52,7 @@
         "RoomName": "305",
         "BlockID": "2",
         "BlockName": "Vyasa",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Blocked for Donor"
     },
     {
@@ -60,7 +60,7 @@
         "RoomName": "306",
         "BlockID": "2",
         "BlockName": "Vyasa",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -68,7 +68,7 @@
         "RoomName": "307",
         "BlockID": "2",
         "BlockName": "Vyasa",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -156,7 +156,7 @@
         "RoomName": "331",
         "BlockID": "4",
         "BlockName": "Godavari",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -164,7 +164,7 @@
         "RoomName": "332",
         "BlockID": "4",
         "BlockName": "Godavari",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -172,7 +172,7 @@
         "RoomName": "333",
         "BlockID": "4",
         "BlockName": "Godavari",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -188,7 +188,7 @@
         "RoomName": "335",
         "BlockID": "4",
         "BlockName": "Godavari",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -196,7 +196,7 @@
         "RoomName": "336",
         "BlockID": "4",
         "BlockName": "Godavari",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {
@@ -220,7 +220,7 @@
         "RoomName": "341",
         "BlockID": "5",
         "BlockName": "Gomati",
-        "SanitoryStatus": "Clean",
+        "SanitoryStatus": "Not Clean",
         "Aailability": "Available"
     },
     {

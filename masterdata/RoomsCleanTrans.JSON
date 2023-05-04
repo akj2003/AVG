@@ -4822,5 +4822,73 @@
         "Date": "2023-05-24T12:55",
         "CleanedBy": "Beatrizes",
         "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "332",
+        "RoomName": "332",
+        "CleanTranID": "604",
+        "Date": "2023-05-05T10:30",
+        "CleanedBy": "kathy",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "333",
+        "RoomName": "333",
+        "CleanTranID": "605",
+        "Date": "2023-05-05T10:30",
+        "CleanedBy": "kathy",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "335",
+        "RoomName": "335",
+        "CleanTranID": "606",
+        "Date": "2023-05-10T11:30",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "336",
+        "RoomName": "336",
+        "CleanTranID": "607",
+        "Date": "2023-05-10T11:30",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "341",
+        "RoomName": "341",
+        "CleanTranID": "608",
+        "Date": "2023-05-03T10:55",
+        "CleanedBy": "Heather",
+        "RequestedBy": "Shuddhatma",
+        "Notes": "Please clean with disinfectant"
+    },
+    {
+        "RoomID": "305",
+        "RoomName": "305",
+        "CleanTranID": "609",
+        "Date": "2023-05-10T10:55",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Shuddhatma",
+        "Notes": "This needs to be done today"
+    },
+    {
+        "RoomID": "306",
+        "RoomName": "306",
+        "CleanTranID": "610",
+        "Date": "2023-05-10T10:55",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Shuddhatma",
+        "Notes": "This can wait until tomorrow"
+    },
+    {
+        "RoomID": "307",
+        "RoomName": "307",
+        "CleanTranID": "612",
+        "Date": "2023-05-10T10:55",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Shuddhatma",
+        "Notes": "Need deep clean"
     }
 ]

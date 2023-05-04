@@ -202,7 +202,10 @@ function roomVS() {
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
-      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' +
+          roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + 
+          roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>' +
+          '<textarea id="txtAra_' + roomsObjFiltered[room].RoomName + '"></textarea>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -550,12 +553,16 @@ function submitCleanRequest() {
    for (var rmIndx = 0; rmIndx < selectedRoomsNames.length; rmIndx++) {
       var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
       roomsObjTranID = roomsObjTranID + rmIndx;
+      var txtAreaID = 'txtAra_' + `${selectedRoomsNames[rmIndx]}`;
+      var txtNotes = document.getElementById(txtAreaID).value;
+
       var cleanTxObj = `{"RoomID": "${selectedRoomsNames[rmIndx]}",
       "RoomName": "${selectedRoomsNames[rmIndx]}",
       "CleanTranID": "${roomsObjTranID}",
       "Date": "${document.getElementById("datepicker").value}",
       "CleanedBy": "${document.getElementById("assignee").value}",
-      "RequestedBy": "${document.getElementById("requestor").value}"}`;
+      "RequestedBy": "${document.getElementById("requestor").value}",
+      "Notes":"${txtNotes}"}`;
 
       var updatedRoomObj = udpateRooms(roomsObj, selectedRoomsNames[rmIndx], "Not Clean");
       saveJSONFile(updatedRoomObj, '../AVG/masterdata/Rooms.JSON');
