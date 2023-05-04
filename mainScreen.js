@@ -233,8 +233,9 @@ function roomVS() {
       //node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' +
           roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + 
-          roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>' +
-          '<textarea id="txtAra_' + roomsObjFiltered[room].RoomName + '"></textarea>';
+          roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>' + 
+          '<textarea placeholder="Notes" id="txtAra_' + roomsObjFiltered[room].RoomName + 
+          '"></textarea>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -268,6 +269,8 @@ function initrequest() {
       document.getElementById('id_nav_home').classList.remove("active")
    if (document.getElementById('id_nav_VS').classList.contains('active'))
       document.getElementById('id_nav_VS').classList.remove("active")
+
+   workorder();
 }
 
 //Cleaning history navigation link
@@ -355,13 +358,13 @@ function workorder(){
    var assingee =  document.getElementById('pw_assignee').value;
    var printWorkOrdertbl = document.getElementById('tbl_printworkorder');
    var workOrderRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON','utf8'));
-   var workOrderTranFiltered = workOrderRecordsObj.filter(obj => obj.CleanedBy == assingee );
+   var workOrderTranFiltered = workOrderRecordsObj.filter(obj => obj.CleanedBy == assingee && obj.Status == 'Not Clean' );
 
    if(workOrderTranFiltered == [] || workOrderTranFiltered == null) {
       console.log("No rooms are assigned to ");
       return;
    }
-   var cellCount = 4;
+   var cellCount = 5;
    
    printWorkOrdertbl.innerHTML = "";
    var header = printWorkOrdertbl.createTHead();
@@ -374,6 +377,8 @@ function workorder(){
    headcell3.innerHTML = '<th id="pw_th">Requested Date </th>';
    var headcell4 = headrow.insertCell(3);
    headcell4.innerHTML = '<th id="pw_th">Assigned To </th></tr >';
+   var headcell5 = headrow.insertCell(4);
+   headcell5.innerHTML = '<th id="pw_th">Request Notes </th></tr >';
 
    //console.log(workOrderTranFiltered);
 
@@ -398,6 +403,10 @@ function workorder(){
 
             case 3:
                cell.innerHTML = workOrderTranFiltered[workorder].CleanedBy;
+               break;
+         
+            case 4:
+               cell.innerHTML = workOrderTranFiltered[workorder].RequestNotes;
                break;
          }
 
@@ -429,7 +438,7 @@ function listCleaningRecords() {
    });
 
    // var rowCount = roomsCleanTranFiltered.length; // Only past 5 cleaning records will  be stored and shown for initial version
-   var cellCount = 4;
+   var cellCount = 5;
 
    roomCleanRectbl.innerHTML = "";
    var header = roomCleanRectbl.createTHead();
@@ -442,6 +451,8 @@ function listCleaningRecords() {
    headcell3.innerHTML = '<th id="vd_th">Room Last cleaned on </th>';
    var headcell4 = headrow.insertCell(3);
    headcell4.innerHTML = '<th id="vd_th">Assigned To </th></tr >';
+   var headcell5 = headrow.insertCell(4);
+   headcell5.innerHTML = '<th id="vd_th">Cleaning Notes </th></tr >';
 
    for (var cleanRec in roomsCleanTranFiltered) {
       var row = roomCleanRectbl.insertRow(Number(cleanRec) + 1);
@@ -463,6 +474,10 @@ function listCleaningRecords() {
 
             case 3:
                cell.innerHTML = roomsCleanTranFiltered[cleanRec].CleanedBy;
+               break;
+
+            case 4:
+               cell.innerHTML = roomsCleanTranFiltered[cleanRec].CleanNotes;
                break;
          }
 
