@@ -202,7 +202,10 @@ function roomVS() {
       //node.innerHTML = '<label id="lbl' + i + '"class="clean" onclick="updatestat(document.getElementById(lbl' + i + '))">'+ rooms[i] +'</label>'; 
       //node.innerHTML = '<label id="lbl' + room + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
       //node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomID + '" value="' + roomsObjFiltered[room].RoomName + '"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean" onclick="updatestat(this)")">' + roomsObjFiltered[room].RoomName + '</label>';
-      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' + roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>';
+      node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' +
+          roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + 
+          roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>' +
+          '<textarea id="txtAra_' + roomsObjFiltered[room].RoomName + '"></textarea>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
       //console.log(node);
@@ -518,11 +521,11 @@ function saveJSONFile(jsonObj, path) {
    }
 }
 
-function udpateRooms(objRooms, targetRoomID, setValue) {
+function udpateRooms(objRooms, targetRoomName, setValue) {
    if (objRooms) {
       var jsonRooms = JSON.parse(objRooms);
       jsonRooms.forEach(room => {
-         if (room.RoomID == targetRoomID) {
+         if (room.RoomName == targetRoomName) {
             room.SanitoryStatus = setValue;
          }
       });
@@ -534,38 +537,34 @@ function submitCleanRequest() {
 
    var selectedroomIds = '', rnNameList = '';
    console.log(document.getElementById('lbl_selected_clean').value);
-   var selected = document.getElementById('lbl_selected_clean').value;
-   var selectedChkObjects = getSelectedChkIds();
+   var selectedRoomsNames = document.getElementById('lbl_selected_clean').value;
+   //var selectedChkObjects = getSelectedChkIds();
 
-   console.log(` Results id n val objects ${selected}, ${(selectedChkObjects)}`);
+   console.log(` Results object ${selectedRoomsNames}`);
    // selectedroomIds = selectedChkObjects.substring(1, selectedChkObjects.length - 1);
 
-   for (var x = 0; x < selectedChkObjects.length; x++) {
-      console.log(`Check box object = ${selectedChkObjects[x]}`);
-      var IDVal = selectedChkObjects[x];
-
-      if (IDVal || IDVal.value != '' || IDVal.length > 0) {
-         selectedChkObjects[x] = IDVal.substring(4, IDVal.length);
-      }
-
-      console.log(`In Process room IDs ${selectedChkObjects[x]} `);
-   }
-
-   const fs = require('fs');
+     const fs = require('fs');
    var roomsObjTranID = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8')).length + 1;
 
+   if(!selectedRoomsNames) 
+      return;
 
-   for (var rmIndx = 0; rmIndx < selectedChkObjects.length; rmIndx++) {
+
+   for (var rmIndx = 0; rmIndx < selectedRoomsNames.length; rmIndx++) {
       var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
       roomsObjTranID = roomsObjTranID + rmIndx;
-      var cleanTxObj = `{"RoomID": "${selectedChkObjects[rmIndx]}",
-      "RoomName": "${selected[rmIndx]}",
-      "CleanTranID": "${roomsObjTranID}",
-      "Date": "${document.getElementById("clnReqDate").value}",
-      "CleanedBy": "${document.getElementById("assignee").value}",
-      "RequestedBy": "${document.getElementById("requestor").value}"}`;
+      var txtAreaID = 'txtAra_' + `${selectedRoomsNames[rmIndx]}`;
+      var txtNotes = document.getElementById(txtAreaID).value;
 
-      var updatedRoomObj = udpateRooms(roomsObj, selectedChkObjects[rmIndx], "Not Clean");
+      var cleanTxObj = `{"RoomID": "${selectedRoomsNames[rmIndx]}",
+      "RoomName": "${selectedRoomsNames[rmIndx]}",
+      "CleanTranID": "${roomsObjTranID}",
+      "Date": "${document.getElementById("datepicker").value}",
+      "CleanedBy": "${document.getElementById("assignee").value}",
+      "RequestedBy": "${document.getElementById("requestor").value}",
+      "Notes":"${txtNotes}"}`;
+
+      var updatedRoomObj = udpateRooms(roomsObj, selectedRoomsNames[rmIndx], "Not Clean");
       saveJSONFile(updatedRoomObj, '../AVG/masterdata/Rooms.JSON');
 
       saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
