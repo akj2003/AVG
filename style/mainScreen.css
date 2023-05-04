@@ -19,6 +19,10 @@ main {
   position: relative;
 }
 
+.mt-24 {
+  margin-top: 24px;
+}
+
 .logo-bg{
  content: "";
   background-image: url('../assets/images/avg-logo.png');
@@ -313,6 +317,10 @@ table tr:nth-child(odd) {
 .room-check div label {
   margin: 0;
 }
+
+.room-check div textarea {
+  margin-left: 16px;
+}
 .selectall {
   margin-bottom: 16px;
 }
@@ -340,4 +348,9 @@ table tr:nth-child(odd) {
 
 #lblnoshow {
   display: none;
+}
+
+#mod_printwork .selectbox-field{
+  width: 250px;
+  margin-bottom: 16px;
 }
