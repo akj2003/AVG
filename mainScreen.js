@@ -1,3 +1,6 @@
+const NOTCLEAN = "Not Clean";
+const CLEAN = "Clean";
+
 window.onload = function () {
    const fs = require('fs');
    var catObject = JSON.parse(fs.readFileSync('../AVG/masterdata/Block.JSON', 'utf8'));
@@ -54,7 +57,7 @@ function getroomstatus() {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("notclean");
       }
-      else if (roomsObjFiltered[room].SanitoryStatus == "Not Clean") {
+      else if (roomsObjFiltered[room].SanitoryStatus == NOTCLEAN) {
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.remove("clean");
          document.getElementById("lbl_" + roomsObjFiltered[room].RoomName).classList.add("notclean");
       }
@@ -182,6 +185,32 @@ function clean() {
          document.getElementById("lbl_err").innerHTML = "Room number : " + selected_clean + " are already cleaned. Please choose Initiate clean option incase if you wish to clean.";
          document.getElementById('lbl_err').style.display = "block";
    }
+
+   
+   //var selectedChkObjects = getSelectedChkIds();
+
+   console.log(` Results dirty rooms ${selected_notclean}`);
+   // selectedroomIds = selectedChkObjects.substring(1, selectedChkObjects.length - 1);
+
+   const fs = require('fs');
+   
+
+   if(!selected_notclean) 
+      return;
+
+   for (var rmIndx = 0; rmIndx < selected_notclean.length; rmIndx++) {
+      var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
+      var roomsCleanTransObj = fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8');
+      
+      var txtAreaID = 'txtAra_' + `${selected_notclean[rmIndx]}`;
+      var txtNotes = document.getElementById(txtAreaID).value;
+      var updatedRoomTransobj = udpateTransRooms(roomsCleanTransObj, selected_notclean[rmIndx], txtNotes);
+      var updatedRoomObj = udpateRooms(roomsObj, selected_notclean[rmIndx], CLEAN);
+      saveJSONFile(JSON.stringify(updatedRoomObj), '../AVG/masterdata/Rooms.JSON');
+      saveJSONFile(JSON.stringify(updatedRoomTransobj), '../AVG/masterdata/RoomsCleanTrans.JSON');
+   }
+   console.log("Request has been submitted");
+   roomVS();
 }
 
 function roomVS() {
@@ -508,7 +537,7 @@ function saveCleanTrans(item, path) {
       var list = (data.length) ? JSON.parse(data) : [];
       if (list instanceof Array) list.push(JSON.parse(item))
       else list = [JSON.parse(item)]
-      flsAmendProm.writeFileSync(path, JSON.stringify(list));
+      flsAmendProm.writeFileSync(path, (Array.isArray(list) ? JSON.stringify(list) : list));
    }
 }
 
@@ -517,7 +546,7 @@ function saveJSONFile(jsonObj, path) {
    if (!flsSave.existsSync(path)) {
       flsSave.writeFile(path, [jsonObj]);
    } else {
-      flsSave.writeFileSync(path, JSON.stringify(jsonObj));
+      flsSave.writeFileSync(path, (Array.isArray(jsonObj) ? JSON.stringify(jsonObj): jsonObj));
    }
 }
 
@@ -533,9 +562,23 @@ function udpateRooms(objRooms, targetRoomName, setValue) {
    return jsonRooms;
 }
 
+function udpateTransRooms(objRooms, targetRoomName, cleanNotes) {
+   if (objRooms) {
+      var jsonRoomTrans = JSON.parse(objRooms);
+      jsonRoomTrans.forEach(room => {
+         if (room.RoomName == targetRoomName  && room.Status == NOTCLEAN) {
+            room.Status = CLEAN;
+            room.CleanNotes = cleanNotes;
+         }
+
+      });
+   }
+   return jsonRoomTrans;
+}
+
+
 function submitCleanRequest() {
 
-   var selectedroomIds = '', rnNameList = '';
    console.log(document.getElementById('lbl_selected_clean').value);
    var selectedRoomsNames = document.getElementById('lbl_selected_clean').value;
    //var selectedChkObjects = getSelectedChkIds();
@@ -562,9 +605,11 @@ function submitCleanRequest() {
       "Date": "${document.getElementById("datepicker").value}",
       "CleanedBy": "${document.getElementById("assignee").value}",
       "RequestedBy": "${document.getElementById("requestor").value}",
-      "Notes":"${txtNotes}"}`;
+      "RequestNotes":"${txtNotes}",
+      "Status":"${NOTCLEAN}",
+      "CleanNotes":""}`;
 
-      var updatedRoomObj = udpateRooms(roomsObj, selectedRoomsNames[rmIndx], "Not Clean");
+      var updatedRoomObj = udpateRooms(roomsObj, selectedRoomsNames[rmIndx], NOTCLEAN);
       saveJSONFile(updatedRoomObj, '../AVG/masterdata/Rooms.JSON');
 
       saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
