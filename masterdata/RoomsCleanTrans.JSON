@@ -1,1 +1,4826 @@
-[{"RoomID":1,"RoomName":210,"CleanTranID":1,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":1,"RoomName":210,"CleanTranID":2,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":1,"RoomName":210,"CleanTranID":3,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":1,"RoomName":210,"CleanTranID":4,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":1,"RoomName":210,"CleanTranID":5,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":2,"RoomName":211,"CleanTranID":6,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":2,"RoomName":211,"CleanTranID":7,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":2,"RoomName":211,"CleanTranID":8,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":2,"RoomName":211,"CleanTranID":9,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":2,"RoomName":211,"CleanTranID":10,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":3,"RoomName":301,"CleanTranID":11,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":3,"RoomName":301,"CleanTranID":12,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":3,"RoomName":301,"CleanTranID":13,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":3,"RoomName":301,"CleanTranID":14,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":3,"RoomName":301,"CleanTranID":15,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":4,"RoomName":302,"CleanTranID":16,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":4,"RoomName":302,"CleanTranID":17,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":4,"RoomName":302,"CleanTranID":18,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":4,"RoomName":302,"CleanTranID":19,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":4,"RoomName":302,"CleanTranID":20,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":5,"RoomName":303,"CleanTranID":21,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":5,"RoomName":303,"CleanTranID":22,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":5,"RoomName":303,"CleanTranID":23,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":5,"RoomName":303,"CleanTranID":24,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":5,"RoomName":303,"CleanTranID":25,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":6,"RoomName":304,"CleanTranID":26,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":6,"RoomName":304,"CleanTranID":27,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":6,"RoomName":304,"CleanTranID":28,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":6,"RoomName":304,"CleanTranID":29,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":6,"RoomName":304,"CleanTranID":30,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":7,"RoomName":305,"CleanTranID":31,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":7,"RoomName":305,"CleanTranID":32,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":7,"RoomName":305,"CleanTranID":33,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":7,"RoomName":305,"CleanTranID":34,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":7,"RoomName":305,"CleanTranID":35,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":8,"RoomName":306,"CleanTranID":36,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":8,"RoomName":306,"CleanTranID":37,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":8,"RoomName":306,"CleanTranID":38,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":8,"RoomName":306,"CleanTranID":39,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":8,"RoomName":306,"CleanTranID":40,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":9,"RoomName":307,"CleanTranID":41,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":9,"RoomName":307,"CleanTranID":42,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":9,"RoomName":307,"CleanTranID":43,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":9,"RoomName":307,"CleanTranID":44,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":9,"RoomName":307,"CleanTranID":45,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":10,"RoomName":308,"CleanTranID":46,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":10,"RoomName":308,"CleanTranID":47,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":10,"RoomName":308,"CleanTranID":48,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":10,"RoomName":308,"CleanTranID":49,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":10,"RoomName":308,"CleanTranID":50,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":11,"RoomName":309,"CleanTranID":51,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":11,"RoomName":309,"CleanTranID":52,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":11,"RoomName":309,"CleanTranID":53,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":11,"RoomName":309,"CleanTranID":54,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":11,"RoomName":309,"CleanTranID":55,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":12,"RoomName":321,"CleanTranID":56,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":12,"RoomName":321,"CleanTranID":57,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":12,"RoomName":321,"CleanTranID":58,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":12,"RoomName":321,"CleanTranID":59,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":12,"RoomName":321,"CleanTranID":60,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":13,"RoomName":322,"CleanTranID":61,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":13,"RoomName":322,"CleanTranID":62,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":13,"RoomName":322,"CleanTranID":63,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":13,"RoomName":322,"CleanTranID":64,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":13,"RoomName":322,"CleanTranID":65,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":14,"RoomName":323,"CleanTranID":66,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":14,"RoomName":323,"CleanTranID":67,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":14,"RoomName":323,"CleanTranID":68,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":14,"RoomName":323,"CleanTranID":69,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":14,"RoomName":323,"CleanTranID":70,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":15,"RoomName":324,"CleanTranID":71,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":15,"RoomName":324,"CleanTranID":72,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":15,"RoomName":324,"CleanTranID":73,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":15,"RoomName":324,"CleanTranID":74,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":15,"RoomName":324,"CleanTranID":75,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":16,"RoomName":325,"CleanTranID":76,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":16,"RoomName":325,"CleanTranID":77,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":16,"RoomName":325,"CleanTranID":78,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":16,"RoomName":325,"CleanTranID":79,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":16,"RoomName":325,"CleanTranID":80,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":17,"RoomName":326,"CleanTranID":81,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":17,"RoomName":326,"CleanTranID":82,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":17,"RoomName":326,"CleanTranID":83,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":17,"RoomName":326,"CleanTranID":84,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":17,"RoomName":326,"CleanTranID":85,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":18,"RoomName":327,"CleanTranID":86,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":18,"RoomName":327,"CleanTranID":87,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":18,"RoomName":327,"CleanTranID":88,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":18,"RoomName":327,"CleanTranID":89,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":18,"RoomName":327,"CleanTranID":90,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":19,"RoomName":328,"CleanTranID":91,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":19,"RoomName":328,"CleanTranID":92,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":19,"RoomName":328,"CleanTranID":93,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":19,"RoomName":328,"CleanTranID":94,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":19,"RoomName":328,"CleanTranID":95,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":20,"RoomName":331,"CleanTranID":96,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":20,"RoomName":331,"CleanTranID":97,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":20,"RoomName":331,"CleanTranID":98,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":20,"RoomName":331,"CleanTranID":99,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":20,"RoomName":331,"CleanTranID":100,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":21,"RoomName":332,"CleanTranID":101,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":21,"RoomName":332,"CleanTranID":102,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":21,"RoomName":332,"CleanTranID":103,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":21,"RoomName":332,"CleanTranID":104,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":21,"RoomName":332,"CleanTranID":105,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":22,"RoomName":333,"CleanTranID":106,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":22,"RoomName":333,"CleanTranID":107,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":22,"RoomName":333,"CleanTranID":108,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":22,"RoomName":333,"CleanTranID":109,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":22,"RoomName":333,"CleanTranID":110,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":23,"RoomName":334,"CleanTranID":111,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":23,"RoomName":334,"CleanTranID":112,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":23,"RoomName":334,"CleanTranID":113,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":23,"RoomName":334,"CleanTranID":114,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":23,"RoomName":334,"CleanTranID":115,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":24,"RoomName":335,"CleanTranID":116,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":24,"RoomName":335,"CleanTranID":117,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":24,"RoomName":335,"CleanTranID":118,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":24,"RoomName":335,"CleanTranID":119,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":24,"RoomName":335,"CleanTranID":120,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":25,"RoomName":336,"CleanTranID":121,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":25,"RoomName":336,"CleanTranID":122,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":25,"RoomName":336,"CleanTranID":123,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":25,"RoomName":336,"CleanTranID":124,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":25,"RoomName":336,"CleanTranID":125,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":26,"RoomName":337,"CleanTranID":126,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":26,"RoomName":337,"CleanTranID":127,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":26,"RoomName":337,"CleanTranID":128,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":26,"RoomName":337,"CleanTranID":129,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":26,"RoomName":337,"CleanTranID":130,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":27,"RoomName":338,"CleanTranID":131,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":27,"RoomName":338,"CleanTranID":132,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":27,"RoomName":338,"CleanTranID":133,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":27,"RoomName":338,"CleanTranID":134,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":27,"RoomName":338,"CleanTranID":135,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":28,"RoomName":341,"CleanTranID":136,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":28,"RoomName":341,"CleanTranID":137,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":28,"RoomName":341,"CleanTranID":138,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":28,"RoomName":341,"CleanTranID":139,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":28,"RoomName":341,"CleanTranID":140,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":29,"RoomName":342,"CleanTranID":141,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":29,"RoomName":342,"CleanTranID":142,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":29,"RoomName":342,"CleanTranID":143,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":29,"RoomName":342,"CleanTranID":144,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":29,"RoomName":342,"CleanTranID":145,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":30,"RoomName":343,"CleanTranID":146,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":30,"RoomName":343,"CleanTranID":147,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":30,"RoomName":343,"CleanTranID":148,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":30,"RoomName":343,"CleanTranID":149,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":30,"RoomName":343,"CleanTranID":150,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":31,"RoomName":344,"CleanTranID":151,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":31,"RoomName":344,"CleanTranID":152,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":31,"RoomName":344,"CleanTranID":153,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":31,"RoomName":344,"CleanTranID":154,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":31,"RoomName":344,"CleanTranID":155,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":32,"RoomName":345,"CleanTranID":156,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":32,"RoomName":345,"CleanTranID":157,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":32,"RoomName":345,"CleanTranID":158,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":32,"RoomName":345,"CleanTranID":159,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":32,"RoomName":345,"CleanTranID":160,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":33,"RoomName":346,"CleanTranID":161,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":33,"RoomName":346,"CleanTranID":162,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":33,"RoomName":346,"CleanTranID":163,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":33,"RoomName":346,"CleanTranID":164,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":33,"RoomName":346,"CleanTranID":165,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":34,"RoomName":347,"CleanTranID":166,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":34,"RoomName":347,"CleanTranID":167,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":34,"RoomName":347,"CleanTranID":168,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":34,"RoomName":347,"CleanTranID":169,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":34,"RoomName":347,"CleanTranID":170,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":35,"RoomName":348,"CleanTranID":171,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":35,"RoomName":348,"CleanTranID":172,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":35,"RoomName":348,"CleanTranID":173,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":35,"RoomName":348,"CleanTranID":174,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":35,"RoomName":348,"CleanTranID":175,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":36,"RoomName":351,"CleanTranID":176,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":36,"RoomName":351,"CleanTranID":177,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":36,"RoomName":351,"CleanTranID":178,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":36,"RoomName":351,"CleanTranID":179,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":36,"RoomName":351,"CleanTranID":180,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":37,"RoomName":352,"CleanTranID":181,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":37,"RoomName":352,"CleanTranID":182,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":37,"RoomName":352,"CleanTranID":183,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":37,"RoomName":352,"CleanTranID":184,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":37,"RoomName":352,"CleanTranID":185,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":38,"RoomName":353,"CleanTranID":186,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":38,"RoomName":353,"CleanTranID":187,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":38,"RoomName":353,"CleanTranID":188,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":38,"RoomName":353,"CleanTranID":189,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":38,"RoomName":353,"CleanTranID":190,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":39,"RoomName":354,"CleanTranID":191,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":39,"RoomName":354,"CleanTranID":192,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":39,"RoomName":354,"CleanTranID":193,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":39,"RoomName":354,"CleanTranID":194,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":39,"RoomName":354,"CleanTranID":195,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":40,"RoomName":361,"CleanTranID":196,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":40,"RoomName":361,"CleanTranID":197,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":40,"RoomName":361,"CleanTranID":198,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":40,"RoomName":361,"CleanTranID":199,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":40,"RoomName":361,"CleanTranID":200,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":41,"RoomName":362,"CleanTranID":201,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":41,"RoomName":362,"CleanTranID":202,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":41,"RoomName":362,"CleanTranID":203,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":41,"RoomName":362,"CleanTranID":204,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":41,"RoomName":362,"CleanTranID":205,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":42,"RoomName":363,"CleanTranID":206,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":42,"RoomName":363,"CleanTranID":207,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":42,"RoomName":363,"CleanTranID":208,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":42,"RoomName":363,"CleanTranID":209,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":42,"RoomName":363,"CleanTranID":210,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":43,"RoomName":364,"CleanTranID":211,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":43,"RoomName":364,"CleanTranID":212,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":43,"RoomName":364,"CleanTranID":213,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":43,"RoomName":364,"CleanTranID":214,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":43,"RoomName":364,"CleanTranID":215,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":44,"RoomName":401,"CleanTranID":216,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":44,"RoomName":401,"CleanTranID":217,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":44,"RoomName":401,"CleanTranID":218,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":44,"RoomName":401,"CleanTranID":219,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":44,"RoomName":401,"CleanTranID":220,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":45,"RoomName":402,"CleanTranID":221,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":45,"RoomName":402,"CleanTranID":222,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":45,"RoomName":402,"CleanTranID":223,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":45,"RoomName":402,"CleanTranID":224,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":45,"RoomName":402,"CleanTranID":225,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":46,"RoomName":403,"CleanTranID":226,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":46,"RoomName":403,"CleanTranID":227,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":46,"RoomName":403,"CleanTranID":228,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":46,"RoomName":403,"CleanTranID":229,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":46,"RoomName":403,"CleanTranID":230,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":47,"RoomName":421,"CleanTranID":231,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":47,"RoomName":421,"CleanTranID":232,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":47,"RoomName":421,"CleanTranID":233,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":47,"RoomName":421,"CleanTranID":234,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":47,"RoomName":421,"CleanTranID":235,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":48,"RoomName":422,"CleanTranID":236,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":48,"RoomName":422,"CleanTranID":237,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":48,"RoomName":422,"CleanTranID":238,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":48,"RoomName":422,"CleanTranID":239,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":48,"RoomName":422,"CleanTranID":240,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":49,"RoomName":423,"CleanTranID":241,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":49,"RoomName":423,"CleanTranID":242,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":49,"RoomName":423,"CleanTranID":243,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":49,"RoomName":423,"CleanTranID":244,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":49,"RoomName":423,"CleanTranID":245,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":50,"RoomName":424,"CleanTranID":246,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":50,"RoomName":424,"CleanTranID":247,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":50,"RoomName":424,"CleanTranID":248,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":50,"RoomName":424,"CleanTranID":249,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":50,"RoomName":424,"CleanTranID":250,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":51,"RoomName":425,"CleanTranID":251,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":51,"RoomName":425,"CleanTranID":252,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":51,"RoomName":425,"CleanTranID":253,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":51,"RoomName":425,"CleanTranID":254,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":51,"RoomName":425,"CleanTranID":255,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":52,"RoomName":426,"CleanTranID":256,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":52,"RoomName":426,"CleanTranID":257,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":52,"RoomName":426,"CleanTranID":258,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":52,"RoomName":426,"CleanTranID":259,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":52,"RoomName":426,"CleanTranID":260,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":53,"RoomName":427,"CleanTranID":261,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":53,"RoomName":427,"CleanTranID":262,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":53,"RoomName":427,"CleanTranID":263,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":53,"RoomName":427,"CleanTranID":264,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":53,"RoomName":427,"CleanTranID":265,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":54,"RoomName":436,"CleanTranID":266,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":54,"RoomName":436,"CleanTranID":267,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":54,"RoomName":436,"CleanTranID":268,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":54,"RoomName":436,"CleanTranID":269,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":54,"RoomName":436,"CleanTranID":270,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":55,"RoomName":437,"CleanTranID":271,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":55,"RoomName":437,"CleanTranID":272,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":55,"RoomName":437,"CleanTranID":273,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":55,"RoomName":437,"CleanTranID":274,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":55,"RoomName":437,"CleanTranID":275,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":56,"RoomName":438,"CleanTranID":276,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":56,"RoomName":438,"CleanTranID":277,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":56,"RoomName":438,"CleanTranID":278,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":56,"RoomName":438,"CleanTranID":279,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":56,"RoomName":438,"CleanTranID":280,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":57,"RoomName":439,"CleanTranID":281,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":57,"RoomName":439,"CleanTranID":282,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":57,"RoomName":439,"CleanTranID":283,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":57,"RoomName":439,"CleanTranID":284,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":57,"RoomName":439,"CleanTranID":285,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":58,"RoomName":451,"CleanTranID":286,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":58,"RoomName":451,"CleanTranID":287,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":58,"RoomName":451,"CleanTranID":288,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":58,"RoomName":451,"CleanTranID":289,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":58,"RoomName":451,"CleanTranID":290,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":59,"RoomName":452,"CleanTranID":291,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":59,"RoomName":452,"CleanTranID":292,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":59,"RoomName":452,"CleanTranID":293,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":59,"RoomName":452,"CleanTranID":294,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":59,"RoomName":452,"CleanTranID":295,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":60,"RoomName":453,"CleanTranID":296,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":60,"RoomName":453,"CleanTranID":297,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":60,"RoomName":453,"CleanTranID":298,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":60,"RoomName":453,"CleanTranID":299,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":60,"RoomName":453,"CleanTranID":300,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":61,"RoomName":461,"CleanTranID":301,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":61,"RoomName":461,"CleanTranID":302,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":61,"RoomName":461,"CleanTranID":303,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":61,"RoomName":461,"CleanTranID":304,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":61,"RoomName":461,"CleanTranID":305,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":62,"RoomName":462,"CleanTranID":306,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":62,"RoomName":462,"CleanTranID":307,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":62,"RoomName":462,"CleanTranID":308,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":62,"RoomName":462,"CleanTranID":309,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":62,"RoomName":462,"CleanTranID":310,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":63,"RoomName":463,"CleanTranID":311,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":63,"RoomName":463,"CleanTranID":312,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":63,"RoomName":463,"CleanTranID":313,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":63,"RoomName":463,"CleanTranID":314,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":63,"RoomName":463,"CleanTranID":315,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":64,"RoomName":471,"CleanTranID":316,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":64,"RoomName":471,"CleanTranID":317,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":64,"RoomName":471,"CleanTranID":318,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":64,"RoomName":471,"CleanTranID":319,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":64,"RoomName":471,"CleanTranID":320,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":65,"RoomName":472,"CleanTranID":321,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":65,"RoomName":472,"CleanTranID":322,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":65,"RoomName":472,"CleanTranID":323,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":65,"RoomName":472,"CleanTranID":324,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":65,"RoomName":472,"CleanTranID":325,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":66,"RoomName":473,"CleanTranID":326,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":66,"RoomName":473,"CleanTranID":327,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":66,"RoomName":473,"CleanTranID":328,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":66,"RoomName":473,"CleanTranID":329,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":66,"RoomName":473,"CleanTranID":330,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":67,"RoomName":481,"CleanTranID":331,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":67,"RoomName":481,"CleanTranID":332,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":67,"RoomName":481,"CleanTranID":333,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":67,"RoomName":481,"CleanTranID":334,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":67,"RoomName":481,"CleanTranID":335,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":68,"RoomName":482,"CleanTranID":336,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":68,"RoomName":482,"CleanTranID":337,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":68,"RoomName":482,"CleanTranID":338,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":68,"RoomName":482,"CleanTranID":339,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":68,"RoomName":482,"CleanTranID":340,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":69,"RoomName":483,"CleanTranID":341,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":69,"RoomName":483,"CleanTranID":342,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":69,"RoomName":483,"CleanTranID":343,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":69,"RoomName":483,"CleanTranID":344,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":69,"RoomName":483,"CleanTranID":345,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":70,"RoomName":501,"CleanTranID":346,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":70,"RoomName":501,"CleanTranID":347,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":70,"RoomName":501,"CleanTranID":348,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":70,"RoomName":501,"CleanTranID":349,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":70,"RoomName":501,"CleanTranID":350,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":71,"RoomName":502,"CleanTranID":351,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":71,"RoomName":502,"CleanTranID":352,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":71,"RoomName":502,"CleanTranID":353,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":71,"RoomName":502,"CleanTranID":354,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":71,"RoomName":502,"CleanTranID":355,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":72,"RoomName":503,"CleanTranID":356,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":72,"RoomName":503,"CleanTranID":357,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":72,"RoomName":503,"CleanTranID":358,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":72,"RoomName":503,"CleanTranID":359,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":72,"RoomName":503,"CleanTranID":360,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":73,"RoomName":521,"CleanTranID":361,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":73,"RoomName":521,"CleanTranID":362,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":73,"RoomName":521,"CleanTranID":363,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":73,"RoomName":521,"CleanTranID":364,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":73,"RoomName":521,"CleanTranID":365,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":74,"RoomName":522,"CleanTranID":366,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":74,"RoomName":522,"CleanTranID":367,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":74,"RoomName":522,"CleanTranID":368,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":74,"RoomName":522,"CleanTranID":369,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":74,"RoomName":522,"CleanTranID":370,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":75,"RoomName":523,"CleanTranID":371,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":75,"RoomName":523,"CleanTranID":372,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":75,"RoomName":523,"CleanTranID":373,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":75,"RoomName":523,"CleanTranID":374,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":75,"RoomName":523,"CleanTranID":375,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":76,"RoomName":531,"CleanTranID":376,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":76,"RoomName":531,"CleanTranID":377,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":76,"RoomName":531,"CleanTranID":378,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":76,"RoomName":531,"CleanTranID":379,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":76,"RoomName":531,"CleanTranID":380,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":77,"RoomName":532,"CleanTranID":381,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":77,"RoomName":532,"CleanTranID":382,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":77,"RoomName":532,"CleanTranID":383,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":77,"RoomName":532,"CleanTranID":384,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":77,"RoomName":532,"CleanTranID":385,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":78,"RoomName":533,"CleanTranID":386,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":78,"RoomName":533,"CleanTranID":387,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":78,"RoomName":533,"CleanTranID":388,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":78,"RoomName":533,"CleanTranID":389,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":78,"RoomName":533,"CleanTranID":390,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":79,"RoomName":541,"CleanTranID":391,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":79,"RoomName":541,"CleanTranID":392,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":79,"RoomName":541,"CleanTranID":393,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":79,"RoomName":541,"CleanTranID":394,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":79,"RoomName":541,"CleanTranID":395,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":80,"RoomName":542,"CleanTranID":396,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":80,"RoomName":542,"CleanTranID":397,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":80,"RoomName":542,"CleanTranID":398,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":80,"RoomName":542,"CleanTranID":399,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":80,"RoomName":542,"CleanTranID":400,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":81,"RoomName":543,"CleanTranID":401,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":81,"RoomName":543,"CleanTranID":402,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":81,"RoomName":543,"CleanTranID":403,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":81,"RoomName":543,"CleanTranID":404,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":81,"RoomName":543,"CleanTranID":405,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":82,"RoomName":551,"CleanTranID":406,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":82,"RoomName":551,"CleanTranID":407,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":82,"RoomName":551,"CleanTranID":408,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":82,"RoomName":551,"CleanTranID":409,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":82,"RoomName":551,"CleanTranID":410,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":83,"RoomName":552,"CleanTranID":411,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":83,"RoomName":552,"CleanTranID":412,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":83,"RoomName":552,"CleanTranID":413,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":83,"RoomName":552,"CleanTranID":414,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":83,"RoomName":552,"CleanTranID":415,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":84,"RoomName":553,"CleanTranID":416,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":84,"RoomName":553,"CleanTranID":417,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":84,"RoomName":553,"CleanTranID":418,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":84,"RoomName":553,"CleanTranID":419,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":84,"RoomName":553,"CleanTranID":420,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":85,"RoomName":561,"CleanTranID":421,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":85,"RoomName":561,"CleanTranID":422,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":85,"RoomName":561,"CleanTranID":423,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":85,"RoomName":561,"CleanTranID":424,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":85,"RoomName":561,"CleanTranID":425,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":86,"RoomName":562,"CleanTranID":426,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":86,"RoomName":562,"CleanTranID":427,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":86,"RoomName":562,"CleanTranID":428,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":86,"RoomName":562,"CleanTranID":429,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":86,"RoomName":562,"CleanTranID":430,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":87,"RoomName":563,"CleanTranID":431,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":87,"RoomName":563,"CleanTranID":432,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":87,"RoomName":563,"CleanTranID":433,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":87,"RoomName":563,"CleanTranID":434,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":87,"RoomName":563,"CleanTranID":435,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":88,"RoomName":571,"CleanTranID":436,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":88,"RoomName":571,"CleanTranID":437,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":88,"RoomName":571,"CleanTranID":438,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":88,"RoomName":571,"CleanTranID":439,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":88,"RoomName":571,"CleanTranID":440,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":89,"RoomName":572,"CleanTranID":441,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":89,"RoomName":572,"CleanTranID":442,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":89,"RoomName":572,"CleanTranID":443,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":89,"RoomName":572,"CleanTranID":444,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":89,"RoomName":572,"CleanTranID":445,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":90,"RoomName":573,"CleanTranID":446,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":90,"RoomName":573,"CleanTranID":447,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":90,"RoomName":573,"CleanTranID":448,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":90,"RoomName":573,"CleanTranID":449,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":90,"RoomName":573,"CleanTranID":450,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":91,"RoomName":581,"CleanTranID":451,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":91,"RoomName":581,"CleanTranID":452,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":91,"RoomName":581,"CleanTranID":453,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":91,"RoomName":581,"CleanTranID":454,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":91,"RoomName":581,"CleanTranID":455,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":92,"RoomName":582,"CleanTranID":456,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":92,"RoomName":582,"CleanTranID":457,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":92,"RoomName":582,"CleanTranID":458,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":92,"RoomName":582,"CleanTranID":459,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":92,"RoomName":582,"CleanTranID":460,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":93,"RoomName":583,"CleanTranID":461,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":93,"RoomName":583,"CleanTranID":462,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":93,"RoomName":583,"CleanTranID":463,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":93,"RoomName":583,"CleanTranID":464,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":93,"RoomName":583,"CleanTranID":465,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":94,"RoomName":591,"CleanTranID":466,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":94,"RoomName":591,"CleanTranID":467,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":94,"RoomName":591,"CleanTranID":468,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":94,"RoomName":591,"CleanTranID":469,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":94,"RoomName":591,"CleanTranID":470,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":471,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":472,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":473,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":474,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":475,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":476,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":477,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":478,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":479,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":95,"RoomName":592,"CleanTranID":480,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":96,"RoomName":593,"CleanTranID":481,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":96,"RoomName":593,"CleanTranID":482,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":96,"RoomName":593,"CleanTranID":483,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":96,"RoomName":593,"CleanTranID":484,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":96,"RoomName":593,"CleanTranID":485,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":97,"RoomName":601,"CleanTranID":486,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":97,"RoomName":601,"CleanTranID":487,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":97,"RoomName":601,"CleanTranID":488,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":97,"RoomName":601,"CleanTranID":489,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":97,"RoomName":601,"CleanTranID":490,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":98,"RoomName":602,"CleanTranID":491,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":98,"RoomName":602,"CleanTranID":492,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":98,"RoomName":602,"CleanTranID":493,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":98,"RoomName":602,"CleanTranID":494,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":98,"RoomName":602,"CleanTranID":495,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":99,"RoomName":603,"CleanTranID":496,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":99,"RoomName":603,"CleanTranID":497,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":99,"RoomName":603,"CleanTranID":498,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":99,"RoomName":603,"CleanTranID":499,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":99,"RoomName":603,"CleanTranID":500,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":100,"RoomName":604,"CleanTranID":501,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":100,"RoomName":604,"CleanTranID":502,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":100,"RoomName":604,"CleanTranID":503,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":100,"RoomName":604,"CleanTranID":504,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":100,"RoomName":604,"CleanTranID":505,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":101,"RoomName":605,"CleanTranID":506,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":101,"RoomName":605,"CleanTranID":507,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":101,"RoomName":605,"CleanTranID":508,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":101,"RoomName":605,"CleanTranID":509,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":101,"RoomName":605,"CleanTranID":510,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":102,"RoomName":606,"CleanTranID":511,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":102,"RoomName":606,"CleanTranID":512,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":102,"RoomName":606,"CleanTranID":513,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":102,"RoomName":606,"CleanTranID":514,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":102,"RoomName":606,"CleanTranID":515,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":103,"RoomName":701,"CleanTranID":516,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":103,"RoomName":701,"CleanTranID":517,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":103,"RoomName":701,"CleanTranID":518,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":103,"RoomName":701,"CleanTranID":519,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":103,"RoomName":701,"CleanTranID":520,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":104,"RoomName":702,"CleanTranID":521,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":104,"RoomName":702,"CleanTranID":522,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":104,"RoomName":702,"CleanTranID":523,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":104,"RoomName":702,"CleanTranID":524,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":104,"RoomName":702,"CleanTranID":525,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":105,"RoomName":703,"CleanTranID":526,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":105,"RoomName":703,"CleanTranID":527,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":105,"RoomName":703,"CleanTranID":528,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":105,"RoomName":703,"CleanTranID":529,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":105,"RoomName":703,"CleanTranID":530,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":106,"RoomName":704,"CleanTranID":531,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":106,"RoomName":704,"CleanTranID":532,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":106,"RoomName":704,"CleanTranID":533,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":106,"RoomName":704,"CleanTranID":534,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":106,"RoomName":704,"CleanTranID":535,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":107,"RoomName":705,"CleanTranID":536,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":107,"RoomName":705,"CleanTranID":537,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":107,"RoomName":705,"CleanTranID":538,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":107,"RoomName":705,"CleanTranID":539,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":107,"RoomName":705,"CleanTranID":540,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":108,"RoomName":706,"CleanTranID":541,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":108,"RoomName":706,"CleanTranID":542,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":108,"RoomName":706,"CleanTranID":543,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":108,"RoomName":706,"CleanTranID":544,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":108,"RoomName":706,"CleanTranID":545,"Date":"5/1/2023","CleanedBy":"N/A","RequestedBy":"N/A"},{"RoomID":"1","RoomName":"210","CleanTranID":"546","Date":"2023-05-01T08:02","CleanedBy":"Aswin","RequestedBy":"Vimala"},{"RoomID":"2","RoomName":"211","CleanTranID":"547","Date":"2023-05-01T08:02","CleanedBy":"Aswin","RequestedBy":"Vimala"},{"RoomID":"1","RoomName":"210","CleanTranID":"548","Date":"2023-05-01T08:06","CleanedBy":"Aswin","RequestedBy":"Vimala"},{"RoomID":"2","RoomName":"211","CleanTranID":"549","Date":"2023-05-01T08:06","CleanedBy":"Aswin","RequestedBy":"Vimala"},{"RoomID":"1","RoomName":"210","CleanTranID":"550","Date":"2023-05-01T09:56","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"2","RoomName":"211","CleanTranID":"551","Date":"2023-05-01T09:56","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"3","RoomName":"301","CleanTranID":"552","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"4","RoomName":"302","CleanTranID":"553","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"5","RoomName":"303","CleanTranID":"555","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"6","RoomName":"304","CleanTranID":"558","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"7","RoomName":"305","CleanTranID":"562","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"8","RoomName":"306","CleanTranID":"567","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"9","RoomName":"307","CleanTranID":"573","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"10","RoomName":"308","CleanTranID":"580","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"11","RoomName":"309","CleanTranID":"588","Date":"2023-05-01T11:57","CleanedBy":"Prashanth","RequestedBy":"Gary"},{"RoomID":"76","RoomName":"531","CleanTranID":"561","Date":"2023-05-01T10:59","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"77","RoomName":"532","CleanTranID":"562","Date":"2023-05-01T10:59","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"78","RoomName":"533","CleanTranID":"564","Date":"2023-05-01T10:59","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"40","RoomName":"361","CleanTranID":"564","Date":"2023-05-01T11:06","CleanedBy":"Aswin","RequestedBy":"Gary"},{"RoomID":"41","RoomName":"362","CleanTranID":"565","Date":"2023-05-01T11:06","CleanedBy":"Aswin","RequestedBy":"Gary"},{"RoomID":"42","RoomName":"363","CleanTranID":"567","Date":"2023-05-01T11:06","CleanedBy":"Aswin","RequestedBy":"Gary"},{"RoomID":"43","RoomName":"364","CleanTranID":"570","Date":"2023-05-01T11:06","CleanedBy":"Aswin","RequestedBy":"Gary"},{"RoomID":"73","RoomName":"521","CleanTranID":"568","Date":"2023-05-01T11:07","CleanedBy":"Kumar","RequestedBy":"Shuddhatma"},{"RoomID":"74","RoomName":"522","CleanTranID":"569","Date":"2023-05-01T11:07","CleanedBy":"Kumar","RequestedBy":"Shuddhatma"},{"RoomID":"75","RoomName":"523","CleanTranID":"571","Date":"2023-05-01T11:07","CleanedBy":"Kumar","RequestedBy":"Shuddhatma"},{"RoomID":"70","RoomName":"501","CleanTranID":"571","Date":"2023-05-01T10:09","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"71","RoomName":"502","CleanTranID":"572","Date":"2023-05-01T10:09","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"72","RoomName":"503","CleanTranID":"574","Date":"2023-05-01T10:09","CleanedBy":"Prashanth","RequestedBy":"Shuddhatma"},{"RoomID":"12","RoomName":"321","CleanTranID":"574","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"13","RoomName":"322","CleanTranID":"575","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"14","RoomName":"323","CleanTranID":"577","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"15","RoomName":"324","CleanTranID":"580","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"16","RoomName":"325","CleanTranID":"584","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"17","RoomName":"326","CleanTranID":"589","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"18","RoomName":"327","CleanTranID":"595","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"19","RoomName":"328","CleanTranID":"602","Date":"2023-05-01T11:15","CleanedBy":"Aswin","RequestedBy":"Shuddhatma"},{"RoomID":"73","RoomName":"521","CleanTranID":"582","Date":"2023-05-17T01:22","CleanedBy":"Kumar","RequestedBy":"Vimala"},{"RoomID":"74","RoomName":"522","CleanTranID":"583","Date":"2023-05-17T01:22","CleanedBy":"Kumar","RequestedBy":"Vimala"},{"RoomID":"75","RoomName":"523","CleanTranID":"585","Date":"2023-05-17T01:22","CleanedBy":"Kumar","RequestedBy":"Vimala"}]
+[
+    {
+        "RoomID": 1,
+        "RoomName": 210,
+        "CleanTranID": 1,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 1,
+        "RoomName": 210,
+        "CleanTranID": 2,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 1,
+        "RoomName": 210,
+        "CleanTranID": 3,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 1,
+        "RoomName": 210,
+        "CleanTranID": 4,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 1,
+        "RoomName": 210,
+        "CleanTranID": 5,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 2,
+        "RoomName": 211,
+        "CleanTranID": 6,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 2,
+        "RoomName": 211,
+        "CleanTranID": 7,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 2,
+        "RoomName": 211,
+        "CleanTranID": 8,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 2,
+        "RoomName": 211,
+        "CleanTranID": 9,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 2,
+        "RoomName": 211,
+        "CleanTranID": 10,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 3,
+        "RoomName": 301,
+        "CleanTranID": 11,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 3,
+        "RoomName": 301,
+        "CleanTranID": 12,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 3,
+        "RoomName": 301,
+        "CleanTranID": 13,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 3,
+        "RoomName": 301,
+        "CleanTranID": 14,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 3,
+        "RoomName": 301,
+        "CleanTranID": 15,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 4,
+        "RoomName": 302,
+        "CleanTranID": 16,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 4,
+        "RoomName": 302,
+        "CleanTranID": 17,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 4,
+        "RoomName": 302,
+        "CleanTranID": 18,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 4,
+        "RoomName": 302,
+        "CleanTranID": 19,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 4,
+        "RoomName": 302,
+        "CleanTranID": 20,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 5,
+        "RoomName": 303,
+        "CleanTranID": 21,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 5,
+        "RoomName": 303,
+        "CleanTranID": 22,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 5,
+        "RoomName": 303,
+        "CleanTranID": 23,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 5,
+        "RoomName": 303,
+        "CleanTranID": 24,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 5,
+        "RoomName": 303,
+        "CleanTranID": 25,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 6,
+        "RoomName": 304,
+        "CleanTranID": 26,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 6,
+        "RoomName": 304,
+        "CleanTranID": 27,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 6,
+        "RoomName": 304,
+        "CleanTranID": 28,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 6,
+        "RoomName": 304,
+        "CleanTranID": 29,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 6,
+        "RoomName": 304,
+        "CleanTranID": 30,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 7,
+        "RoomName": 305,
+        "CleanTranID": 31,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 7,
+        "RoomName": 305,
+        "CleanTranID": 32,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 7,
+        "RoomName": 305,
+        "CleanTranID": 33,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 7,
+        "RoomName": 305,
+        "CleanTranID": 34,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 7,
+        "RoomName": 305,
+        "CleanTranID": 35,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 8,
+        "RoomName": 306,
+        "CleanTranID": 36,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 8,
+        "RoomName": 306,
+        "CleanTranID": 37,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 8,
+        "RoomName": 306,
+        "CleanTranID": 38,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 8,
+        "RoomName": 306,
+        "CleanTranID": 39,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 8,
+        "RoomName": 306,
+        "CleanTranID": 40,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 9,
+        "RoomName": 307,
+        "CleanTranID": 41,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 9,
+        "RoomName": 307,
+        "CleanTranID": 42,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 9,
+        "RoomName": 307,
+        "CleanTranID": 43,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 9,
+        "RoomName": 307,
+        "CleanTranID": 44,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 9,
+        "RoomName": 307,
+        "CleanTranID": 45,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 10,
+        "RoomName": 308,
+        "CleanTranID": 46,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 10,
+        "RoomName": 308,
+        "CleanTranID": 47,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 10,
+        "RoomName": 308,
+        "CleanTranID": 48,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 10,
+        "RoomName": 308,
+        "CleanTranID": 49,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 10,
+        "RoomName": 308,
+        "CleanTranID": 50,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 11,
+        "RoomName": 309,
+        "CleanTranID": 51,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 11,
+        "RoomName": 309,
+        "CleanTranID": 52,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 11,
+        "RoomName": 309,
+        "CleanTranID": 53,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 11,
+        "RoomName": 309,
+        "CleanTranID": 54,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 11,
+        "RoomName": 309,
+        "CleanTranID": 55,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 12,
+        "RoomName": 321,
+        "CleanTranID": 56,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 12,
+        "RoomName": 321,
+        "CleanTranID": 57,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 12,
+        "RoomName": 321,
+        "CleanTranID": 58,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 12,
+        "RoomName": 321,
+        "CleanTranID": 59,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 12,
+        "RoomName": 321,
+        "CleanTranID": 60,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 13,
+        "RoomName": 322,
+        "CleanTranID": 61,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 13,
+        "RoomName": 322,
+        "CleanTranID": 62,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 13,
+        "RoomName": 322,
+        "CleanTranID": 63,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 13,
+        "RoomName": 322,
+        "CleanTranID": 64,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 13,
+        "RoomName": 322,
+        "CleanTranID": 65,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 14,
+        "RoomName": 323,
+        "CleanTranID": 66,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 14,
+        "RoomName": 323,
+        "CleanTranID": 67,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 14,
+        "RoomName": 323,
+        "CleanTranID": 68,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 14,
+        "RoomName": 323,
+        "CleanTranID": 69,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 14,
+        "RoomName": 323,
+        "CleanTranID": 70,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 15,
+        "RoomName": 324,
+        "CleanTranID": 71,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 15,
+        "RoomName": 324,
+        "CleanTranID": 72,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 15,
+        "RoomName": 324,
+        "CleanTranID": 73,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 15,
+        "RoomName": 324,
+        "CleanTranID": 74,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 15,
+        "RoomName": 324,
+        "CleanTranID": 75,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 16,
+        "RoomName": 325,
+        "CleanTranID": 76,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 16,
+        "RoomName": 325,
+        "CleanTranID": 77,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 16,
+        "RoomName": 325,
+        "CleanTranID": 78,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 16,
+        "RoomName": 325,
+        "CleanTranID": 79,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 16,
+        "RoomName": 325,
+        "CleanTranID": 80,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 17,
+        "RoomName": 326,
+        "CleanTranID": 81,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 17,
+        "RoomName": 326,
+        "CleanTranID": 82,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 17,
+        "RoomName": 326,
+        "CleanTranID": 83,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 17,
+        "RoomName": 326,
+        "CleanTranID": 84,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 17,
+        "RoomName": 326,
+        "CleanTranID": 85,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 18,
+        "RoomName": 327,
+        "CleanTranID": 86,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 18,
+        "RoomName": 327,
+        "CleanTranID": 87,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 18,
+        "RoomName": 327,
+        "CleanTranID": 88,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 18,
+        "RoomName": 327,
+        "CleanTranID": 89,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 18,
+        "RoomName": 327,
+        "CleanTranID": 90,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 19,
+        "RoomName": 328,
+        "CleanTranID": 91,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 19,
+        "RoomName": 328,
+        "CleanTranID": 92,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 19,
+        "RoomName": 328,
+        "CleanTranID": 93,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 19,
+        "RoomName": 328,
+        "CleanTranID": 94,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 19,
+        "RoomName": 328,
+        "CleanTranID": 95,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 20,
+        "RoomName": 331,
+        "CleanTranID": 96,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 20,
+        "RoomName": 331,
+        "CleanTranID": 97,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 20,
+        "RoomName": 331,
+        "CleanTranID": 98,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 20,
+        "RoomName": 331,
+        "CleanTranID": 99,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 20,
+        "RoomName": 331,
+        "CleanTranID": 100,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 21,
+        "RoomName": 332,
+        "CleanTranID": 101,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 21,
+        "RoomName": 332,
+        "CleanTranID": 102,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 21,
+        "RoomName": 332,
+        "CleanTranID": 103,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 21,
+        "RoomName": 332,
+        "CleanTranID": 104,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 21,
+        "RoomName": 332,
+        "CleanTranID": 105,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 22,
+        "RoomName": 333,
+        "CleanTranID": 106,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 22,
+        "RoomName": 333,
+        "CleanTranID": 107,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 22,
+        "RoomName": 333,
+        "CleanTranID": 108,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 22,
+        "RoomName": 333,
+        "CleanTranID": 109,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 22,
+        "RoomName": 333,
+        "CleanTranID": 110,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 23,
+        "RoomName": 334,
+        "CleanTranID": 111,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 23,
+        "RoomName": 334,
+        "CleanTranID": 112,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 23,
+        "RoomName": 334,
+        "CleanTranID": 113,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 23,
+        "RoomName": 334,
+        "CleanTranID": 114,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 23,
+        "RoomName": 334,
+        "CleanTranID": 115,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 24,
+        "RoomName": 335,
+        "CleanTranID": 116,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 24,
+        "RoomName": 335,
+        "CleanTranID": 117,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 24,
+        "RoomName": 335,
+        "CleanTranID": 118,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 24,
+        "RoomName": 335,
+        "CleanTranID": 119,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 24,
+        "RoomName": 335,
+        "CleanTranID": 120,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 25,
+        "RoomName": 336,
+        "CleanTranID": 121,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 25,
+        "RoomName": 336,
+        "CleanTranID": 122,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 25,
+        "RoomName": 336,
+        "CleanTranID": 123,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 25,
+        "RoomName": 336,
+        "CleanTranID": 124,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 25,
+        "RoomName": 336,
+        "CleanTranID": 125,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 26,
+        "RoomName": 337,
+        "CleanTranID": 126,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 26,
+        "RoomName": 337,
+        "CleanTranID": 127,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 26,
+        "RoomName": 337,
+        "CleanTranID": 128,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 26,
+        "RoomName": 337,
+        "CleanTranID": 129,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 26,
+        "RoomName": 337,
+        "CleanTranID": 130,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 27,
+        "RoomName": 338,
+        "CleanTranID": 131,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 27,
+        "RoomName": 338,
+        "CleanTranID": 132,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 27,
+        "RoomName": 338,
+        "CleanTranID": 133,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 27,
+        "RoomName": 338,
+        "CleanTranID": 134,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 27,
+        "RoomName": 338,
+        "CleanTranID": 135,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 28,
+        "RoomName": 341,
+        "CleanTranID": 136,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 28,
+        "RoomName": 341,
+        "CleanTranID": 137,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 28,
+        "RoomName": 341,
+        "CleanTranID": 138,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 28,
+        "RoomName": 341,
+        "CleanTranID": 139,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 28,
+        "RoomName": 341,
+        "CleanTranID": 140,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 29,
+        "RoomName": 342,
+        "CleanTranID": 141,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 29,
+        "RoomName": 342,
+        "CleanTranID": 142,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 29,
+        "RoomName": 342,
+        "CleanTranID": 143,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 29,
+        "RoomName": 342,
+        "CleanTranID": 144,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 29,
+        "RoomName": 342,
+        "CleanTranID": 145,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 30,
+        "RoomName": 343,
+        "CleanTranID": 146,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 30,
+        "RoomName": 343,
+        "CleanTranID": 147,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 30,
+        "RoomName": 343,
+        "CleanTranID": 148,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 30,
+        "RoomName": 343,
+        "CleanTranID": 149,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 30,
+        "RoomName": 343,
+        "CleanTranID": 150,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 31,
+        "RoomName": 344,
+        "CleanTranID": 151,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 31,
+        "RoomName": 344,
+        "CleanTranID": 152,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 31,
+        "RoomName": 344,
+        "CleanTranID": 153,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 31,
+        "RoomName": 344,
+        "CleanTranID": 154,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 31,
+        "RoomName": 344,
+        "CleanTranID": 155,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 32,
+        "RoomName": 345,
+        "CleanTranID": 156,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 32,
+        "RoomName": 345,
+        "CleanTranID": 157,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 32,
+        "RoomName": 345,
+        "CleanTranID": 158,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 32,
+        "RoomName": 345,
+        "CleanTranID": 159,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 32,
+        "RoomName": 345,
+        "CleanTranID": 160,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 33,
+        "RoomName": 346,
+        "CleanTranID": 161,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 33,
+        "RoomName": 346,
+        "CleanTranID": 162,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 33,
+        "RoomName": 346,
+        "CleanTranID": 163,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 33,
+        "RoomName": 346,
+        "CleanTranID": 164,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 33,
+        "RoomName": 346,
+        "CleanTranID": 165,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 34,
+        "RoomName": 347,
+        "CleanTranID": 166,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 34,
+        "RoomName": 347,
+        "CleanTranID": 167,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 34,
+        "RoomName": 347,
+        "CleanTranID": 168,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 34,
+        "RoomName": 347,
+        "CleanTranID": 169,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 34,
+        "RoomName": 347,
+        "CleanTranID": 170,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 35,
+        "RoomName": 348,
+        "CleanTranID": 171,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 35,
+        "RoomName": 348,
+        "CleanTranID": 172,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 35,
+        "RoomName": 348,
+        "CleanTranID": 173,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 35,
+        "RoomName": 348,
+        "CleanTranID": 174,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 35,
+        "RoomName": 348,
+        "CleanTranID": 175,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 36,
+        "RoomName": 351,
+        "CleanTranID": 176,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 36,
+        "RoomName": 351,
+        "CleanTranID": 177,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 36,
+        "RoomName": 351,
+        "CleanTranID": 178,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 36,
+        "RoomName": 351,
+        "CleanTranID": 179,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 36,
+        "RoomName": 351,
+        "CleanTranID": 180,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 37,
+        "RoomName": 352,
+        "CleanTranID": 181,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 37,
+        "RoomName": 352,
+        "CleanTranID": 182,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 37,
+        "RoomName": 352,
+        "CleanTranID": 183,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 37,
+        "RoomName": 352,
+        "CleanTranID": 184,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 37,
+        "RoomName": 352,
+        "CleanTranID": 185,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 38,
+        "RoomName": 353,
+        "CleanTranID": 186,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 38,
+        "RoomName": 353,
+        "CleanTranID": 187,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 38,
+        "RoomName": 353,
+        "CleanTranID": 188,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 38,
+        "RoomName": 353,
+        "CleanTranID": 189,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 38,
+        "RoomName": 353,
+        "CleanTranID": 190,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 39,
+        "RoomName": 354,
+        "CleanTranID": 191,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 39,
+        "RoomName": 354,
+        "CleanTranID": 192,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 39,
+        "RoomName": 354,
+        "CleanTranID": 193,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 39,
+        "RoomName": 354,
+        "CleanTranID": 194,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 39,
+        "RoomName": 354,
+        "CleanTranID": 195,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 40,
+        "RoomName": 361,
+        "CleanTranID": 196,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 40,
+        "RoomName": 361,
+        "CleanTranID": 197,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 40,
+        "RoomName": 361,
+        "CleanTranID": 198,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 40,
+        "RoomName": 361,
+        "CleanTranID": 199,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 40,
+        "RoomName": 361,
+        "CleanTranID": 200,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 41,
+        "RoomName": 362,
+        "CleanTranID": 201,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 41,
+        "RoomName": 362,
+        "CleanTranID": 202,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 41,
+        "RoomName": 362,
+        "CleanTranID": 203,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 41,
+        "RoomName": 362,
+        "CleanTranID": 204,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 41,
+        "RoomName": 362,
+        "CleanTranID": 205,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 42,
+        "RoomName": 363,
+        "CleanTranID": 206,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 42,
+        "RoomName": 363,
+        "CleanTranID": 207,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 42,
+        "RoomName": 363,
+        "CleanTranID": 208,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 42,
+        "RoomName": 363,
+        "CleanTranID": 209,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 42,
+        "RoomName": 363,
+        "CleanTranID": 210,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 43,
+        "RoomName": 364,
+        "CleanTranID": 211,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 43,
+        "RoomName": 364,
+        "CleanTranID": 212,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 43,
+        "RoomName": 364,
+        "CleanTranID": 213,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 43,
+        "RoomName": 364,
+        "CleanTranID": 214,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 43,
+        "RoomName": 364,
+        "CleanTranID": 215,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 44,
+        "RoomName": 401,
+        "CleanTranID": 216,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 44,
+        "RoomName": 401,
+        "CleanTranID": 217,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 44,
+        "RoomName": 401,
+        "CleanTranID": 218,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 44,
+        "RoomName": 401,
+        "CleanTranID": 219,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 44,
+        "RoomName": 401,
+        "CleanTranID": 220,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 45,
+        "RoomName": 402,
+        "CleanTranID": 221,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 45,
+        "RoomName": 402,
+        "CleanTranID": 222,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 45,
+        "RoomName": 402,
+        "CleanTranID": 223,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 45,
+        "RoomName": 402,
+        "CleanTranID": 224,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 45,
+        "RoomName": 402,
+        "CleanTranID": 225,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 46,
+        "RoomName": 403,
+        "CleanTranID": 226,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 46,
+        "RoomName": 403,
+        "CleanTranID": 227,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 46,
+        "RoomName": 403,
+        "CleanTranID": 228,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 46,
+        "RoomName": 403,
+        "CleanTranID": 229,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 46,
+        "RoomName": 403,
+        "CleanTranID": 230,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 47,
+        "RoomName": 421,
+        "CleanTranID": 231,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 47,
+        "RoomName": 421,
+        "CleanTranID": 232,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 47,
+        "RoomName": 421,
+        "CleanTranID": 233,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 47,
+        "RoomName": 421,
+        "CleanTranID": 234,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 47,
+        "RoomName": 421,
+        "CleanTranID": 235,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 48,
+        "RoomName": 422,
+        "CleanTranID": 236,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 48,
+        "RoomName": 422,
+        "CleanTranID": 237,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 48,
+        "RoomName": 422,
+        "CleanTranID": 238,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 48,
+        "RoomName": 422,
+        "CleanTranID": 239,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 48,
+        "RoomName": 422,
+        "CleanTranID": 240,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 49,
+        "RoomName": 423,
+        "CleanTranID": 241,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 49,
+        "RoomName": 423,
+        "CleanTranID": 242,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 49,
+        "RoomName": 423,
+        "CleanTranID": 243,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 49,
+        "RoomName": 423,
+        "CleanTranID": 244,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 49,
+        "RoomName": 423,
+        "CleanTranID": 245,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 50,
+        "RoomName": 424,
+        "CleanTranID": 246,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 50,
+        "RoomName": 424,
+        "CleanTranID": 247,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 50,
+        "RoomName": 424,
+        "CleanTranID": 248,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 50,
+        "RoomName": 424,
+        "CleanTranID": 249,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 50,
+        "RoomName": 424,
+        "CleanTranID": 250,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 51,
+        "RoomName": 425,
+        "CleanTranID": 251,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 51,
+        "RoomName": 425,
+        "CleanTranID": 252,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 51,
+        "RoomName": 425,
+        "CleanTranID": 253,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 51,
+        "RoomName": 425,
+        "CleanTranID": 254,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 51,
+        "RoomName": 425,
+        "CleanTranID": 255,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 52,
+        "RoomName": 426,
+        "CleanTranID": 256,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 52,
+        "RoomName": 426,
+        "CleanTranID": 257,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 52,
+        "RoomName": 426,
+        "CleanTranID": 258,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 52,
+        "RoomName": 426,
+        "CleanTranID": 259,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 52,
+        "RoomName": 426,
+        "CleanTranID": 260,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 53,
+        "RoomName": 427,
+        "CleanTranID": 261,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 53,
+        "RoomName": 427,
+        "CleanTranID": 262,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 53,
+        "RoomName": 427,
+        "CleanTranID": 263,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 53,
+        "RoomName": 427,
+        "CleanTranID": 264,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 53,
+        "RoomName": 427,
+        "CleanTranID": 265,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 54,
+        "RoomName": 436,
+        "CleanTranID": 266,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 54,
+        "RoomName": 436,
+        "CleanTranID": 267,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 54,
+        "RoomName": 436,
+        "CleanTranID": 268,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 54,
+        "RoomName": 436,
+        "CleanTranID": 269,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 54,
+        "RoomName": 436,
+        "CleanTranID": 270,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 55,
+        "RoomName": 437,
+        "CleanTranID": 271,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 55,
+        "RoomName": 437,
+        "CleanTranID": 272,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 55,
+        "RoomName": 437,
+        "CleanTranID": 273,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 55,
+        "RoomName": 437,
+        "CleanTranID": 274,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 55,
+        "RoomName": 437,
+        "CleanTranID": 275,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 56,
+        "RoomName": 438,
+        "CleanTranID": 276,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 56,
+        "RoomName": 438,
+        "CleanTranID": 277,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 56,
+        "RoomName": 438,
+        "CleanTranID": 278,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 56,
+        "RoomName": 438,
+        "CleanTranID": 279,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 56,
+        "RoomName": 438,
+        "CleanTranID": 280,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 57,
+        "RoomName": 439,
+        "CleanTranID": 281,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 57,
+        "RoomName": 439,
+        "CleanTranID": 282,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 57,
+        "RoomName": 439,
+        "CleanTranID": 283,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 57,
+        "RoomName": 439,
+        "CleanTranID": 284,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 57,
+        "RoomName": 439,
+        "CleanTranID": 285,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 58,
+        "RoomName": 451,
+        "CleanTranID": 286,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 58,
+        "RoomName": 451,
+        "CleanTranID": 287,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 58,
+        "RoomName": 451,
+        "CleanTranID": 288,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 58,
+        "RoomName": 451,
+        "CleanTranID": 289,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 58,
+        "RoomName": 451,
+        "CleanTranID": 290,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 59,
+        "RoomName": 452,
+        "CleanTranID": 291,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 59,
+        "RoomName": 452,
+        "CleanTranID": 292,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 59,
+        "RoomName": 452,
+        "CleanTranID": 293,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 59,
+        "RoomName": 452,
+        "CleanTranID": 294,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 59,
+        "RoomName": 452,
+        "CleanTranID": 295,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 60,
+        "RoomName": 453,
+        "CleanTranID": 296,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 60,
+        "RoomName": 453,
+        "CleanTranID": 297,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 60,
+        "RoomName": 453,
+        "CleanTranID": 298,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 60,
+        "RoomName": 453,
+        "CleanTranID": 299,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 60,
+        "RoomName": 453,
+        "CleanTranID": 300,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 61,
+        "RoomName": 461,
+        "CleanTranID": 301,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 61,
+        "RoomName": 461,
+        "CleanTranID": 302,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 61,
+        "RoomName": 461,
+        "CleanTranID": 303,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 61,
+        "RoomName": 461,
+        "CleanTranID": 304,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 61,
+        "RoomName": 461,
+        "CleanTranID": 305,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 62,
+        "RoomName": 462,
+        "CleanTranID": 306,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 62,
+        "RoomName": 462,
+        "CleanTranID": 307,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 62,
+        "RoomName": 462,
+        "CleanTranID": 308,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 62,
+        "RoomName": 462,
+        "CleanTranID": 309,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 62,
+        "RoomName": 462,
+        "CleanTranID": 310,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 63,
+        "RoomName": 463,
+        "CleanTranID": 311,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 63,
+        "RoomName": 463,
+        "CleanTranID": 312,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 63,
+        "RoomName": 463,
+        "CleanTranID": 313,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 63,
+        "RoomName": 463,
+        "CleanTranID": 314,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 63,
+        "RoomName": 463,
+        "CleanTranID": 315,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 64,
+        "RoomName": 471,
+        "CleanTranID": 316,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 64,
+        "RoomName": 471,
+        "CleanTranID": 317,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 64,
+        "RoomName": 471,
+        "CleanTranID": 318,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 64,
+        "RoomName": 471,
+        "CleanTranID": 319,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 64,
+        "RoomName": 471,
+        "CleanTranID": 320,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 65,
+        "RoomName": 472,
+        "CleanTranID": 321,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 65,
+        "RoomName": 472,
+        "CleanTranID": 322,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 65,
+        "RoomName": 472,
+        "CleanTranID": 323,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 65,
+        "RoomName": 472,
+        "CleanTranID": 324,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 65,
+        "RoomName": 472,
+        "CleanTranID": 325,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 66,
+        "RoomName": 473,
+        "CleanTranID": 326,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 66,
+        "RoomName": 473,
+        "CleanTranID": 327,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 66,
+        "RoomName": 473,
+        "CleanTranID": 328,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 66,
+        "RoomName": 473,
+        "CleanTranID": 329,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 66,
+        "RoomName": 473,
+        "CleanTranID": 330,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 67,
+        "RoomName": 481,
+        "CleanTranID": 331,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 67,
+        "RoomName": 481,
+        "CleanTranID": 332,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 67,
+        "RoomName": 481,
+        "CleanTranID": 333,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 67,
+        "RoomName": 481,
+        "CleanTranID": 334,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 67,
+        "RoomName": 481,
+        "CleanTranID": 335,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 68,
+        "RoomName": 482,
+        "CleanTranID": 336,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 68,
+        "RoomName": 482,
+        "CleanTranID": 337,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 68,
+        "RoomName": 482,
+        "CleanTranID": 338,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 68,
+        "RoomName": 482,
+        "CleanTranID": 339,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 68,
+        "RoomName": 482,
+        "CleanTranID": 340,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 69,
+        "RoomName": 483,
+        "CleanTranID": 341,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 69,
+        "RoomName": 483,
+        "CleanTranID": 342,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 69,
+        "RoomName": 483,
+        "CleanTranID": 343,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 69,
+        "RoomName": 483,
+        "CleanTranID": 344,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 69,
+        "RoomName": 483,
+        "CleanTranID": 345,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 70,
+        "RoomName": 501,
+        "CleanTranID": 346,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 70,
+        "RoomName": 501,
+        "CleanTranID": 347,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 70,
+        "RoomName": 501,
+        "CleanTranID": 348,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 70,
+        "RoomName": 501,
+        "CleanTranID": 349,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 70,
+        "RoomName": 501,
+        "CleanTranID": 350,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 71,
+        "RoomName": 502,
+        "CleanTranID": 351,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 71,
+        "RoomName": 502,
+        "CleanTranID": 352,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 71,
+        "RoomName": 502,
+        "CleanTranID": 353,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 71,
+        "RoomName": 502,
+        "CleanTranID": 354,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 71,
+        "RoomName": 502,
+        "CleanTranID": 355,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 72,
+        "RoomName": 503,
+        "CleanTranID": 356,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 72,
+        "RoomName": 503,
+        "CleanTranID": 357,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 72,
+        "RoomName": 503,
+        "CleanTranID": 358,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 72,
+        "RoomName": 503,
+        "CleanTranID": 359,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 72,
+        "RoomName": 503,
+        "CleanTranID": 360,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 73,
+        "RoomName": 521,
+        "CleanTranID": 361,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 73,
+        "RoomName": 521,
+        "CleanTranID": 362,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 73,
+        "RoomName": 521,
+        "CleanTranID": 363,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 73,
+        "RoomName": 521,
+        "CleanTranID": 364,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 73,
+        "RoomName": 521,
+        "CleanTranID": 365,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 74,
+        "RoomName": 522,
+        "CleanTranID": 366,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 74,
+        "RoomName": 522,
+        "CleanTranID": 367,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 74,
+        "RoomName": 522,
+        "CleanTranID": 368,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 74,
+        "RoomName": 522,
+        "CleanTranID": 369,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 74,
+        "RoomName": 522,
+        "CleanTranID": 370,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 75,
+        "RoomName": 523,
+        "CleanTranID": 371,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 75,
+        "RoomName": 523,
+        "CleanTranID": 372,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 75,
+        "RoomName": 523,
+        "CleanTranID": 373,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 75,
+        "RoomName": 523,
+        "CleanTranID": 374,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 75,
+        "RoomName": 523,
+        "CleanTranID": 375,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 76,
+        "RoomName": 531,
+        "CleanTranID": 376,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 76,
+        "RoomName": 531,
+        "CleanTranID": 377,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 76,
+        "RoomName": 531,
+        "CleanTranID": 378,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 76,
+        "RoomName": 531,
+        "CleanTranID": 379,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 76,
+        "RoomName": 531,
+        "CleanTranID": 380,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 77,
+        "RoomName": 532,
+        "CleanTranID": 381,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 77,
+        "RoomName": 532,
+        "CleanTranID": 382,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 77,
+        "RoomName": 532,
+        "CleanTranID": 383,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 77,
+        "RoomName": 532,
+        "CleanTranID": 384,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 77,
+        "RoomName": 532,
+        "CleanTranID": 385,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 78,
+        "RoomName": 533,
+        "CleanTranID": 386,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 78,
+        "RoomName": 533,
+        "CleanTranID": 387,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 78,
+        "RoomName": 533,
+        "CleanTranID": 388,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 78,
+        "RoomName": 533,
+        "CleanTranID": 389,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 78,
+        "RoomName": 533,
+        "CleanTranID": 390,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 79,
+        "RoomName": 541,
+        "CleanTranID": 391,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 79,
+        "RoomName": 541,
+        "CleanTranID": 392,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 79,
+        "RoomName": 541,
+        "CleanTranID": 393,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 79,
+        "RoomName": 541,
+        "CleanTranID": 394,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 79,
+        "RoomName": 541,
+        "CleanTranID": 395,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 80,
+        "RoomName": 542,
+        "CleanTranID": 396,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 80,
+        "RoomName": 542,
+        "CleanTranID": 397,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 80,
+        "RoomName": 542,
+        "CleanTranID": 398,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 80,
+        "RoomName": 542,
+        "CleanTranID": 399,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 80,
+        "RoomName": 542,
+        "CleanTranID": 400,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 81,
+        "RoomName": 543,
+        "CleanTranID": 401,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 81,
+        "RoomName": 543,
+        "CleanTranID": 402,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 81,
+        "RoomName": 543,
+        "CleanTranID": 403,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 81,
+        "RoomName": 543,
+        "CleanTranID": 404,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 81,
+        "RoomName": 543,
+        "CleanTranID": 405,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 82,
+        "RoomName": 551,
+        "CleanTranID": 406,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 82,
+        "RoomName": 551,
+        "CleanTranID": 407,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 82,
+        "RoomName": 551,
+        "CleanTranID": 408,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 82,
+        "RoomName": 551,
+        "CleanTranID": 409,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 82,
+        "RoomName": 551,
+        "CleanTranID": 410,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 83,
+        "RoomName": 552,
+        "CleanTranID": 411,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 83,
+        "RoomName": 552,
+        "CleanTranID": 412,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 83,
+        "RoomName": 552,
+        "CleanTranID": 413,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 83,
+        "RoomName": 552,
+        "CleanTranID": 414,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 83,
+        "RoomName": 552,
+        "CleanTranID": 415,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 84,
+        "RoomName": 553,
+        "CleanTranID": 416,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 84,
+        "RoomName": 553,
+        "CleanTranID": 417,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 84,
+        "RoomName": 553,
+        "CleanTranID": 418,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 84,
+        "RoomName": 553,
+        "CleanTranID": 419,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 84,
+        "RoomName": 553,
+        "CleanTranID": 420,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 85,
+        "RoomName": 561,
+        "CleanTranID": 421,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 85,
+        "RoomName": 561,
+        "CleanTranID": 422,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 85,
+        "RoomName": 561,
+        "CleanTranID": 423,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 85,
+        "RoomName": 561,
+        "CleanTranID": 424,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 85,
+        "RoomName": 561,
+        "CleanTranID": 425,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 86,
+        "RoomName": 562,
+        "CleanTranID": 426,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 86,
+        "RoomName": 562,
+        "CleanTranID": 427,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 86,
+        "RoomName": 562,
+        "CleanTranID": 428,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 86,
+        "RoomName": 562,
+        "CleanTranID": 429,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 86,
+        "RoomName": 562,
+        "CleanTranID": 430,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 87,
+        "RoomName": 563,
+        "CleanTranID": 431,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 87,
+        "RoomName": 563,
+        "CleanTranID": 432,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 87,
+        "RoomName": 563,
+        "CleanTranID": 433,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 87,
+        "RoomName": 563,
+        "CleanTranID": 434,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 87,
+        "RoomName": 563,
+        "CleanTranID": 435,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 88,
+        "RoomName": 571,
+        "CleanTranID": 436,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 88,
+        "RoomName": 571,
+        "CleanTranID": 437,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 88,
+        "RoomName": 571,
+        "CleanTranID": 438,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 88,
+        "RoomName": 571,
+        "CleanTranID": 439,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 88,
+        "RoomName": 571,
+        "CleanTranID": 440,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 89,
+        "RoomName": 572,
+        "CleanTranID": 441,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 89,
+        "RoomName": 572,
+        "CleanTranID": 442,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 89,
+        "RoomName": 572,
+        "CleanTranID": 443,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 89,
+        "RoomName": 572,
+        "CleanTranID": 444,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 89,
+        "RoomName": 572,
+        "CleanTranID": 445,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 90,
+        "RoomName": 573,
+        "CleanTranID": 446,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 90,
+        "RoomName": 573,
+        "CleanTranID": 447,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 90,
+        "RoomName": 573,
+        "CleanTranID": 448,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 90,
+        "RoomName": 573,
+        "CleanTranID": 449,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 90,
+        "RoomName": 573,
+        "CleanTranID": 450,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 91,
+        "RoomName": 581,
+        "CleanTranID": 451,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 91,
+        "RoomName": 581,
+        "CleanTranID": 452,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 91,
+        "RoomName": 581,
+        "CleanTranID": 453,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 91,
+        "RoomName": 581,
+        "CleanTranID": 454,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 91,
+        "RoomName": 581,
+        "CleanTranID": 455,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 92,
+        "RoomName": 582,
+        "CleanTranID": 456,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 92,
+        "RoomName": 582,
+        "CleanTranID": 457,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 92,
+        "RoomName": 582,
+        "CleanTranID": 458,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 92,
+        "RoomName": 582,
+        "CleanTranID": 459,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 92,
+        "RoomName": 582,
+        "CleanTranID": 460,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 93,
+        "RoomName": 583,
+        "CleanTranID": 461,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 93,
+        "RoomName": 583,
+        "CleanTranID": 462,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 93,
+        "RoomName": 583,
+        "CleanTranID": 463,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 93,
+        "RoomName": 583,
+        "CleanTranID": 464,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 93,
+        "RoomName": 583,
+        "CleanTranID": 465,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 94,
+        "RoomName": 591,
+        "CleanTranID": 466,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 94,
+        "RoomName": 591,
+        "CleanTranID": 467,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 94,
+        "RoomName": 591,
+        "CleanTranID": 468,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 94,
+        "RoomName": 591,
+        "CleanTranID": 469,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 94,
+        "RoomName": 591,
+        "CleanTranID": 470,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 471,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 472,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 473,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 474,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 475,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 476,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 477,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 478,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 479,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 95,
+        "RoomName": 592,
+        "CleanTranID": 480,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 96,
+        "RoomName": 593,
+        "CleanTranID": 481,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 96,
+        "RoomName": 593,
+        "CleanTranID": 482,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 96,
+        "RoomName": 593,
+        "CleanTranID": 483,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 96,
+        "RoomName": 593,
+        "CleanTranID": 484,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 96,
+        "RoomName": 593,
+        "CleanTranID": 485,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 97,
+        "RoomName": 601,
+        "CleanTranID": 486,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 97,
+        "RoomName": 601,
+        "CleanTranID": 487,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 97,
+        "RoomName": 601,
+        "CleanTranID": 488,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 97,
+        "RoomName": 601,
+        "CleanTranID": 489,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 97,
+        "RoomName": 601,
+        "CleanTranID": 490,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 98,
+        "RoomName": 602,
+        "CleanTranID": 491,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 98,
+        "RoomName": 602,
+        "CleanTranID": 492,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 98,
+        "RoomName": 602,
+        "CleanTranID": 493,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 98,
+        "RoomName": 602,
+        "CleanTranID": 494,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 98,
+        "RoomName": 602,
+        "CleanTranID": 495,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 99,
+        "RoomName": 603,
+        "CleanTranID": 496,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 99,
+        "RoomName": 603,
+        "CleanTranID": 497,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 99,
+        "RoomName": 603,
+        "CleanTranID": 498,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 99,
+        "RoomName": 603,
+        "CleanTranID": 499,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 99,
+        "RoomName": 603,
+        "CleanTranID": 500,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 100,
+        "RoomName": 604,
+        "CleanTranID": 501,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 100,
+        "RoomName": 604,
+        "CleanTranID": 502,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 100,
+        "RoomName": 604,
+        "CleanTranID": 503,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 100,
+        "RoomName": 604,
+        "CleanTranID": 504,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 100,
+        "RoomName": 604,
+        "CleanTranID": 505,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 101,
+        "RoomName": 605,
+        "CleanTranID": 506,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 101,
+        "RoomName": 605,
+        "CleanTranID": 507,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 101,
+        "RoomName": 605,
+        "CleanTranID": 508,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 101,
+        "RoomName": 605,
+        "CleanTranID": 509,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 101,
+        "RoomName": 605,
+        "CleanTranID": 510,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 102,
+        "RoomName": 606,
+        "CleanTranID": 511,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 102,
+        "RoomName": 606,
+        "CleanTranID": 512,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 102,
+        "RoomName": 606,
+        "CleanTranID": 513,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 102,
+        "RoomName": 606,
+        "CleanTranID": 514,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 102,
+        "RoomName": 606,
+        "CleanTranID": 515,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 103,
+        "RoomName": 701,
+        "CleanTranID": 516,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 103,
+        "RoomName": 701,
+        "CleanTranID": 517,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 103,
+        "RoomName": 701,
+        "CleanTranID": 518,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 103,
+        "RoomName": 701,
+        "CleanTranID": 519,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 103,
+        "RoomName": 701,
+        "CleanTranID": 520,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 104,
+        "RoomName": 702,
+        "CleanTranID": 521,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 104,
+        "RoomName": 702,
+        "CleanTranID": 522,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 104,
+        "RoomName": 702,
+        "CleanTranID": 523,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 104,
+        "RoomName": 702,
+        "CleanTranID": 524,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 104,
+        "RoomName": 702,
+        "CleanTranID": 525,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 105,
+        "RoomName": 703,
+        "CleanTranID": 526,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 105,
+        "RoomName": 703,
+        "CleanTranID": 527,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 105,
+        "RoomName": 703,
+        "CleanTranID": 528,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 105,
+        "RoomName": 703,
+        "CleanTranID": 529,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 105,
+        "RoomName": 703,
+        "CleanTranID": 530,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 106,
+        "RoomName": 704,
+        "CleanTranID": 531,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 106,
+        "RoomName": 704,
+        "CleanTranID": 532,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 106,
+        "RoomName": 704,
+        "CleanTranID": 533,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 106,
+        "RoomName": 704,
+        "CleanTranID": 534,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 106,
+        "RoomName": 704,
+        "CleanTranID": 535,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 107,
+        "RoomName": 705,
+        "CleanTranID": 536,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 107,
+        "RoomName": 705,
+        "CleanTranID": 537,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 107,
+        "RoomName": 705,
+        "CleanTranID": 538,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 107,
+        "RoomName": 705,
+        "CleanTranID": 539,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 107,
+        "RoomName": 705,
+        "CleanTranID": 540,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 108,
+        "RoomName": 706,
+        "CleanTranID": 541,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 108,
+        "RoomName": 706,
+        "CleanTranID": 542,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 108,
+        "RoomName": 706,
+        "CleanTranID": 543,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 108,
+        "RoomName": 706,
+        "CleanTranID": 544,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": 108,
+        "RoomName": 706,
+        "CleanTranID": 545,
+        "Date": "5/1/2023",
+        "CleanedBy": "N/A",
+        "RequestedBy": "N/A"
+    },
+    {
+        "RoomID": "1",
+        "RoomName": "210",
+        "CleanTranID": "546",
+        "Date": "2023-05-01T08:02",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "2",
+        "RoomName": "211",
+        "CleanTranID": "547",
+        "Date": "2023-05-01T08:02",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "1",
+        "RoomName": "210",
+        "CleanTranID": "548",
+        "Date": "2023-05-01T08:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "2",
+        "RoomName": "211",
+        "CleanTranID": "549",
+        "Date": "2023-05-01T08:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "1",
+        "RoomName": "210",
+        "CleanTranID": "550",
+        "Date": "2023-05-01T09:56",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "2",
+        "RoomName": "211",
+        "CleanTranID": "551",
+        "Date": "2023-05-01T09:56",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "3",
+        "RoomName": "301",
+        "CleanTranID": "552",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "4",
+        "RoomName": "302",
+        "CleanTranID": "553",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "5",
+        "RoomName": "303",
+        "CleanTranID": "555",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "6",
+        "RoomName": "304",
+        "CleanTranID": "558",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "7",
+        "RoomName": "305",
+        "CleanTranID": "562",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "8",
+        "RoomName": "306",
+        "CleanTranID": "567",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "9",
+        "RoomName": "307",
+        "CleanTranID": "573",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "10",
+        "RoomName": "308",
+        "CleanTranID": "580",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "11",
+        "RoomName": "309",
+        "CleanTranID": "588",
+        "Date": "2023-05-01T11:57",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "76",
+        "RoomName": "531",
+        "CleanTranID": "561",
+        "Date": "2023-05-01T10:59",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "77",
+        "RoomName": "532",
+        "CleanTranID": "562",
+        "Date": "2023-05-01T10:59",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "78",
+        "RoomName": "533",
+        "CleanTranID": "564",
+        "Date": "2023-05-01T10:59",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "40",
+        "RoomName": "361",
+        "CleanTranID": "564",
+        "Date": "2023-05-01T11:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "41",
+        "RoomName": "362",
+        "CleanTranID": "565",
+        "Date": "2023-05-01T11:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "42",
+        "RoomName": "363",
+        "CleanTranID": "567",
+        "Date": "2023-05-01T11:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "43",
+        "RoomName": "364",
+        "CleanTranID": "570",
+        "Date": "2023-05-01T11:06",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "73",
+        "RoomName": "521",
+        "CleanTranID": "568",
+        "Date": "2023-05-01T11:07",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "74",
+        "RoomName": "522",
+        "CleanTranID": "569",
+        "Date": "2023-05-01T11:07",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "75",
+        "RoomName": "523",
+        "CleanTranID": "571",
+        "Date": "2023-05-01T11:07",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "70",
+        "RoomName": "501",
+        "CleanTranID": "571",
+        "Date": "2023-05-01T10:09",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "71",
+        "RoomName": "502",
+        "CleanTranID": "572",
+        "Date": "2023-05-01T10:09",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "72",
+        "RoomName": "503",
+        "CleanTranID": "574",
+        "Date": "2023-05-01T10:09",
+        "CleanedBy": "Prashanth",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "12",
+        "RoomName": "321",
+        "CleanTranID": "574",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "13",
+        "RoomName": "322",
+        "CleanTranID": "575",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "14",
+        "RoomName": "323",
+        "CleanTranID": "577",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "15",
+        "RoomName": "324",
+        "CleanTranID": "580",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "16",
+        "RoomName": "325",
+        "CleanTranID": "584",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "17",
+        "RoomName": "326",
+        "CleanTranID": "589",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "18",
+        "RoomName": "327",
+        "CleanTranID": "595",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "19",
+        "RoomName": "328",
+        "CleanTranID": "602",
+        "Date": "2023-05-01T11:15",
+        "CleanedBy": "Aswin",
+        "RequestedBy": "Shuddhatma"
+    },
+    {
+        "RoomID": "73",
+        "RoomName": "521",
+        "CleanTranID": "582",
+        "Date": "2023-05-17T01:22",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "74",
+        "RoomName": "522",
+        "CleanTranID": "583",
+        "Date": "2023-05-17T01:22",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "75",
+        "RoomName": "523",
+        "CleanTranID": "585",
+        "Date": "2023-05-17T01:22",
+        "CleanedBy": "Kumar",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "561",
+        "RoomName": "561",
+        "CleanTranID": "585",
+        "Date": "2023-05-03T10:50",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "562",
+        "RoomName": "562",
+        "CleanTranID": "586",
+        "Date": "2023-05-03T10:50",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "563",
+        "RoomName": "563",
+        "CleanTranID": "588",
+        "Date": "2023-05-03T10:50",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "301",
+        "RoomName": "301",
+        "CleanTranID": "588",
+        "Date": "2023-05-10T10:55",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "301",
+        "RoomName": "322",
+        "CleanTranID": "589",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "302",
+        "RoomName": "undefined",
+        "CleanTranID": "590",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "303",
+        "RoomName": "undefined",
+        "CleanTranID": "592",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "304",
+        "RoomName": "undefined",
+        "CleanTranID": "595",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "305",
+        "RoomName": "undefined",
+        "CleanTranID": "599",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "306",
+        "RoomName": "undefined",
+        "CleanTranID": "604",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "307",
+        "RoomName": "undefined",
+        "CleanTranID": "610",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "308",
+        "RoomName": "undefined",
+        "CleanTranID": "617",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "309",
+        "RoomName": "undefined",
+        "CleanTranID": "625",
+        "Date": "2023-05-04T10:15",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "401",
+        "RoomName": "401",
+        "CleanTranID": "598",
+        "Date": "2023-05-04T10:50",
+        "CleanedBy": "Tracy",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "402",
+        "RoomName": "402",
+        "CleanTranID": "599",
+        "Date": "2023-05-04T10:50",
+        "CleanedBy": "Tracy",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "403",
+        "RoomName": "403",
+        "CleanTranID": "601",
+        "Date": "2023-05-04T10:50",
+        "CleanedBy": "Tracy",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "322",
+        "RoomName": "322",
+        "CleanTranID": "601",
+        "Date": "2023-05-09T10:55",
+        "CleanedBy": "Anna",
+        "RequestedBy": "Vimala"
+    },
+    {
+        "RoomID": "Tunga Basement",
+        "RoomName": "Tunga Basement",
+        "CleanTranID": "602",
+        "Date": "2023-05-24T12:55",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Gary"
+    },
+    {
+        "RoomID": "Office",
+        "RoomName": "Office",
+        "CleanTranID": "603",
+        "Date": "2023-05-24T12:55",
+        "CleanedBy": "Beatrizes",
+        "RequestedBy": "Gary"
+    }
+]
