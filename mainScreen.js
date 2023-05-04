@@ -234,7 +234,7 @@ function roomVS() {
       node.innerHTML = '<input type="checkbox" class="chk_hide" onclick="checkSin(this)" name="check" id="chk_' +
           roomsObjFiltered[room].RoomName + '" value="'+ roomsObjFiltered[room].RoomName +'"><label id="lbl_' + 
           roomsObjFiltered[room].RoomName + '"class="clean">' + roomsObjFiltered[room].RoomName + '</label>' + 
-          '<label id="lbl_notes">Notes</label>' + '<textarea id="txtAra_' + roomsObjFiltered[room].RoomName + 
+          '<textarea placeholder="Notes" id="txtAra_' + roomsObjFiltered[room].RoomName + 
           '"></textarea>';
       //node.innerHTML = '<label id="lbl' + i + '"class="clean")">'+ rooms[i] +'</label>'; 
       document.getElementById('cont_VS').appendChild(node);
