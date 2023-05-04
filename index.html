@@ -62,6 +62,9 @@
                                     <th id="vd_th">
                                         Assigned To
                                     </th>
+                                    <th id="vd_th">
+                                        Cleaning Notes
+                                    </th>
                                 </tr>
                                 <tr id="vd_tr">
                                     <td id="vd_td">
@@ -76,53 +79,67 @@
                                     <td id="vd_td">
                                         Assigned To
                                     </td>
+                                    <td id="vd_td">
+                                        Cleaning Notes
+                                    </td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                 </div>
                 <div id="mod_printwork" class="block">
-                    <div class="selectbox-field">
-                        <label>Assigned To</label>
-                        <select name="Assigne" id="pw_assignee" onchange="workorder()">
-                                                
-                        </select>
-                    </div>
-                    <div id="mod_printworkorder" style="overflow-y:auto;display: block;">
-                        <table id="tbl_printworkorder" class="tbl_printworkorder">
-                            <tr id="pw_tr">
-                                <th id="pw_th">
-                                    No.
-                                </th>
-                                <th id="pw_th">
-                                    Room Number
-                                </th>
-                                <th id="pw_th">
-                                    Requested Date
-                                </th>
-                                <th id="pw_th">
-                                    Assigned To
-                                </th>
-                            </tr>
-                            <tr id="pw_tr">
-                                <td id="pw_td">
-                                    No.
-                                </td>
-                                <td id="pw_td">
-                                    Room Number
-                                </td>
-                                <td id="pw_td">
-                                    Requested Date
-                                </td>
-                                <td id="pw_td">
-                                    Assigned To
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btnVS" onclick="printworkorder()">Print Workorder</button>
-                        <button class="btnVS" onclick="reset_pw()">Reset</button>
+                    <h2 id="mod_viewStatus_title">
+                        Print Work Order
+                    </h2>
+                    <div class="block-content">
+                        <div class="selectbox-field">
+                            <label>Assigned To</label>
+                            <select name="Assigne" id="pw_assignee" onchange="workorder()">
+                                                    
+                            </select>
+                        </div>
+                        <div id="mod_printworkorder" style="overflow-y:auto;display: block;">
+                            <table id="tbl_printworkorder" class="tbl_printworkorder">
+                                <tr id="pw_tr">
+                                    <th id="pw_th">
+                                        No.
+                                    </th>
+                                    <th id="pw_th">
+                                        Room Number
+                                    </th>
+                                    <th id="pw_th">
+                                        Requested Date
+                                    </th>
+                                    <th id="pw_th">
+                                        Assigned To
+                                    </th>
+                                    <th id="pw_th">
+                                        Cleaning Notes
+                                    </th>
+                                </tr>
+                                <tr id="pw_tr">
+                                    <td id="pw_td">
+                                        No.
+                                    </td>
+                                    <td id="pw_td">
+                                        Room Number
+                                    </td>
+                                    <td id="pw_td">
+                                        Requested Date
+                                    </td>
+                                    <td id="pw_td">
+                                        Assigned To
+                                    </td>
+                                    <td id="pw_td">
+                                        Request Notes
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btnVS" onclick="printworkorder()">Print Workorder</button>
+                            <button class="btnVS" onclick="reset_pw()">Reset</button>
+                        </div>
                     </div>
                 </div>
                 
