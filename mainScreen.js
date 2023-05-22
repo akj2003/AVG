@@ -1,9 +1,10 @@
 const NOTCLEAN = "Not Clean";
 const CLEAN = "Clean";
+const path = "/Users/aj/Workspace/Electron/Development/AVG/release-builds/avg_cleaning-darwin-x64/avg_cleaning.app/Contents/Resources/app/masterdata"
 
 window.onload = function () {
    const fs = require('fs');
-   var catObject = JSON.parse(fs.readFileSync('../AVG/masterdata/Block.JSON', 'utf8'));
+   var catObject = JSON.parse(fs.readFileSync(path + '/Block.JSON', 'utf8'));
 
    var catSel = document.getElementById("catSel"),
       catSel1 = document.getElementById("catSel1");
@@ -35,7 +36,7 @@ function listRooms() {
    document.getElementById("roomSel").innerText = null;
    var roomSel = document.getElementById("roomSel");
 
-   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObj = JSON.parse(fs.readFileSync(path + '/Rooms.JSON', 'utf8'));
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == blockSelected);
 
    for (var room in roomsObjFiltered) {
@@ -49,7 +50,7 @@ function listRooms() {
 function getroomstatus() {
    const fs = require('fs');
    document.getElementById('lbl_err').style.display = "none";
-   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObj = JSON.parse(fs.readFileSync(path + '/Rooms.JSON', 'utf8'));
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
    var room
    for (var room in roomsObjFiltered) {
@@ -199,15 +200,15 @@ function clean() {
       return;
 
    for (var rmIndx = 0; rmIndx < selected_notclean.length; rmIndx++) {
-      var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
-      var roomsCleanTransObj = fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8');
+      var roomsObj = fs.readFileSync(path + '/Rooms.JSON', 'utf8');
+      var roomsCleanTransObj = fs.readFileSync(path + '/RoomsCleanTrans.JSON', 'utf8');
       
       var txtAreaID = 'txtAra_' + `${selected_notclean[rmIndx]}`;
       var txtNotes = document.getElementById(txtAreaID).value;
       var updatedRoomTransobj = udpateTransRooms(roomsCleanTransObj, selected_notclean[rmIndx], txtNotes);
       var updatedRoomObj = udpateRooms(roomsObj, selected_notclean[rmIndx], CLEAN);
-      saveJSONFile(JSON.stringify(updatedRoomObj), '../AVG/masterdata/Rooms.JSON');
-      saveJSONFile(JSON.stringify(updatedRoomTransobj), '../AVG/masterdata/RoomsCleanTrans.JSON');
+      saveJSONFile(JSON.stringify(updatedRoomObj), path + '/Rooms.JSON');
+      saveJSONFile(JSON.stringify(updatedRoomTransobj), path + '/RoomsCleanTrans.JSON');
    }
    console.log("Request has been submitted");
    roomVS();
@@ -221,7 +222,7 @@ function roomVS() {
    const fs = require('fs');
    document.getElementById('cont_VS').innerHTML = '';
    var node = document.createElement('div');
-   var roomsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8'));
+   var roomsObj = JSON.parse(fs.readFileSync(path + '/Rooms.JSON', 'utf8'));
    var roomsObjFiltered = roomsObj.filter(obj => obj.BlockID == document.getElementById('catSel1').value);
    if (this.selectedIndex < 1) return;
    //console.log(roomsObjFiltered);
@@ -305,7 +306,7 @@ function home() {
 
 function listUsers() {
    const fs = require('fs');
-   var peopleObject = JSON.parse(fs.readFileSync('../AVG/masterdata/People.JSON', 'utf8'));
+   var peopleObject = JSON.parse(fs.readFileSync(path + '/People.JSON', 'utf8'));
    document.getElementById('lbl_err').style.display = "none";
 
    var requesterObj = document.getElementById("requestor"),
@@ -357,7 +358,7 @@ function workorder(){
    const fs = require('fs');
    var assingee =  document.getElementById('pw_assignee').value;
    var printWorkOrdertbl = document.getElementById('tbl_printworkorder');
-   var workOrderRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON','utf8'));
+   var workOrderRecordsObj = JSON.parse(fs.readFileSync(path + '/RoomsCleanTrans.JSON','utf8'));
    var workOrderTranFiltered = workOrderRecordsObj.filter(obj => obj.CleanedBy == assingee && obj.Status == 'Not Clean' );
 
    if(workOrderTranFiltered == [] || workOrderTranFiltered == null) {
@@ -423,7 +424,7 @@ function listCleaningRecords() {
 
    var roomName = document.getElementById('roomSel').options[document.getElementById('roomSel').selectedIndex].text;
    const fs = require('fs');
-   var roomCleanRecordsObj = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8'));
+   var roomCleanRecordsObj = JSON.parse(fs.readFileSync(path + '/RoomsCleanTrans.JSON', 'utf8'));
    var roomsCleanTranFiltered = roomCleanRecordsObj.filter(obj => obj.RoomName == roomName);
 
 
@@ -602,14 +603,14 @@ function submitCleanRequest() {
    // selectedroomIds = selectedChkObjects.substring(1, selectedChkObjects.length - 1);
 
      const fs = require('fs');
-   var roomsObjTranID = JSON.parse(fs.readFileSync('../AVG/masterdata/RoomsCleanTrans.JSON', 'utf8')).length + 1;
+   var roomsObjTranID = JSON.parse(fs.readFileSync(path + '/RoomsCleanTrans.JSON', 'utf8')).length + 1;
 
    if(!selectedRoomsNames) 
       return;
 
 
    for (var rmIndx = 0; rmIndx < selectedRoomsNames.length; rmIndx++) {
-      var roomsObj = fs.readFileSync('../AVG/masterdata/Rooms.JSON', 'utf8');
+      var roomsObj = fs.readFileSync(path + '/Rooms.JSON', 'utf8');
       roomsObjTranID = roomsObjTranID + rmIndx;
       var txtAreaID = 'txtAra_' + `${selectedRoomsNames[rmIndx]}`;
       var txtNotes = document.getElementById(txtAreaID).value;
@@ -625,9 +626,9 @@ function submitCleanRequest() {
       "CleanNotes":""}`;
 
       var updatedRoomObj = udpateRooms(roomsObj, selectedRoomsNames[rmIndx], NOTCLEAN);
-      saveJSONFile(updatedRoomObj, '../AVG/masterdata/Rooms.JSON');
+      saveJSONFile(updatedRoomObj, path + '/Rooms.JSON');
 
-      saveCleanTrans(cleanTxObj, '../AVG/masterdata/RoomsCleanTrans.JSON');
+      saveCleanTrans(cleanTxObj, path + '/RoomsCleanTrans.JSON');
    }
    console.log("Request has been submitted");
   
